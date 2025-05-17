@@ -1188,15 +1188,21 @@
 						"disableBodyPruning": true
 					},
 					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "{{token}}"
+							}
+						},
 						"method": "GET",
 						"header": [
 							{
 								"key": "Authorization",
 								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7Il9pZCI6IjY3YzFjY2YzZTVkOWM3OGViNWQ5ZjBjMyIsImVtYWlsIjoiZG9taW5vc0BnbWFpbC5jb20ifSwidGltZXN0YW1wIjoiMjAyNS0wNS0wMlQxNDoyMDo0My42MTlaIiwiaWF0IjoxNzQ2MTk1NjQzLCJleHAiOjE3NDY0NTQ4NDMsImF1ZCI6Imdsb2JhbCJ9.YOWMOlsNvElWMs5StYVO1mLt12439n3I4N0d-ableKs",
-								"type": "text"
+								"disabled": true
 							}
 						],
-						"url": "http://127.0.0.1:3050/api/v1/products/fetch/68159a826ec384fb2991e331"
+						"url": "http://127.0.0.1:3050/api/v1/products/682863b5691af816cde6361c"
 					},
 					"response": [
 						{
@@ -1293,11 +1299,6 @@
 								"fetch"
 							],
 							"query": [
-								{
-									"key": "search",
-									"value": "nayan",
-									"disabled": true
-								},
 								{
 									"key": "category",
 									"value": null,
@@ -1884,6 +1885,11 @@
 				}
 			],
 			"id": "99d9610f-d0b8-4b38-9ef7-f1e53f500ff8"
+		},
+		{
+			"name": "New Folder",
+			"item": [],
+			"id": "1dcaa723-96ec-47f2-8645-ca3bbe4780ac"
 		},
 		{
 			"name": "Cart",

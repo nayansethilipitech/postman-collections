@@ -1,586 +1,148 @@
 {
 	"info": {
-		"_postman_id": "0f27744d-ed61-4578-9f9f-d74f3f5f8a80",
-		"name": "Coupon Service",
+		"_postman_id": "972296a9-42a0-4966-9777-17686668c38d",
+		"name": "Ecommerce",
 		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
 	},
 	"item": [
 		{
-			"name": "Tenant",
+			"name": "attributes",
 			"item": [
 				{
-					"name": "Create tenant",
-					"id": "eb3086c8-c2f0-40be-a980-4b170270989d",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"method": "POST",
-						"header": [],
-						"body": {
-							"mode": "raw",
-							"raw": "{\r\n    \"name\": \"Dominos India\",\r\n    \"phone\": \"9999999999\",\r\n    \"email\": \"dominos@gmail.com\",\r\n    \"gst\": \"AXDKS55485SS\",\r\n    \"pan\": \"PI09IIS0SS\",\r\n    \"website\": \"https://dominos.com/in\",\r\n    \"category\": \"Food\",\r\n    // \"logo\": \"\",\r\n    \"about\": \"We are pizza company\",\r\n    \"address\": {\r\n        \"line1\": \"Delhi\",\r\n        \"pincode\": \"1234\",\r\n        \"city\": \"Delhi\",\r\n        \"state\": \"Delhi\"\r\n    }\r\n}",
-							"options": {
-								"raw": {
-									"language": "json"
+					"name": "public",
+					"item": [
+						{
+							"name": "getAllAttributes",
+							"id": "a1b3b7be-8169-441e-83b1-4c67cedc1e95",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": "{{url}}/api/v1/attributes"
+							},
+							"response": [
+								{
+									"id": "0be06864-faad-42f2-88f1-084dbadf8d28",
+									"name": "getAllAttributes",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": "http://127.0.0.1:3050/api/v1/attributes"
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "217"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"d9-OQnewKsFUyTbg7//Lzbmhn6JTaE\""
+										},
+										{
+											"key": "Date",
+											"value": "Sat, 03 May 2025 04:25:21 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"responseTime": null,
+									"body": "{\n    \"data\": {\n        \"list\": [\n            {\n                \"_id\": \"6814d57a50e949ed115b392d\",\n                \"name\": \"Colors\",\n                \"options\": [\n                    \"Red\",\n                    \"Blue\"\n                ]\n            },\n            {\n                \"_id\": \"6814d58f50e949ed115b392f\",\n                \"name\": \"Size\",\n                \"options\": [\n                    \"M\",\n                    \"S\"\n                ]\n            }\n        ],\n        \"total\": 2\n    },\n    \"status\": \"Ok\",\n    \"message\": {\n        \"code\": \"Success\"\n    }\n}"
 								}
-							}
+							]
 						},
-						"url": "{{host}}:{{port}}/api/v1/tenant"
-					},
-					"response": []
-				},
-				{
-					"name": "Update tenant",
-					"id": "b689feff-9c30-44fe-b44e-78aa9ecb334e",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"method": "PATCH",
-						"header": [],
-						"body": {
-							"mode": "raw",
-							"raw": "{\r\n    \"gst\": \"AXDKS55485XX\"\r\n}",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
-						},
-						"url": {
-							"raw": "{{host}}:{{port}}/api/v1/tenant/:tenantId",
-							"host": [
-								"{{host}}"
-							],
-							"port": "{{port}}",
-							"path": [
-								"api",
-								"v1",
-								"tenant",
-								":tenantId"
-							],
-							"variable": [
+						{
+							"name": "getAttributeById",
+							"id": "4a17138d-a41b-4dac-8c09-78f4180b4938",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": "http://127.0.0.1:3050/api/v1/attributes/6814d57a50e949ed115b392d"
+							},
+							"response": [
 								{
-									"key": "tenantId",
-									"value": "67c1ccf2e5d9c78eb5d9f0c0"
+									"id": "007f6f7d-f84f-41e9-86ed-5dd18716d53d",
+									"name": "getAttributeById",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": "http://127.0.0.1:3050/api/v1/attributes/6814d57a50e949ed115b392d"
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "127"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"7f-H84wf/0Uaie6wx9mNTs3X0K8tOQ\""
+										},
+										{
+											"key": "Date",
+											"value": "Sat, 03 May 2025 04:25:41 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"responseTime": null,
+									"body": "{\n    \"data\": {\n        \"_id\": \"6814d57a50e949ed115b392d\",\n        \"name\": \"Colors\",\n        \"options\": [\n            \"Red\",\n            \"Blue\"\n        ]\n    },\n    \"status\": \"Ok\",\n    \"message\": {\n        \"code\": \"Success\"\n    }\n}"
 								}
 							]
 						}
-					},
-					"response": []
+					],
+					"id": "0a3e54fd-1d88-46b2-8018-3be450bab494"
 				},
 				{
-					"name": "Get tenant List",
-					"id": "d93d07bf-939e-4fbe-895a-d9ab329224e5",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"method": "GET",
-						"header": [],
-						"url": "{{host}}:{{port}}/api/v1/tenant"
-					},
-					"response": []
-				}
-			],
-			"id": "9a8789be-165f-4f70-b3d1-906c4467ac83",
-			"auth": {
-				"type": "apikey",
-				"apikey": {
-					"value": "lPbBqWW4s5Zav1HPV43HlnVOpZSnH4lynFleoEMTKYzWVR8xAmbUY2YAh6lpzyA4",
-					"key": "x-api-key"
-				}
-			},
-			"event": [
-				{
-					"listen": "prerequest",
-					"script": {
-						"id": "0eec7d68-4c31-43d4-84b8-01664f051989",
-						"type": "text/javascript",
-						"packages": {},
-						"exec": [
-							""
-						]
-					}
-				},
-				{
-					"listen": "test",
-					"script": {
-						"id": "cbf07c2a-d632-469e-8d14-f5005ca20128",
-						"type": "text/javascript",
-						"packages": {},
-						"exec": [
-							""
-						]
-					}
-				}
-			]
-		},
-		{
-			"name": "Offers",
-			"item": [
-				{
-					"name": "Create offer",
-					"id": "518e1833-450d-4ac6-ac5f-14aa63a45f59",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"method": "POST",
-						"header": [],
-						"body": {
-							"mode": "raw",
-							"raw": "{\r\n    \"name\": \"75% off on Burger\",\r\n    \"type\": \"Private\",\r\n    \"discount\": {\r\n        \"value\": 20\r\n    },\r\n    \"usage\": {\r\n        \"value\": 12,\r\n        \"type\": \"Yearly\"\r\n    },\r\n    \"endDate\": \"2025-12-31\",\r\n    \"description\": \"These are terms and conditions\"\r\n}",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
-						},
-						"url": {
-							"raw": "{{host}}:{{port}}/api/v1/offer?tenant=67c1d71325d207797263da9e",
-							"host": [
-								"{{host}}"
-							],
-							"port": "{{port}}",
-							"path": [
-								"api",
-								"v1",
-								"offer"
-							],
-							"query": [
-								{
-									"key": "tenant",
-									"value": "67c1d71325d207797263da9e"
-								}
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "Update offer",
-					"id": "49f0525e-e24b-4336-bb92-66c1e5a57d98",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"method": "PATCH",
-						"header": [],
-						"body": {
-							"mode": "raw",
-							"raw": "{\r\n    \"gst\": \"AXDKS55485XX\"\r\n}",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
-						},
-						"url": {
-							"raw": "{{host}}:{{port}}/api/v1/offer/:offerId?tenant=67c1d71325d207797263da9e",
-							"host": [
-								"{{host}}"
-							],
-							"port": "{{port}}",
-							"path": [
-								"api",
-								"v1",
-								"offer",
-								":offerId"
-							],
-							"query": [
-								{
-									"key": "tenant",
-									"value": "67c1d71325d207797263da9e",
-									"type": "text"
-								}
-							],
-							"variable": [
-								{
-									"key": "offerId",
-									"value": ""
-								}
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "Get offer list",
-					"id": "6204fa98-bb6f-4b45-94fe-70d0e2e371da",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"method": "GET",
-						"header": [],
-						"url": {
-							"raw": "{{host}}:{{port}}/api/v1/offer?tenant=67c1d71325d207797263da9e",
-							"host": [
-								"{{host}}"
-							],
-							"port": "{{port}}",
-							"path": [
-								"api",
-								"v1",
-								"offer"
-							],
-							"query": [
-								{
-									"key": "tenant",
-									"value": "67c1d71325d207797263da9e"
-								}
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "Get offer list Copy",
-					"id": "90625ad5-5ebe-4a2c-95e6-bc7006f0017f",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"method": "GET",
-						"header": [],
-						"url": {
-							"raw": "{{host}}:{{port}}/api/v1/offer?tenant=67c1d71325d207797263da9e",
-							"host": [
-								"{{host}}"
-							],
-							"port": "{{port}}",
-							"path": [
-								"api",
-								"v1",
-								"offer"
-							],
-							"query": [
-								{
-									"key": "tenant",
-									"value": "67c1d71325d207797263da9e"
-								}
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "Get offer detail",
-					"id": "7ea57bc3-44d9-45e0-9f85-402724d66be3",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"method": "GET",
-						"header": [],
-						"url": {
-							"raw": "{{host}}:{{port}}/api/v1/offer/:offerId?tenant=67c1d71325d207797263da9e",
-							"host": [
-								"{{host}}"
-							],
-							"port": "{{port}}",
-							"path": [
-								"api",
-								"v1",
-								"offer",
-								":offerId"
-							],
-							"query": [
-								{
-									"key": "tenant",
-									"value": "67c1d71325d207797263da9e",
-									"type": "text"
-								}
-							],
-							"variable": [
-								{
-									"key": "offerId",
-									"value": ""
-								}
-							]
-						}
-					},
-					"response": []
-				}
-			],
-			"id": "9e14e6f9-b387-4c73-9561-019e24fba5a4",
-			"auth": {
-				"type": "apikey",
-				"apikey": {
-					"value": "lPbBqWW4s5Zav1HPV43HlnVOpZSnH4lynFleoEMTKYzWVR8xAmbUY2YAh6lpzyA4",
-					"key": "x-api-key"
-				}
-			},
-			"event": [
-				{
-					"listen": "prerequest",
-					"script": {
-						"id": "643a40d8-4209-42b2-ada4-c635e819504d",
-						"type": "text/javascript",
-						"packages": {},
-						"exec": [
-							""
-						]
-					}
-				},
-				{
-					"listen": "test",
-					"script": {
-						"id": "2724aece-c497-4b14-8b3a-8e5c32675186",
-						"type": "text/javascript",
-						"packages": {},
-						"exec": [
-							""
-						]
-					}
-				}
-			]
-		},
-		{
-			"name": "Coupon",
-			"item": [
-				{
-					"name": "Create coupon",
-					"id": "59f0e3b5-314c-4ff8-af08-75d9bfb11984",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"method": "POST",
-						"header": [],
-						"body": {
-							"mode": "raw",
-							"raw": "{\r\n    \"offer\": \"67c32936a83e4d21ac16c6c6\",\r\n    \"user\": {\r\n        \"id\": \"65cc8d887747ea06991acd57\",\r\n        \"name\": \"Nibedita Swain416\",\r\n        \"provider\": \"Hyderbad Branch\"\r\n    },\r\n    \"image\": \"afasfiasdf9asdf9sad\"\r\n}",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
-						},
-						"url": {
-							"raw": "{{host}}:{{port}}/api/v1/coupon",
-							"host": [
-								"{{host}}"
-							],
-							"port": "{{port}}",
-							"path": [
-								"api",
-								"v1",
-								"coupon"
-							],
-							"query": [
-								{
-									"key": "tenant",
-									"value": "67c1d71325d207797263da9e",
-									"disabled": true
-								}
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "Get coupon list",
-					"id": "a697a333-3f28-4cc2-93a9-dd785181058d",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"auth": {
-							"type": "bearer",
-							"bearer": {
-								"token": "{{token}}"
-							}
-						},
-						"method": "GET",
-						"header": [],
-						"url": {
-							"raw": "{{host}}:{{port}}/api/v1/coupon?tenant=67c1d71325d207797263da9e&offer",
-							"host": [
-								"{{host}}"
-							],
-							"port": "{{port}}",
-							"path": [
-								"api",
-								"v1",
-								"coupon"
-							],
-							"query": [
-								{
-									"key": "tenant",
-									"value": "67c1d71325d207797263da9e"
-								},
-								{
-									"key": "offer",
-									"value": null,
-									"type": "text"
-								}
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "Get coupon detail",
-					"id": "d3c9c10b-dda1-41ad-9b87-52e41c3afacb",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"method": "GET",
-						"header": [],
-						"url": {
-							"raw": "{{host}}:{{port}}/api/v1/coupon/:couponId?tenant=67c1d71325d207797263da9e&populate=offer,tenant_f=name|description",
-							"host": [
-								"{{host}}"
-							],
-							"port": "{{port}}",
-							"path": [
-								"api",
-								"v1",
-								"coupon",
-								":couponId"
-							],
-							"query": [
-								{
-									"key": "tenant",
-									"value": "67c1d71325d207797263da9e"
-								},
-								{
-									"key": "populate",
-									"value": "offer,tenant_f=name|description"
-								}
-							],
-							"variable": [
-								{
-									"key": "couponId",
-									"value": "67c4189d3455d03b83da3f7d"
-								}
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "Redeem Coupon",
-					"id": "35d73259-e115-4e6f-94a9-a33dcddeccb4",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"auth": {
-							"type": "bearer",
-							"bearer": {
-								"token": "{{token}}"
-							}
-						},
-						"method": "POST",
-						"header": [],
-						"url": {
-							"raw": "{{host}}:{{port}}/api/v1/coupon/redeem/:couponId",
-							"host": [
-								"{{host}}"
-							],
-							"port": "{{port}}",
-							"path": [
-								"api",
-								"v1",
-								"coupon",
-								"redeem",
-								":couponId"
-							],
-							"variable": [
-								{
-									"key": "couponId",
-									"value": "67c57eaf893528e52c0e443c"
-								}
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "Coupon Verify",
-					"id": "568164e6-37e5-4dda-8da8-77fb800738af",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"auth": {
-							"type": "bearer",
-							"bearer": {
-								"token": "{{token}}"
-							}
-						},
-						"method": "GET",
-						"header": [],
-						"url": {
-							"raw": "{{host}}:{{port}}/api/v1/coupon/verify/:couponCode?populate=offer",
-							"host": [
-								"{{host}}"
-							],
-							"port": "{{port}}",
-							"path": [
-								"api",
-								"v1",
-								"coupon",
-								"verify",
-								":couponCode"
-							],
-							"query": [
-								{
-									"key": "populate",
-									"value": "offer"
-								}
-							],
-							"variable": [
-								{
-									"key": "couponCode",
-									"value": "51377614"
-								}
-							]
-						}
-					},
-					"response": []
-				}
-			],
-			"id": "2095a7f7-ecd4-4d70-b15d-5e42f492d99d",
-			"auth": {
-				"type": "noauth"
-			},
-			"event": [
-				{
-					"listen": "prerequest",
-					"script": {
-						"id": "ef6dacb2-cc4f-4724-9ef8-48c052721af0",
-						"type": "text/javascript",
-						"packages": {},
-						"exec": [
-							""
-						]
-					}
-				},
-				{
-					"listen": "test",
-					"script": {
-						"id": "470b92bb-978c-44c5-9929-ecc5da9ca53f",
-						"type": "text/javascript",
-						"packages": {},
-						"exec": [
-							""
-						]
-					}
-				}
-			]
-		},
-		{
-			"name": "Asset",
-			"item": [
-				{
-					"name": "Create Asset",
-					"id": "154bdd35-3290-43e3-856e-816b19cf27ee",
+					"name": "addAttribute",
+					"id": "c240a2cc-134e-4df7-831c-76afd6d3b47f",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -594,41 +156,215 @@
 						"method": "POST",
 						"header": [
 							{
-								"key": "Origin",
-								"value": "{{referer}}",
+								"key": "authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7Il9pZCI6IjY3YzFjY2YzZTVkOWM3OGViNWQ5ZjBjMyIsImVtYWlsIjoiZG9taW5vc0BnbWFpbC5jb20ifSwidGltZXN0YW1wIjoiMjAyNS0wNS0wMlQxNDoyMDo0My42MTlaIiwiaWF0IjoxNzQ2MTk1NjQzLCJleHAiOjE3NDY0NTQ4NDMsImF1ZCI6Imdsb2JhbCJ9.YOWMOlsNvElWMs5StYVO1mLt12439n3I4N0d-ableKs",
 								"type": "text"
 							}
 						],
 						"body": {
-							"mode": "formdata",
-							"formdata": [
-								{
-									"key": "file",
-									"type": "file",
-									"fileNotInWorkingDirectoryWarning": "This file isn't in your working directory. Teammates you share this request with won't be able to use this file. To make collaboration easier you can setup your working directory in Settings.",
-									"filesNotInWorkingDirectory": [
-										"/C:/Users/rajes/Pictures/031.jpg"
-									],
-									"src": "/C:/Users/rajes/Pictures/031.jpg"
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"Weight\",\r\n    \"options\":[\"500gm\",\"1kg\"]\r\n    // \"tenant\":\"67c1ccf2e5d9c78eb5d9f0c0\" //optional\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
 								}
-							]
+							}
+						},
+						"url": "{{url}}/api/v1/attributes"
+					},
+					"response": [
+						{
+							"id": "d312cd1a-e8b1-42d6-afb8-0a37b17e57d8",
+							"name": "addAttribute",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7Il9pZCI6IjY3YzFjY2YzZTVkOWM3OGViNWQ5ZjBjMyIsImVtYWlsIjoiZG9taW5vc0BnbWFpbC5jb20ifSwidGltZXN0YW1wIjoiMjAyNS0wNS0wMlQxNDoyMDo0My42MTlaIiwiaWF0IjoxNzQ2MTk1NjQzLCJleHAiOjE3NDY0NTQ4NDMsImF1ZCI6Imdsb2JhbCJ9.YOWMOlsNvElWMs5StYVO1mLt12439n3I4N0d-ableKs",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\":\"Weight\",\r\n    \"options\":[\"500gm\",\"1kg\"]\r\n    // \"tenant\":\"67c1ccf2e5d9c78eb5d9f0c0\" //optional\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "http://127.0.0.1:3050/api/v1/attributes"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "224"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"e0-CzWXHcoW9JIBtwDwLulSSqD2xiE\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 03 May 2025 04:26:08 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"responseTime": null,
+							"body": "{\n    \"data\": {\n        \"name\": \"Weight\",\n        \"options\": [\n            \"500gm\",\n            \"1kg\"\n        ],\n        \"status\": \"ACTIVE\",\n        \"_id\": \"68159ae06ec384fb2991e33c\",\n        \"createdAt\": \"2025-05-03T04:26:08.676Z\",\n        \"updatedAt\": \"2025-05-03T04:26:08.676Z\"\n    },\n    \"status\": \"Ok\",\n    \"message\": {\n        \"code\": \"Success\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "getAttributeById",
+					"id": "e0bf68d2-72a1-46f9-8f51-248f0ee77a61",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7Il9pZCI6IjY3YzFjY2YzZTVkOWM3OGViNWQ5ZjBjMyIsImVtYWlsIjoiZG9taW5vc0BnbWFpbC5jb20ifSwidGltZXN0YW1wIjoiMjAyNS0wNS0wMlQxNDoyMDo0My42MTlaIiwiaWF0IjoxNzQ2MTk1NjQzLCJleHAiOjE3NDY0NTQ4NDMsImF1ZCI6Imdsb2JhbCJ9.YOWMOlsNvElWMs5StYVO1mLt12439n3I4N0d-ableKs",
+								"type": "text"
+							}
+						],
+						"url": "http://127.0.0.1:3050/api/v1/attributes/fetch/6814d57a50e949ed115b392d"
+					},
+					"response": [
+						{
+							"id": "c619e49e-981b-49d7-8192-5432cdb09d0b",
+							"name": "getAttributeById",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7Il9pZCI6IjY3YzFjY2YzZTVkOWM3OGViNWQ5ZjBjMyIsImVtYWlsIjoiZG9taW5vc0BnbWFpbC5jb20ifSwidGltZXN0YW1wIjoiMjAyNS0wNS0wMlQxNDoyMDo0My42MTlaIiwiaWF0IjoxNzQ2MTk1NjQzLCJleHAiOjE3NDY0NTQ4NDMsImF1ZCI6Imdsb2JhbCJ9.YOWMOlsNvElWMs5StYVO1mLt12439n3I4N0d-ableKs",
+										"type": "text"
+									}
+								],
+								"url": "http://127.0.0.1:3050/api/v1/attributes/fetch/6814d57a50e949ed115b392d"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "223"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"df-2uJcTfTsr/z7puD+lpXK5aPK6pQ\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 03 May 2025 04:27:44 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"responseTime": null,
+							"body": "{\n    \"data\": {\n        \"_id\": \"6814d57a50e949ed115b392d\",\n        \"name\": \"Colors\",\n        \"options\": [\n            \"Red\",\n            \"Blue\"\n        ],\n        \"status\": \"ACTIVE\",\n        \"createdAt\": \"2025-05-02T14:23:54.356Z\",\n        \"updatedAt\": \"2025-05-02T17:27:18.713Z\"\n    },\n    \"status\": \"Ok\",\n    \"message\": {\n        \"code\": \"Success\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "getAllAttributes",
+					"id": "ad3df542-23af-4179-b7ce-ddc076fd348c",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7Il9pZCI6IjY3YzFjY2YzZTVkOWM3OGViNWQ5ZjBjMyIsImVtYWlsIjoiZG9taW5vc0BnbWFpbC5jb20ifSwidGltZXN0YW1wIjoiMjAyNS0wNS0wOVQxNzo0NTozNC40MTBaIiwiaWF0IjoxNzQ2ODEyNzM0LCJleHAiOjE3NDcwNzE5MzQsImF1ZCI6Imdsb2JhbCJ9.2vD6_YDY_NHARPIGV9MAyj-peNQxK6M9uQHAWcUPRyg"
+							}
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7Il9pZCI6IjY3YzFjY2YzZTVkOWM3OGViNWQ5ZjBjMyIsImVtYWlsIjoiZG9taW5vc0BnbWFpbC5jb20ifSwidGltZXN0YW1wIjoiMjAyNS0wNS0wMlQxNDoyMDo0My42MTlaIiwiaWF0IjoxNzQ2MTk1NjQzLCJleHAiOjE3NDY0NTQ4NDMsImF1ZCI6Imdsb2JhbCJ9.YOWMOlsNvElWMs5StYVO1mLt12439n3I4N0d-ableKs",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
 						},
 						"url": {
-							"raw": "{{host}}:{{port}}/api/v1/asset/upload",
+							"raw": "{{url}}/api/v1/attributes/fetch",
 							"host": [
-								"{{host}}"
+								"{{url}}"
 							],
-							"port": "{{port}}",
 							"path": [
 								"api",
 								"v1",
-								"asset",
-								"upload"
+								"attributes",
+								"fetch"
 							],
 							"query": [
 								{
-									"key": "private",
-									"value": "true",
+									"key": "tenant",
+									"value": "67c1ccf2e5d9c78eb5d9f0c0",
+									"description": "optional",
+									"disabled": true
+								},
+								{
+									"key": "",
+									"value": null,
 									"disabled": true
 								}
 							]
@@ -636,28 +372,1189 @@
 					},
 					"response": [
 						{
-							"id": "6a7e6cc8-b2ea-4b5a-a772-fa0c57369a1a",
-							"name": "Create Asset",
+							"id": "a13e7ea3-458e-4ad1-a03e-8de1f96a17b8",
+							"name": "getAllAttributes",
 							"originalRequest": {
-								"method": "POST",
+								"method": "GET",
 								"header": [
 									{
-										"key": "Origin",
-										"value": "{{referer}}",
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7Il9pZCI6IjY3YzFjY2YzZTVkOWM3OGViNWQ5ZjBjMyIsImVtYWlsIjoiZG9taW5vc0BnbWFpbC5jb20ifSwidGltZXN0YW1wIjoiMjAyNS0wNS0wMlQxNDoyMDo0My42MTlaIiwiaWF0IjoxNzQ2MTk1NjQzLCJleHAiOjE3NDY0NTQ4NDMsImF1ZCI6Imdsb2JhbCJ9.YOWMOlsNvElWMs5StYVO1mLt12439n3I4N0d-ableKs",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "http://127.0.0.1:3050/api/v1/attributes/fetch",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "3050",
+									"path": [
+										"api",
+										"v1",
+										"attributes",
+										"fetch"
+									],
+									"query": [
+										{
+											"key": "tenant",
+											"value": "67c1ccf2e5d9c78eb5d9f0c0",
+											"description": "optional",
+											"disabled": true
+										},
+										{
+											"key": "",
+											"value": null,
+											"disabled": true
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "465"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"1d1-2J83Oz8iAkcEUCoBPJ04+HpvJfY\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 03 May 2025 04:27:55 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"responseTime": null,
+							"body": "{\n    \"data\": {\n        \"list\": [\n            {\n                \"_id\": \"6814d57a50e949ed115b392d\",\n                \"name\": \"Colors\",\n                \"options\": [\n                    \"Red\",\n                    \"Blue\"\n                ],\n                \"status\": \"ACTIVE\",\n                \"updatedAt\": \"2025-05-02T17:27:18.713Z\"\n            },\n            {\n                \"_id\": \"6814d58f50e949ed115b392f\",\n                \"name\": \"Size\",\n                \"options\": [\n                    \"M\",\n                    \"S\"\n                ],\n                \"status\": \"ACTIVE\",\n                \"updatedAt\": \"2025-05-02T17:28:00.249Z\"\n            },\n            {\n                \"_id\": \"68159ae06ec384fb2991e33c\",\n                \"name\": \"Weight\",\n                \"options\": [\n                    \"500gm\",\n                    \"1kg\"\n                ],\n                \"status\": \"ACTIVE\",\n                \"updatedAt\": \"2025-05-03T04:26:08.676Z\"\n            }\n        ],\n        \"total\": 3\n    },\n    \"status\": \"Ok\",\n    \"message\": {\n        \"code\": \"Success\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "updateAttribute",
+					"id": "8f778331-7779-4fdc-b398-00e646680d60",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "{{token}}"
+							}
+						},
+						"method": "PUT",
+						"header": [
+							{
+								"key": "authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7Il9pZCI6IjY3YzFjY2YzZTVkOWM3OGViNWQ5ZjBjMyIsImVtYWlsIjoiZG9taW5vc0BnbWFpbC5jb20ifSwidGltZXN0YW1wIjoiMjAyNS0wNS0wMlQxNDoyMDo0My42MTlaIiwiaWF0IjoxNzQ2MTk1NjQzLCJleHAiOjE3NDY0NTQ4NDMsImF1ZCI6Imdsb2JhbCJ9.YOWMOlsNvElWMs5StYVO1mLt12439n3I4N0d-ableKs",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"Size\",\r\n    \"options\":[\"M\",\"S\"]\r\n    // \"tenant\":\"67c1ccf2e5d9c78eb5d9f0c0\" //optional\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{url}}/api/v1/attributes/6814d58f50e949ed115b392f"
+					},
+					"response": [
+						{
+							"id": "479bf511-d99c-4ce5-a33c-4394f8fa8614",
+							"name": "updateAttribute",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7Il9pZCI6IjY3YzFjY2YzZTVkOWM3OGViNWQ5ZjBjMyIsImVtYWlsIjoiZG9taW5vc0BnbWFpbC5jb20ifSwidGltZXN0YW1wIjoiMjAyNS0wNS0wMlQxNDoyMDo0My42MTlaIiwiaWF0IjoxNzQ2MTk1NjQzLCJleHAiOjE3NDY0NTQ4NDMsImF1ZCI6Imdsb2JhbCJ9.YOWMOlsNvElWMs5StYVO1mLt12439n3I4N0d-ableKs",
 										"type": "text"
 									}
 								],
 								"body": {
-									"mode": "formdata",
-									"formdata": [
-										{
-											"key": "file",
-											"type": "file",
-											"src": "/C:/Users/rajes/Pictures/python.png"
+									"mode": "raw",
+									"raw": "{\r\n    \"name\":\"Size\",\r\n    \"options\":[\"M\",\"S\"]\r\n    // \"tenant\":\"67c1ccf2e5d9c78eb5d9f0c0\" //optional\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
 										}
-									]
+									}
 								},
-								"url": "{{host}}:{{port}}/api/v1/asset/upload"
+								"url": "http://127.0.0.1:3050/api/v1/attributes/6814d58f50e949ed115b392f"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "216"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"d8-tPMbtTJmrVaTEyqzc5GmgrVgLWw\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 03 May 2025 04:28:08 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"responseTime": null,
+							"body": "{\n    \"data\": {\n        \"_id\": \"6814d58f50e949ed115b392f\",\n        \"name\": \"Size\",\n        \"options\": [\n            \"M\",\n            \"S\"\n        ],\n        \"status\": \"ACTIVE\",\n        \"createdAt\": \"2025-05-02T14:24:15.378Z\",\n        \"updatedAt\": \"2025-05-03T04:28:08.325Z\"\n    },\n    \"status\": \"Ok\",\n    \"message\": {\n        \"code\": \"Success\"\n    }\n}"
+						}
+					]
+				}
+			],
+			"id": "7e4625eb-c4c7-4355-b699-f632de2ea065"
+		},
+		{
+			"name": "Category",
+			"item": [
+				{
+					"name": "public",
+					"item": [
+						{
+							"name": "getAllCategory",
+							"id": "97171cce-be1e-4b9d-bb8f-61d7c53b41b4",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": "http://127.0.0.1:3050/api/v1/categories"
+							},
+							"response": [
+								{
+									"id": "ed0d4d27-50f9-48ea-b2c2-d0fd99144141",
+									"name": "getAllCategory",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": "http://127.0.0.1:3050/api/v1/categories"
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "138"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"8a-C9MUX1Jif/sYwrhW2PqxQMydmuo\""
+										},
+										{
+											"key": "Date",
+											"value": "Sat, 03 May 2025 04:28:42 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"responseTime": null,
+									"body": "{\n    \"data\": {\n        \"list\": [\n            {\n                \"_id\": \"6814f8df0278fcb889a48c43\",\n                \"name\": \"Cloth\",\n                \"parentId\": null\n            }\n        ],\n        \"total\": 4\n    },\n    \"status\": \"Ok\",\n    \"message\": {\n        \"code\": \"Success\"\n    }\n}"
+								}
+							]
+						},
+						{
+							"name": "getAttributeById",
+							"id": "48fcf7c6-2a0f-4eca-b70b-203f3fefacdd",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": "http://127.0.0.1:3050/api/v1/categories/6814f8df0278fcb889a48c43"
+							},
+							"response": []
+						}
+					],
+					"id": "0cdcd615-5c96-4450-a824-c27967f86c80"
+				},
+				{
+					"name": "addCategory",
+					"id": "cc965030-af9d-4829-847c-ba03b86da2e0",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7Il9pZCI6IjY3YzFjY2YzZTVkOWM3OGViNWQ5ZjBjMyIsImVtYWlsIjoiZG9taW5vc0BnbWFpbC5jb20ifSwidGltZXN0YW1wIjoiMjAyNS0wNS0xMlQxNjozMDo0Ny45NDRaIiwiaWF0IjoxNzQ3MDY3NDQ3LCJleHAiOjE3NDczMjY2NDcsImF1ZCI6Imdsb2JhbCJ9.Fzb08QSUF21ISrdY1yo5i26gH-bTMeX3QxbQy_cqCl0",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"child category\",\r\n    \"parentId\":\"6814782945124ddfb1322a7f\"\r\n    // \"tenant\":\"67c1ccf2e5d9c78eb5d9f0c0\" //optional\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://127.0.0.1:3050/api/v1/categories"
+					},
+					"response": [
+						{
+							"id": "e58b7422-db8b-40b5-bcf0-d33f9dd28a57",
+							"name": "addCategory",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7Il9pZCI6IjY3YzFjY2YzZTVkOWM3OGViNWQ5ZjBjMyIsImVtYWlsIjoiZG9taW5vc0BnbWFpbC5jb20ifSwidGltZXN0YW1wIjoiMjAyNS0wNS0wMlQxNDoyMDo0My42MTlaIiwiaWF0IjoxNzQ2MTk1NjQzLCJleHAiOjE3NDY0NTQ4NDMsImF1ZCI6Imdsb2JhbCJ9.YOWMOlsNvElWMs5StYVO1mLt12439n3I4N0d-ableKs",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\":\"Child Cloth 22\",\r\n    \"parentId\":\"6814f8df0278fcb889a48c43\"\r\n    // \"tenant\":\"67c1ccf2e5d9c78eb5d9f0c0\" //optional\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "http://127.0.0.1:3050/api/v1/categories"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "244"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"f4-BERi6JjC9vk8Bas8+uWwretsddE\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 03 May 2025 04:29:22 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"responseTime": null,
+							"body": "{\n    \"data\": {\n        \"name\": \"Child Cloth 22\",\n        \"parentId\": \"6814f8df0278fcb889a48c43\",\n        \"status\": \"ACTIVE\",\n        \"_id\": \"68159ba26ec384fb2991e34a\",\n        \"createdAt\": \"2025-05-03T04:29:22.628Z\",\n        \"updatedAt\": \"2025-05-03T04:29:22.628Z\"\n    },\n    \"status\": \"Ok\",\n    \"message\": {\n        \"code\": \"Success\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "getCategoryById",
+					"id": "9b61e391-8575-4191-a608-f7c70a69c0e1",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7Il9pZCI6IjY3YzFjY2YzZTVkOWM3OGViNWQ5ZjBjMyIsImVtYWlsIjoiZG9taW5vc0BnbWFpbC5jb20ifSwidGltZXN0YW1wIjoiMjAyNS0wNS0wMlQxNDoyMDo0My42MTlaIiwiaWF0IjoxNzQ2MTk1NjQzLCJleHAiOjE3NDY0NTQ4NDMsImF1ZCI6Imdsb2JhbCJ9.YOWMOlsNvElWMs5StYVO1mLt12439n3I4N0d-ableKs",
+								"type": "text"
+							}
+						],
+						"url": "http://127.0.0.1:3050/api/v1/categories/fetch/6814d80b2d7231a65671c211"
+					},
+					"response": [
+						{
+							"id": "c3c4f9a0-fae3-46e6-9793-77511c583745",
+							"name": "getCategoryById",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7Il9pZCI6IjY3YzFjY2YzZTVkOWM3OGViNWQ5ZjBjMyIsImVtYWlsIjoiZG9taW5vc0BnbWFpbC5jb20ifSwidGltZXN0YW1wIjoiMjAyNS0wNS0wMlQxNDoyMDo0My42MTlaIiwiaWF0IjoxNzQ2MTk1NjQzLCJleHAiOjE3NDY0NTQ4NDMsImF1ZCI6Imdsb2JhbCJ9.YOWMOlsNvElWMs5StYVO1mLt12439n3I4N0d-ableKs",
+										"type": "text"
+									}
+								],
+								"url": "http://127.0.0.1:3050/api/v1/categories/fetch/6814d80b2d7231a65671c211"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "240"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"f0-jbtcHpBNe9EKGkg1gBxQNIznSlM\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 03 May 2025 04:29:59 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"responseTime": null,
+							"body": "{\n    \"data\": {\n        \"_id\": \"6814d80b2d7231a65671c211\",\n        \"name\": \"Mens Cloth\",\n        \"parentId\": \"6814d7f12d7231a65671c20e\",\n        \"status\": \"ACTIVE\",\n        \"createdAt\": \"2025-05-02T14:34:51.918Z\",\n        \"updatedAt\": \"2025-05-02T14:34:51.918Z\"\n    },\n    \"status\": \"Ok\",\n    \"message\": {\n        \"code\": \"Success\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "getAllCategory",
+					"id": "dd44f009-603c-4817-a801-23ba6ec9fa52",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "{{token}}"
+							}
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7Il9pZCI6IjY3YzFjY2YzZTVkOWM3OGViNWQ5ZjBjMyIsImVtYWlsIjoiZG9taW5vc0BnbWFpbC5jb20ifSwidGltZXN0YW1wIjoiMjAyNS0wNS0xMlQxNjozMDo0Ny45NDRaIiwiaWF0IjoxNzQ3MDY3NDQ3LCJleHAiOjE3NDczMjY2NDcsImF1ZCI6Imdsb2JhbCJ9.Fzb08QSUF21ISrdY1yo5i26gH-bTMeX3QxbQy_cqCl0",
+								"type": "text"
+							}
+						],
+						"url": "{{url}}/api/v1/categories/fetch"
+					},
+					"response": [
+						{
+							"id": "e201471f-ad96-4e33-9d5e-256e8c4fc4d4",
+							"name": "getAllCategory",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7Il9pZCI6IjY3YzFjY2YzZTVkOWM3OGViNWQ5ZjBjMyIsImVtYWlsIjoiZG9taW5vc0BnbWFpbC5jb20ifSwidGltZXN0YW1wIjoiMjAyNS0wNS0wMlQxNDoyMDo0My42MTlaIiwiaWF0IjoxNzQ2MTk1NjQzLCJleHAiOjE3NDY0NTQ4NDMsImF1ZCI6Imdsb2JhbCJ9.YOWMOlsNvElWMs5StYVO1mLt12439n3I4N0d-ableKs",
+										"type": "text"
+									}
+								],
+								"url": "http://127.0.0.1:3050/api/v1/categories/fetch"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "802"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"322-BTUMk6LycUCRzBlLFsxXmbxc+e4\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 03 May 2025 04:30:45 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"responseTime": null,
+							"body": "{\n    \"data\": {\n        \"list\": [\n            {\n                \"_id\": \"6814d80b2d7231a65671c211\",\n                \"name\": \"Mens Cloth\",\n                \"parentId\": \"6814d7f12d7231a65671c20e\",\n                \"status\": \"ACTIVE\",\n                \"createdAt\": \"2025-05-02T14:34:51.918Z\"\n            },\n            {\n                \"_id\": \"6814d8102d7231a65671c214\",\n                \"name\": \"Womens Cloth\",\n                \"parentId\": \"6814d7f12d7231a65671c20e\",\n                \"status\": \"ACTIVE\",\n                \"createdAt\": \"2025-05-02T14:34:56.668Z\"\n            },\n            {\n                \"_id\": \"6814d8182d7231a65671c217\",\n                \"name\": \"Child Cloth\",\n                \"parentId\": \"6814d7f12d7231a65671c20e\",\n                \"status\": \"ACTIVE\",\n                \"createdAt\": \"2025-05-02T14:35:04.245Z\"\n            },\n            {\n                \"_id\": \"6814f8df0278fcb889a48c43\",\n                \"name\": \"Cloth\",\n                \"parentId\": null,\n                \"status\": \"ACTIVE\",\n                \"createdAt\": \"2025-05-02T16:54:55.583Z\"\n            },\n            {\n                \"_id\": \"68159ba26ec384fb2991e34a\",\n                \"name\": \"Child Cloth 22\",\n                \"parentId\": \"6814f8df0278fcb889a48c43\",\n                \"status\": \"ACTIVE\",\n                \"createdAt\": \"2025-05-03T04:29:22.628Z\"\n            }\n        ],\n        \"total\": 5\n    },\n    \"status\": \"Ok\",\n    \"message\": {\n        \"code\": \"Success\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "updateCategory",
+					"id": "da2def28-00a5-42ac-9d44-0e687d459dc3",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7Il9pZCI6IjY3YzFjY2YzZTVkOWM3OGViNWQ5ZjBjMyIsImVtYWlsIjoiZG9taW5vc0BnbWFpbC5jb20ifSwidGltZXN0YW1wIjoiMjAyNS0wNS0wMlQxNDoyMDo0My42MTlaIiwiaWF0IjoxNzQ2MTk1NjQzLCJleHAiOjE3NDY0NTQ4NDMsImF1ZCI6Imdsb2JhbCJ9.YOWMOlsNvElWMs5StYVO1mLt12439n3I4N0d-ableKs",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"Cloth_Testing\",\r\n    \"parentId\":\"67c1ccf2e5d9c78eb5d9f0c0\"\r\n    // \"tenant\":\"67c1ccf2e5d9c78eb5d9f0c0\" //optional\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://127.0.0.1:3050/api/v1/categories/6814d8102d7231a65671c214"
+					},
+					"response": []
+				}
+			],
+			"id": "209d7bef-9f1b-4b55-953c-561dfdc4709a"
+		},
+		{
+			"name": "Products",
+			"item": [
+				{
+					"name": "public",
+					"item": [
+						{
+							"name": "getAllProducts",
+							"id": "b4d7b4c5-3a8c-41f3-91ea-a786ec454800",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": "http://127.0.0.1:3050/api/v1/products"
+							},
+							"response": [
+								{
+									"id": "97564e64-4798-45e0-aa1c-c4b1cd859cba",
+									"name": "getAllProducts",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": "http://127.0.0.1:3050/api/v1/products"
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "890"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"37a-I8UF9/GLN7IRco3zi3tfLkh1IwU\""
+										},
+										{
+											"key": "Date",
+											"value": "Sat, 03 May 2025 04:31:57 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"responseTime": null,
+									"body": "{\n    \"data\": {\n        \"list\": [\n            {\n                \"_id\": \"68159a826ec384fb2991e331\",\n                \"tenant\": \"68099a3d82e5a7fd20967e7c\",\n                \"title\": \"Sample Product Title\",\n                \"shortDesc\": \"Short description of the product\",\n                \"description\": \"Detailed description of the product\",\n                \"category\": \"6808ea75550f3a69d0bd868d\",\n                \"status\": \"ACTIVE\",\n                \"offerPrice\": 299.99,\n                \"originalPrice\": 499.99,\n                \"totalQuantity\": 100,\n                \"quantity\": 50,\n                \"sku\": \"ABC123XYZ\",\n                \"isPriceVariable\": true,\n                \"isTaxIncluded\": false,\n                \"seo\": {\n                    \"title\": \"Sample Product SEO Title\",\n                    \"metaTitle\": \"Sample Product Meta Title\",\n                    \"metaDesc\": \"Sample product meta description for SEO\",\n                    \"urlHandle\": \"sample-product-url-handle\"\n                },\n                \"gallery\": [\n                    \"680998da82e5a7fd20967e76\"\n                ],\n                \"productVariants\": [\n                    \"68159a826ec384fb2991e333\",\n                    \"68159a826ec384fb2991e334\",\n                    \"68159a826ec384fb2991e335\",\n                    \"68159a826ec384fb2991e336\"\n                ],\n                \"createdAt\": \"2025-05-03T04:24:34.795Z\",\n                \"updatedAt\": \"2025-05-03T04:24:34.931Z\"\n            }\n        ],\n        \"total\": 1\n    },\n    \"status\": \"Ok\",\n    \"message\": {\n        \"code\": \"Success\"\n    }\n}"
+								}
+							]
+						},
+						{
+							"name": "getproductById",
+							"id": "c832a09b-b898-48ea-98ec-4b88630b2ead",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": "http://127.0.0.1:3050/api/v1/products/68159a826ec384fb2991e331"
+							},
+							"response": [
+								{
+									"id": "edc2a4c3-79a0-4fa0-b3a5-9b96b5534ba8",
+									"name": "getproductById",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": "http://127.0.0.1:3050/api/v1/products/68159a826ec384fb2991e331"
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "869"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"365-ubwszDRCAbUjYL0X48Gbl7kxTz8\""
+										},
+										{
+											"key": "Date",
+											"value": "Sat, 03 May 2025 04:32:26 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"responseTime": null,
+									"body": "{\n    \"data\": {\n        \"_id\": \"68159a826ec384fb2991e331\",\n        \"tenant\": \"68099a3d82e5a7fd20967e7c\",\n        \"title\": \"Sample Product Title\",\n        \"shortDesc\": \"Short description of the product\",\n        \"description\": \"Detailed description of the product\",\n        \"category\": \"6808ea75550f3a69d0bd868d\",\n        \"status\": \"ACTIVE\",\n        \"offerPrice\": 299.99,\n        \"originalPrice\": 499.99,\n        \"totalQuantity\": 100,\n        \"quantity\": 50,\n        \"sku\": \"ABC123XYZ\",\n        \"isPriceVariable\": true,\n        \"isTaxIncluded\": false,\n        \"seo\": {\n            \"title\": \"Sample Product SEO Title\",\n            \"metaTitle\": \"Sample Product Meta Title\",\n            \"metaDesc\": \"Sample product meta description for SEO\",\n            \"urlHandle\": \"sample-product-url-handle\"\n        },\n        \"gallery\": [\n            \"680998da82e5a7fd20967e76\"\n        ],\n        \"productVariants\": [\n            \"68159a826ec384fb2991e333\",\n            \"68159a826ec384fb2991e334\",\n            \"68159a826ec384fb2991e335\",\n            \"68159a826ec384fb2991e336\"\n        ],\n        \"createdAt\": \"2025-05-03T04:24:34.795Z\",\n        \"updatedAt\": \"2025-05-03T04:24:34.931Z\"\n    },\n    \"status\": \"Ok\",\n    \"message\": {\n        \"code\": \"Success\"\n    }\n}"
+								}
+							]
+						}
+					],
+					"id": "6c2d645d-d576-488d-be59-491ba6430e2f"
+				},
+				{
+					"name": "addProduct",
+					"id": "cb25a596-337f-42d3-bbde-bb4c08fa51a3",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7Il9pZCI6IjY3YzFjY2YzZTVkOWM3OGViNWQ5ZjBjMyIsImVtYWlsIjoiZG9taW5vc0BnbWFpbC5jb20ifSwidGltZXN0YW1wIjoiMjAyNS0wNS0wMlQxNDoyMDo0My42MTlaIiwiaWF0IjoxNzQ2MTk1NjQzLCJleHAiOjE3NDY0NTQ4NDMsImF1ZCI6Imdsb2JhbCJ9.YOWMOlsNvElWMs5StYVO1mLt12439n3I4N0d-ableKs",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\": \"Sample Product Title\",\r\n    \"shortDesc\": \"Short description of the product\",\r\n    \"description\": \"Detailed description of the product\",\r\n    \"category\": \"6808ea75550f3a69d0bd868d\",\r\n    \"subcategory\": \"6808ea91550f3a69d0bd8690\",\r\n    \"status\": \"ACTIVE\",\r\n    \"offerPrice\": 299.99,\r\n    \"originalPrice\": 499.99,\r\n    \"totalQuantity\": 100,\r\n    \"quantity\": 50,\r\n    \"isPriceVariable\": true,\r\n    \"isTaxIncluded\": false,\r\n    \"seo\": {\r\n        \"title\": \"Sample Product SEO Title\",\r\n        \"metaTitle\": \"Sample Product Meta Title\",\r\n        \"metaDesc\": \"Sample product meta description for SEO\",\r\n        \"urlHandle\": \"sample-product-url-handle\"\r\n    },\r\n    \"gallery\": [\r\n        \"680998da82e5a7fd20967e76\"\r\n    ]\r\n    // \"attributes\": {\r\n    //     \"primary\": {\r\n    //         \"attributeId\": \"6814d57a50e949ed115b392d\",\r\n    //         \"name\": \"Color\",\r\n    //         \"attributeOptions\": [\r\n    //             \"Red\",\r\n    //             \"Blue\",\r\n    //             \"Green\"\r\n    //         ]\r\n    //     },\r\n    //     \"secondary\": {\r\n    //         \"attributeId\": \"6814d58f50e949ed115b392f\",\r\n    //         \"name\": \"Size\",\r\n    //         \"attributeOptions\": [\r\n    //             \"XL\",\r\n    //             \"L\"\r\n    //         ]\r\n    //     }\r\n    // },\r\n    // \"variants\": [\r\n    //     {\r\n    //         \"sku\": \"RED-XL\",\r\n    //         \"offerPrice\": 40,\r\n    //         \"originalPrice\": 90,\r\n    //         \"quantity\": 200,\r\n    //         \"gallery\": [\r\n    //             \"680998da82e5a7fd20967e76\"\r\n    //         ]\r\n    //     },\r\n    //     {\r\n    //         \"sku\": \"RED-L\",\r\n    //         \"offerPrice\": 40,\r\n    //         \"originalPrice\": 90,\r\n    //         \"quantity\": 200,\r\n    //         \"gallery\": [\r\n    //             \"680998da82e5a7fd20967e76\"\r\n    //         ]\r\n    //     },\r\n    //     {\r\n    //         \"sku\": \"BLUE-XL\",\r\n    //         \"offerPrice\": 40,\r\n    //         \"originalPrice\": 90,\r\n    //         \"quantity\": 200,\r\n    //         \"gallery\": [\r\n    //             \"680998da82e5a7fd20967e76\"\r\n    //         ]\r\n    //     },\r\n    //     {\r\n    //         \"sku\": \"BLUE-L\",\r\n    //         \"offerPrice\": 40,\r\n    //         \"originalPrice\": 90,\r\n    //         \"quantity\": 200,\r\n    //         \"gallery\": [\r\n    //             \"680998da82e5a7fd20967e76\"\r\n    //         ]\r\n    //     },\r\n    //     {\r\n    //         \"sku\": \"GREEN-XL\",\r\n    //         \"offerPrice\": 40,\r\n    //         \"originalPrice\": 90,\r\n    //         \"quantity\": 200,\r\n    //         \"gallery\": [\r\n    //             \"680998da82e5a7fd20967e76\"\r\n    //         ]\r\n    //     },\r\n    //     {\r\n    //         \"sku\": \"GREEN-L\",\r\n    //         \"offerPrice\": 40,\r\n    //         \"originalPrice\": 90,\r\n    //         \"quantity\": 200,\r\n    //         \"gallery\": [\r\n    //             \"680998da82e5a7fd20967e76\"\r\n    //         ]\r\n    //     }\r\n    // ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://127.0.0.1:3050/api/v1/products"
+					},
+					"response": [
+						{
+							"id": "a6c7e3cb-d4ae-44b6-ad7b-9d88808b1887",
+							"name": "addProduct",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7Il9pZCI6IjY3YzFjY2YzZTVkOWM3OGViNWQ5ZjBjMyIsImVtYWlsIjoiZG9taW5vc0BnbWFpbC5jb20ifSwidGltZXN0YW1wIjoiMjAyNS0wNS0wMlQxNDoyMDo0My42MTlaIiwiaWF0IjoxNzQ2MTk1NjQzLCJleHAiOjE3NDY0NTQ4NDMsImF1ZCI6Imdsb2JhbCJ9.YOWMOlsNvElWMs5StYVO1mLt12439n3I4N0d-ableKs",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"title\": \"Sample Product Title\",\r\n    \"shortDesc\": \"Short description of the product\",\r\n    \"description\": \"Detailed description of the product\",\r\n    \"category\": \"6808ea75550f3a69d0bd868d\",\r\n    \"subcategory\": \"6808ea91550f3a69d0bd8690\",\r\n    \"status\": \"ACTIVE\",\r\n    \"offerPrice\": 299.99,\r\n    \"originalPrice\": 499.99,\r\n    \"totalQuantity\": 100,\r\n    \"quantity\": 50,\r\n    \"sku\": \"ABC123XYZ\",\r\n    \"isPriceVariable\": true,\r\n    \"isTaxIncluded\": false,\r\n    \"seo\": {\r\n        \"title\": \"Sample Product SEO Title\",\r\n        \"metaTitle\": \"Sample Product Meta Title\",\r\n        \"metaDesc\": \"Sample product meta description for SEO\",\r\n        \"urlHandle\": \"sample-product-url-handle\"\r\n    },\r\n    \"gallery\": [\r\n        \"680998da82e5a7fd20967e76\"\r\n    ],\r\n    \"variants\": [\r\n        {\r\n            \"name\": \"Red - M\",\r\n            \"sku\": \"Red-M\",\r\n            \"price\": 10,\r\n            \"quantity\": 10\r\n        },\r\n        {\r\n            \"name\": \"Red - S\",\r\n            \"sku\": \"Red-S\",\r\n            \"price\": 10,\r\n            \"quantity\": 10\r\n        },\r\n        {\r\n            \"name\": \"Blue - M\",\r\n            \"sku\": \"Blue-M\",\r\n            \"price\": 10,\r\n            \"quantity\": 10\r\n        },\r\n        {\r\n            \"name\": \"Blue - S\",\r\n            \"sku\": \"Blue-S\",\r\n            \"price\": 10,\r\n            \"quantity\": 10\r\n        }\r\n    ],\r\n    \"tenant\": \"68099a3d82e5a7fd20967e7c\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "http://127.0.0.1:3050/api/v1/products"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "869"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"365-1Mq3iFKRcd+wkkAn/GncGQGSbNQ\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 03 May 2025 04:24:34 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"responseTime": null,
+							"body": "{\n    \"data\": {\n        \"tenant\": \"68099a3d82e5a7fd20967e7c\",\n        \"title\": \"Sample Product Title\",\n        \"shortDesc\": \"Short description of the product\",\n        \"description\": \"Detailed description of the product\",\n        \"category\": \"6808ea75550f3a69d0bd868d\",\n        \"status\": \"ACTIVE\",\n        \"offerPrice\": 299.99,\n        \"originalPrice\": 499.99,\n        \"totalQuantity\": 100,\n        \"quantity\": 50,\n        \"sku\": \"ABC123XYZ\",\n        \"isPriceVariable\": true,\n        \"isTaxIncluded\": false,\n        \"seo\": {\n            \"title\": \"Sample Product SEO Title\",\n            \"metaTitle\": \"Sample Product Meta Title\",\n            \"metaDesc\": \"Sample product meta description for SEO\",\n            \"urlHandle\": \"sample-product-url-handle\"\n        },\n        \"gallery\": [\n            \"680998da82e5a7fd20967e76\"\n        ],\n        \"productVariants\": [\n            \"68159a826ec384fb2991e333\",\n            \"68159a826ec384fb2991e334\",\n            \"68159a826ec384fb2991e335\",\n            \"68159a826ec384fb2991e336\"\n        ],\n        \"_id\": \"68159a826ec384fb2991e331\",\n        \"createdAt\": \"2025-05-03T04:24:34.795Z\",\n        \"updatedAt\": \"2025-05-03T04:24:34.931Z\"\n    },\n    \"status\": \"Ok\",\n    \"message\": {\n        \"code\": \"Success\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "getProductId",
+					"id": "412b34ca-8fdd-4501-a5d6-aa969d1b1489",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7Il9pZCI6IjY3YzFjY2YzZTVkOWM3OGViNWQ5ZjBjMyIsImVtYWlsIjoiZG9taW5vc0BnbWFpbC5jb20ifSwidGltZXN0YW1wIjoiMjAyNS0wNS0wMlQxNDoyMDo0My42MTlaIiwiaWF0IjoxNzQ2MTk1NjQzLCJleHAiOjE3NDY0NTQ4NDMsImF1ZCI6Imdsb2JhbCJ9.YOWMOlsNvElWMs5StYVO1mLt12439n3I4N0d-ableKs",
+								"type": "text"
+							}
+						],
+						"url": "http://127.0.0.1:3050/api/v1/products/fetch/68159a826ec384fb2991e331"
+					},
+					"response": [
+						{
+							"id": "a2e0cd55-af91-4ec4-972f-8a713a4bcb44",
+							"name": "getProductId",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7Il9pZCI6IjY3YzFjY2YzZTVkOWM3OGViNWQ5ZjBjMyIsImVtYWlsIjoiZG9taW5vc0BnbWFpbC5jb20ifSwidGltZXN0YW1wIjoiMjAyNS0wNS0wMlQxNDoyMDo0My42MTlaIiwiaWF0IjoxNzQ2MTk1NjQzLCJleHAiOjE3NDY0NTQ4NDMsImF1ZCI6Imdsb2JhbCJ9.YOWMOlsNvElWMs5StYVO1mLt12439n3I4N0d-ableKs",
+										"type": "text"
+									}
+								],
+								"url": "http://127.0.0.1:3050/api/v1/products/fetch/68159a826ec384fb2991e331"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "869"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"365-ubwszDRCAbUjYL0X48Gbl7kxTz8\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 03 May 2025 04:32:46 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"responseTime": null,
+							"body": "{\n    \"data\": {\n        \"_id\": \"68159a826ec384fb2991e331\",\n        \"tenant\": \"68099a3d82e5a7fd20967e7c\",\n        \"title\": \"Sample Product Title\",\n        \"shortDesc\": \"Short description of the product\",\n        \"description\": \"Detailed description of the product\",\n        \"category\": \"6808ea75550f3a69d0bd868d\",\n        \"status\": \"ACTIVE\",\n        \"offerPrice\": 299.99,\n        \"originalPrice\": 499.99,\n        \"totalQuantity\": 100,\n        \"quantity\": 50,\n        \"sku\": \"ABC123XYZ\",\n        \"isPriceVariable\": true,\n        \"isTaxIncluded\": false,\n        \"seo\": {\n            \"title\": \"Sample Product SEO Title\",\n            \"metaTitle\": \"Sample Product Meta Title\",\n            \"metaDesc\": \"Sample product meta description for SEO\",\n            \"urlHandle\": \"sample-product-url-handle\"\n        },\n        \"gallery\": [\n            \"680998da82e5a7fd20967e76\"\n        ],\n        \"productVariants\": [\n            \"68159a826ec384fb2991e333\",\n            \"68159a826ec384fb2991e334\",\n            \"68159a826ec384fb2991e335\",\n            \"68159a826ec384fb2991e336\"\n        ],\n        \"createdAt\": \"2025-05-03T04:24:34.795Z\",\n        \"updatedAt\": \"2025-05-03T04:24:34.931Z\"\n    },\n    \"status\": \"Ok\",\n    \"message\": {\n        \"code\": \"Success\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "getAllProduct",
+					"id": "3069181a-a709-48df-a39e-339f34982620",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7Il9pZCI6IjY3YzFjY2YzZTVkOWM3OGViNWQ5ZjBjMyIsImVtYWlsIjoiZG9taW5vc0BnbWFpbC5jb20ifSwidGltZXN0YW1wIjoiMjAyNS0wNS0xMlQxNjozMDo0Ny45NDRaIiwiaWF0IjoxNzQ3MDY3NDQ3LCJleHAiOjE3NDczMjY2NDcsImF1ZCI6Imdsb2JhbCJ9.Fzb08QSUF21ISrdY1yo5i26gH-bTMeX3QxbQy_cqCl0",
+								"type": "text"
+							}
+						],
+						"url": "http://127.0.0.1:3050/api/v1/products/fetch"
+					},
+					"response": [
+						{
+							"id": "8b2d5cb5-f4a4-413e-a0c9-8e7e2608a580",
+							"name": "getAllProduct",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7Il9pZCI6IjY3YzFjY2YzZTVkOWM3OGViNWQ5ZjBjMyIsImVtYWlsIjoiZG9taW5vc0BnbWFpbC5jb20ifSwidGltZXN0YW1wIjoiMjAyNS0wNS0wMlQxNDoyMDo0My42MTlaIiwiaWF0IjoxNzQ2MTk1NjQzLCJleHAiOjE3NDY0NTQ4NDMsImF1ZCI6Imdsb2JhbCJ9.YOWMOlsNvElWMs5StYVO1mLt12439n3I4N0d-ableKs",
+										"type": "text"
+									}
+								],
+								"url": "http://127.0.0.1:3050/api/v1/products/fetch"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "890"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"37a-I8UF9/GLN7IRco3zi3tfLkh1IwU\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 03 May 2025 04:33:14 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"responseTime": null,
+							"body": "{\n    \"data\": {\n        \"list\": [\n            {\n                \"_id\": \"68159a826ec384fb2991e331\",\n                \"tenant\": \"68099a3d82e5a7fd20967e7c\",\n                \"title\": \"Sample Product Title\",\n                \"shortDesc\": \"Short description of the product\",\n                \"description\": \"Detailed description of the product\",\n                \"category\": \"6808ea75550f3a69d0bd868d\",\n                \"status\": \"ACTIVE\",\n                \"offerPrice\": 299.99,\n                \"originalPrice\": 499.99,\n                \"totalQuantity\": 100,\n                \"quantity\": 50,\n                \"sku\": \"ABC123XYZ\",\n                \"isPriceVariable\": true,\n                \"isTaxIncluded\": false,\n                \"seo\": {\n                    \"title\": \"Sample Product SEO Title\",\n                    \"metaTitle\": \"Sample Product Meta Title\",\n                    \"metaDesc\": \"Sample product meta description for SEO\",\n                    \"urlHandle\": \"sample-product-url-handle\"\n                },\n                \"gallery\": [\n                    \"680998da82e5a7fd20967e76\"\n                ],\n                \"productVariants\": [\n                    \"68159a826ec384fb2991e333\",\n                    \"68159a826ec384fb2991e334\",\n                    \"68159a826ec384fb2991e335\",\n                    \"68159a826ec384fb2991e336\"\n                ],\n                \"createdAt\": \"2025-05-03T04:24:34.795Z\",\n                \"updatedAt\": \"2025-05-03T04:24:34.931Z\"\n            }\n        ],\n        \"total\": 1\n    },\n    \"status\": \"Ok\",\n    \"message\": {\n        \"code\": \"Success\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "dashboard products",
+					"id": "c173821d-42b3-4877-aa7c-97eab9a1260c",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7Il9pZCI6IjY3YzFjY2YzZTVkOWM3OGViNWQ5ZjBjMyIsImVtYWlsIjoiZG9taW5vc0BnbWFpbC5jb20ifSwidGltZXN0YW1wIjoiMjAyNS0wNS0xMlQxNjozMDo0Ny45NDRaIiwiaWF0IjoxNzQ3MDY3NDQ3LCJleHAiOjE3NDczMjY2NDcsImF1ZCI6Imdsb2JhbCJ9.Fzb08QSUF21ISrdY1yo5i26gH-bTMeX3QxbQy_cqCl0"
+							}
+						],
+						"url": "http://127.0.0.1:3050/api/v1/products/featured"
+					},
+					"response": []
+				},
+				{
+					"name": "updateProduct",
+					"id": "df5f254c-5247-4d20-8f68-6241e7f8c443",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7Il9pZCI6IjY3YzFjY2YzZTVkOWM3OGViNWQ5ZjBjMyIsImVtYWlsIjoiZG9taW5vc0BnbWFpbC5jb20ifSwidGltZXN0YW1wIjoiMjAyNS0wNS0wMlQxNDoyMDo0My42MTlaIiwiaWF0IjoxNzQ2MTk1NjQzLCJleHAiOjE3NDY0NTQ4NDMsImF1ZCI6Imdsb2JhbCJ9.YOWMOlsNvElWMs5StYVO1mLt12439n3I4N0d-ableKs",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\":\"product_title\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://127.0.0.1:3050/api/v1/products/68159a826ec384fb2991e331"
+					},
+					"response": [
+						{
+							"id": "659de5cf-5527-4b62-b166-2ca39067d3f4",
+							"name": "updateProduct",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7Il9pZCI6IjY3YzFjY2YzZTVkOWM3OGViNWQ5ZjBjMyIsImVtYWlsIjoiZG9taW5vc0BnbWFpbC5jb20ifSwidGltZXN0YW1wIjoiMjAyNS0wNS0wMlQxNDoyMDo0My42MTlaIiwiaWF0IjoxNzQ2MTk1NjQzLCJleHAiOjE3NDY0NTQ4NDMsImF1ZCI6Imdsb2JhbCJ9.YOWMOlsNvElWMs5StYVO1mLt12439n3I4N0d-ableKs",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"title\":\"product_title\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "http://127.0.0.1:3050/api/v1/products/68159a826ec384fb2991e331"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "899"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"383-9c9dIjkV5huB1/FHJzPSbivxFd8\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 03 May 2025 04:34:12 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"responseTime": null,
+							"body": "{\n    \"data\": {\n        \"_id\": \"68159a826ec384fb2991e331\",\n        \"tenant\": \"68099a3d82e5a7fd20967e7c\",\n        \"title\": \"product_title\",\n        \"shortDesc\": \"Short description of the product\",\n        \"description\": \"Detailed description of the product\",\n        \"category\": \"6808ea75550f3a69d0bd868d\",\n        \"status\": \"ACTIVE\",\n        \"offerPrice\": 299.99,\n        \"originalPrice\": 499.99,\n        \"totalQuantity\": 100,\n        \"quantity\": 50,\n        \"sku\": \"ABC123XYZ\",\n        \"isPriceVariable\": true,\n        \"isTaxIncluded\": false,\n        \"seo\": {\n            \"title\": \"Sample Product SEO Title\",\n            \"metaTitle\": \"Sample Product Meta Title\",\n            \"metaDesc\": \"Sample product meta description for SEO\",\n            \"urlHandle\": \"sample-product-url-handle\"\n        },\n        \"gallery\": [\n            \"680998da82e5a7fd20967e76\"\n        ],\n        \"productVariants\": [\n            \"68159a826ec384fb2991e333\",\n            \"68159a826ec384fb2991e334\",\n            \"68159a826ec384fb2991e335\",\n            \"68159a826ec384fb2991e336\"\n        ],\n        \"createdAt\": \"2025-05-03T04:24:34.795Z\",\n        \"updatedAt\": \"2025-05-03T04:34:12.913Z\"\n    },\n    \"status\": \"Ok\",\n    \"message\": {\n        \"code\": \"Success\",\n        \"msg\": \"Product updated successfully\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "updateProductVariant",
+					"id": "747709c3-5986-42f9-98e1-4d4fbb3f6c30",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7Il9pZCI6IjY3YzFjY2YzZTVkOWM3OGViNWQ5ZjBjMyIsImVtYWlsIjoiZG9taW5vc0BnbWFpbC5jb20ifSwidGltZXN0YW1wIjoiMjAyNS0wNS0wMlQxNDoyMDo0My42MTlaIiwiaWF0IjoxNzQ2MTk1NjQzLCJleHAiOjE3NDY0NTQ4NDMsImF1ZCI6Imdsb2JhbCJ9.YOWMOlsNvElWMs5StYVO1mLt12439n3I4N0d-ableKs",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\":\"product_title\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://127.0.0.1:3050/api/v1/products/68159a826ec384fb2991e331"
+					},
+					"response": [
+						{
+							"id": "e72e15fc-6899-49b2-9f13-83b95bc880d2",
+							"name": "updateProduct",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7Il9pZCI6IjY3YzFjY2YzZTVkOWM3OGViNWQ5ZjBjMyIsImVtYWlsIjoiZG9taW5vc0BnbWFpbC5jb20ifSwidGltZXN0YW1wIjoiMjAyNS0wNS0wMlQxNDoyMDo0My42MTlaIiwiaWF0IjoxNzQ2MTk1NjQzLCJleHAiOjE3NDY0NTQ4NDMsImF1ZCI6Imdsb2JhbCJ9.YOWMOlsNvElWMs5StYVO1mLt12439n3I4N0d-ableKs",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"title\":\"product_title\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "http://127.0.0.1:3050/api/v1/products/68159a826ec384fb2991e331"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "899"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"383-9c9dIjkV5huB1/FHJzPSbivxFd8\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 03 May 2025 04:34:12 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"responseTime": null,
+							"body": "{\n    \"data\": {\n        \"_id\": \"68159a826ec384fb2991e331\",\n        \"tenant\": \"68099a3d82e5a7fd20967e7c\",\n        \"title\": \"product_title\",\n        \"shortDesc\": \"Short description of the product\",\n        \"description\": \"Detailed description of the product\",\n        \"category\": \"6808ea75550f3a69d0bd868d\",\n        \"status\": \"ACTIVE\",\n        \"offerPrice\": 299.99,\n        \"originalPrice\": 499.99,\n        \"totalQuantity\": 100,\n        \"quantity\": 50,\n        \"sku\": \"ABC123XYZ\",\n        \"isPriceVariable\": true,\n        \"isTaxIncluded\": false,\n        \"seo\": {\n            \"title\": \"Sample Product SEO Title\",\n            \"metaTitle\": \"Sample Product Meta Title\",\n            \"metaDesc\": \"Sample product meta description for SEO\",\n            \"urlHandle\": \"sample-product-url-handle\"\n        },\n        \"gallery\": [\n            \"680998da82e5a7fd20967e76\"\n        ],\n        \"productVariants\": [\n            \"68159a826ec384fb2991e333\",\n            \"68159a826ec384fb2991e334\",\n            \"68159a826ec384fb2991e335\",\n            \"68159a826ec384fb2991e336\"\n        ],\n        \"createdAt\": \"2025-05-03T04:24:34.795Z\",\n        \"updatedAt\": \"2025-05-03T04:34:12.913Z\"\n    },\n    \"status\": \"Ok\",\n    \"message\": {\n        \"code\": \"Success\",\n        \"msg\": \"Product updated successfully\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "generateSkus",
+					"id": "52c14313-50fd-428d-b93b-679f9823fc2e",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7Il9pZCI6IjY3YzFjY2YzZTVkOWM3OGViNWQ5ZjBjMyIsImVtYWlsIjoiZG9taW5vc0BnbWFpbC5jb20ifSwidGltZXN0YW1wIjoiMjAyNS0wNS0wMlQxNDoyMDo0My42MTlaIiwiaWF0IjoxNzQ2MTk1NjQzLCJleHAiOjE3NDY0NTQ4NDMsImF1ZCI6Imdsb2JhbCJ9.YOWMOlsNvElWMs5StYVO1mLt12439n3I4N0d-ableKs",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n   \"attributes\":{\r\n    \"primary\":{\r\n        \"attributeId\":\"6814d57a50e949ed115b392d\",\r\n        \"name\":\"Color\",\r\n        \"attributeOptions\":[\"Red\",\"Blue\",\"Green\"]\r\n    },\r\n    \"secondary\":{\r\n        \"attributeId\":\"6814d58f50e949ed115b392f\",\r\n        \"name\":\"Size\",\r\n        \"attributeOptions\":[\"XL\",\"L\"]\r\n    }\r\n}}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://127.0.0.1:3050/api/v1/products/generate-skus"
+					},
+					"response": [
+						{
+							"id": "9a759a71-1f0f-4942-9d92-af96b9e596ff",
+							"name": "generateProductVariants",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7Il9pZCI6IjY3YzFjY2YzZTVkOWM3OGViNWQ5ZjBjMyIsImVtYWlsIjoiZG9taW5vc0BnbWFpbC5jb20ifSwidGltZXN0YW1wIjoiMjAyNS0wNS0wMlQxNDoyMDo0My42MTlaIiwiaWF0IjoxNzQ2MTk1NjQzLCJleHAiOjE3NDY0NTQ4NDMsImF1ZCI6Imdsb2JhbCJ9.YOWMOlsNvElWMs5StYVO1mLt12439n3I4N0d-ableKs",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n   \"attributeIds\":[\"6814d57a50e949ed115b392d\",\"6814d58f50e949ed115b392f\"]\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "http://127.0.0.1:3050/api/v1/attributes/variants"
 							},
 							"status": "OK",
 							"code": 200,
@@ -681,11 +1578,11 @@
 								},
 								{
 									"key": "ETag",
-									"value": "W/\"18d-UwxiHcf2yIaTbIlQt7cAFOBqIa0\""
+									"value": "W/\"18d-pon3MGd6eKzn82knIU/p7r14OM0\""
 								},
 								{
 									"key": "Date",
-									"value": "Sun, 27 Aug 2023 17:07:18 GMT"
+									"value": "Sat, 03 May 2025 04:28:19 GMT"
 								},
 								{
 									"key": "Connection",
@@ -698,28 +1595,22 @@
 							],
 							"cookie": [],
 							"responseTime": null,
-							"body": "{\n    \"data\": {\n        \"key\": \"28cfd432-3932-41e0-bd24-118891efa830.png\",\n        \"name\": \"python.png\",\n        \"type\": \"public\",\n        \"mimetype\": \"image/png\",\n        \"url\": \"https://crm-crmlocalhost.s3.ap-south-1.amazonaws.com/full/28cfd432-3932-41e0-bd24-118891efa830.png\",\n        \"_id\": \"64eb82c5491dd86ed6fe633d\",\n        \"createdAt\": \"2023-08-27T17:07:17.987Z\",\n        \"updatedAt\": \"2023-08-27T17:07:17.987Z\"\n    },\n    \"status\": \"Ok\",\n    \"message\": {\n        \"code\": \"AssetSuccessfullyUploaded\"\n    }\n}"
+							"body": "{\n    \"data\": [\n        {\n            \"sku\": \"Red-M\",\n            \"data\": [\n                {\n                    \"name\": \"Colors\",\n                    \"value\": \"Red\"\n                },\n                {\n                    \"name\": \"Size\",\n                    \"value\": \"M\"\n                }\n            ]\n        },\n        {\n            \"sku\": \"Red-S\",\n            \"data\": [\n                {\n                    \"name\": \"Colors\",\n                    \"value\": \"Red\"\n                },\n                {\n                    \"name\": \"Size\",\n                    \"value\": \"S\"\n                }\n            ]\n        },\n        {\n            \"sku\": \"Blue-M\",\n            \"data\": [\n                {\n                    \"name\": \"Colors\",\n                    \"value\": \"Blue\"\n                },\n                {\n                    \"name\": \"Size\",\n                    \"value\": \"M\"\n                }\n            ]\n        },\n        {\n            \"sku\": \"Blue-S\",\n            \"data\": [\n                {\n                    \"name\": \"Colors\",\n                    \"value\": \"Blue\"\n                },\n                {\n                    \"name\": \"Size\",\n                    \"value\": \"S\"\n                }\n            ]\n        }\n    ],\n    \"status\": \"Ok\",\n    \"message\": {\n        \"code\": \"Success\"\n    }\n}"
 						}
 					]
 				},
 				{
-					"name": "Get Asset by id",
-					"id": "6e793c52-9c56-4f51-a439-b5ced2b5d37d",
+					"name": "getSkus",
+					"id": "f9676f6b-e46b-4051-a617-4dad1d96d367",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
 					"request": {
-						"auth": {
-							"type": "bearer",
-							"bearer": {
-								"token": "{{token}}"
-							}
-						},
 						"method": "GET",
 						"header": [
 							{
-								"key": "Origin",
-								"value": "{{referer}}",
+								"key": "authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7Il9pZCI6IjY3YzFjY2YzZTVkOWM3OGViNWQ5ZjBjMyIsImVtYWlsIjoiZG9taW5vc0BnbWFpbC5jb20ifSwidGltZXN0YW1wIjoiMjAyNS0wNS0wMlQxNDoyMDo0My42MTlaIiwiaWF0IjoxNzQ2MTk1NjQzLCJleHAiOjE3NDY0NTQ4NDMsImF1ZCI6Imdsb2JhbCJ9.YOWMOlsNvElWMs5StYVO1mLt12439n3I4N0d-ableKs",
 								"type": "text"
 							}
 						],
@@ -732,47 +1623,87 @@
 								}
 							}
 						},
-						"url": {
-							"raw": "{{host}}:{{port}}/api/v1/asset/:id",
-							"host": [
-								"{{host}}"
-							],
-							"port": "{{port}}",
-							"path": [
-								"api",
-								"v1",
-								"asset",
-								":id"
-							],
-							"variable": [
-								{
-									"id": "ff5c5fbc-c8c0-44ac-93af-dd026a1bb7bb",
-									"key": "id",
-									"value": "64eb82c5491dd86ed6fe633d"
-								}
-							]
-						}
+						"url": "http://127.0.0.1:3050/api/v1/products/skus"
 					},
-					"response": []
+					"response": [
+						{
+							"id": "35f6be8c-7732-45c3-847b-4a8897de4744",
+							"name": "generateProductVariants",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7Il9pZCI6IjY3YzFjY2YzZTVkOWM3OGViNWQ5ZjBjMyIsImVtYWlsIjoiZG9taW5vc0BnbWFpbC5jb20ifSwidGltZXN0YW1wIjoiMjAyNS0wNS0wMlQxNDoyMDo0My42MTlaIiwiaWF0IjoxNzQ2MTk1NjQzLCJleHAiOjE3NDY0NTQ4NDMsImF1ZCI6Imdsb2JhbCJ9.YOWMOlsNvElWMs5StYVO1mLt12439n3I4N0d-ableKs",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n   \"attributeIds\":[\"6814d57a50e949ed115b392d\",\"6814d58f50e949ed115b392f\"]\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "http://127.0.0.1:3050/api/v1/attributes/variants"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "397"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"18d-pon3MGd6eKzn82knIU/p7r14OM0\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 03 May 2025 04:28:19 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"responseTime": null,
+							"body": "{\n    \"data\": [\n        {\n            \"sku\": \"Red-M\",\n            \"data\": [\n                {\n                    \"name\": \"Colors\",\n                    \"value\": \"Red\"\n                },\n                {\n                    \"name\": \"Size\",\n                    \"value\": \"M\"\n                }\n            ]\n        },\n        {\n            \"sku\": \"Red-S\",\n            \"data\": [\n                {\n                    \"name\": \"Colors\",\n                    \"value\": \"Red\"\n                },\n                {\n                    \"name\": \"Size\",\n                    \"value\": \"S\"\n                }\n            ]\n        },\n        {\n            \"sku\": \"Blue-M\",\n            \"data\": [\n                {\n                    \"name\": \"Colors\",\n                    \"value\": \"Blue\"\n                },\n                {\n                    \"name\": \"Size\",\n                    \"value\": \"M\"\n                }\n            ]\n        },\n        {\n            \"sku\": \"Blue-S\",\n            \"data\": [\n                {\n                    \"name\": \"Colors\",\n                    \"value\": \"Blue\"\n                },\n                {\n                    \"name\": \"Size\",\n                    \"value\": \"S\"\n                }\n            ]\n        }\n    ],\n    \"status\": \"Ok\",\n    \"message\": {\n        \"code\": \"Success\"\n    }\n}"
+						}
+					]
 				},
 				{
-					"name": "Get Private Asset",
-					"id": "e362f379-f604-485d-b153-da7f0a8e3cf9",
+					"name": "inventoryhistory",
+					"id": "8ba89077-66a7-4eb4-88fd-ef0209b918ef",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
 					"request": {
-						"auth": {
-							"type": "bearer",
-							"bearer": {
-								"token": "{{token}}"
-							}
-						},
 						"method": "GET",
 						"header": [
 							{
-								"key": "Origin",
-								"value": "{{referer}}",
+								"key": "authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7Il9pZCI6IjY3YzFjY2YzZTVkOWM3OGViNWQ5ZjBjMyIsImVtYWlsIjoiZG9taW5vc0BnbWFpbC5jb20ifSwidGltZXN0YW1wIjoiMjAyNS0wNS0wMlQxNDoyMDo0My42MTlaIiwiaWF0IjoxNzQ2MTk1NjQzLCJleHAiOjE3NDY0NTQ4NDMsImF1ZCI6Imdsb2JhbCJ9.YOWMOlsNvElWMs5StYVO1mLt12439n3I4N0d-ableKs",
 								"type": "text"
 							}
 						],
@@ -785,413 +1716,139 @@
 								}
 							}
 						},
-						"url": {
-							"raw": "{{host}}:{{port}}/api/v1/asset/get/:id",
-							"host": [
-								"{{host}}"
-							],
-							"port": "{{port}}",
-							"path": [
-								"api",
-								"v1",
-								"asset",
-								"get",
-								":id"
-							],
-							"variable": [
+						"url": "http://127.0.0.1:3050/api/v1/products/history/"
+					},
+					"response": [
+						{
+							"id": "695268ed-0b5a-4e9d-98b9-22749739998c",
+							"name": "generateProductVariants",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7Il9pZCI6IjY3YzFjY2YzZTVkOWM3OGViNWQ5ZjBjMyIsImVtYWlsIjoiZG9taW5vc0BnbWFpbC5jb20ifSwidGltZXN0YW1wIjoiMjAyNS0wNS0wMlQxNDoyMDo0My42MTlaIiwiaWF0IjoxNzQ2MTk1NjQzLCJleHAiOjE3NDY0NTQ4NDMsImF1ZCI6Imdsb2JhbCJ9.YOWMOlsNvElWMs5StYVO1mLt12439n3I4N0d-ableKs",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n   \"attributeIds\":[\"6814d57a50e949ed115b392d\",\"6814d58f50e949ed115b392f\"]\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "http://127.0.0.1:3050/api/v1/attributes/variants"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
 								{
-									"id": "4b373563-5b73-43fe-bef3-48cd60f14639",
-									"key": "id",
-									"value": "65afa6f70d7996a77bd68bdf"
-								}
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "Delete Asset",
-					"id": "5faf40c1-50c1-4a8b-b938-e974f6e014c8",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"auth": {
-							"type": "bearer",
-							"bearer": {
-								"token": "{{token}}"
-							}
-						},
-						"method": "DELETE",
-						"header": [
-							{
-								"key": "Origin",
-								"value": "{{referer}}",
-								"type": "text"
-							}
-						],
-						"body": {
-							"mode": "raw",
-							"raw": "",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
-						},
-						"url": {
-							"raw": "{{host}}:{{port}}/api/v1/asset/:id",
-							"host": [
-								"{{host}}"
-							],
-							"port": "{{port}}",
-							"path": [
-								"api",
-								"v1",
-								"asset",
-								":id"
-							],
-							"variable": [
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
 								{
-									"id": "969f4bff-3856-4f67-b19f-931586bea4c5",
-									"key": "id",
-									"value": "65a3f5a8e4edd9b0c544d437"
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "397"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"18d-pon3MGd6eKzn82knIU/p7r14OM0\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 03 May 2025 04:28:19 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
 								}
-							]
+							],
+							"cookie": [],
+							"responseTime": null,
+							"body": "{\n    \"data\": [\n        {\n            \"sku\": \"Red-M\",\n            \"data\": [\n                {\n                    \"name\": \"Colors\",\n                    \"value\": \"Red\"\n                },\n                {\n                    \"name\": \"Size\",\n                    \"value\": \"M\"\n                }\n            ]\n        },\n        {\n            \"sku\": \"Red-S\",\n            \"data\": [\n                {\n                    \"name\": \"Colors\",\n                    \"value\": \"Red\"\n                },\n                {\n                    \"name\": \"Size\",\n                    \"value\": \"S\"\n                }\n            ]\n        },\n        {\n            \"sku\": \"Blue-M\",\n            \"data\": [\n                {\n                    \"name\": \"Colors\",\n                    \"value\": \"Blue\"\n                },\n                {\n                    \"name\": \"Size\",\n                    \"value\": \"M\"\n                }\n            ]\n        },\n        {\n            \"sku\": \"Blue-S\",\n            \"data\": [\n                {\n                    \"name\": \"Colors\",\n                    \"value\": \"Blue\"\n                },\n                {\n                    \"name\": \"Size\",\n                    \"value\": \"S\"\n                }\n            ]\n        }\n    ],\n    \"status\": \"Ok\",\n    \"message\": {\n        \"code\": \"Success\"\n    }\n}"
 						}
-					},
-					"response": []
+					]
 				}
 			],
-			"id": "8aa48958-62c0-48e1-8819-d616659ee38f",
-			"description": "## User Operations related API's",
-			"auth": {
-				"type": "apikey",
-				"apikey": {
-					"key": "x-api-key",
-					"value": "lPbBqWW4s5Zav1HPV43HlnVOpZSnH4lynFleoEMTKYzWVR8xAmbUY2YAh6lpzyA4"
-				}
-			},
-			"event": [
-				{
-					"listen": "prerequest",
-					"script": {
-						"id": "483fc6fb-4269-4fd4-848c-41d07a8438c5",
-						"type": "text/javascript",
-						"packages": {},
-						"exec": [
-							""
-						]
-					}
-				},
-				{
-					"listen": "test",
-					"script": {
-						"id": "e0ceff09-4af9-47fa-ac08-6ea6904f4d47",
-						"type": "text/javascript",
-						"packages": {},
-						"exec": [
-							""
-						]
-					}
-				}
-			]
+			"id": "99d9610f-d0b8-4b38-9ef7-f1e53f500ff8"
 		},
 		{
-			"name": "Dashboard",
-			"item": [
-				{
-					"name": "Overview",
-					"id": "9bc580ea-ed2b-4945-bdea-4653c719b0ae",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"auth": {
-							"type": "bearer",
-							"bearer": {
-								"token": "{{token}}"
-							}
-						},
-						"method": "GET",
-						"header": [
-							{
-								"key": "Origin",
-								"value": "{{referer}}",
-								"type": "text"
-							}
-						],
-						"body": {
-							"mode": "raw",
-							"raw": "",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
-						},
-						"url": "{{host}}:{{port}}/api/v1/dashboard/overview"
-					},
-					"response": []
-				}
-			],
-			"id": "beb3d3c7-7c14-41a1-b512-96bf4b9b59ec",
-			"description": "## User Operations related API's",
-			"auth": {
-				"type": "apikey",
-				"apikey": {
-					"key": "x-api-key",
-					"value": "lPbBqWW4s5Zav1HPV43HlnVOpZSnH4lynFleoEMTKYzWVR8xAmbUY2YAh6lpzyA4"
-				}
-			},
-			"event": [
-				{
-					"listen": "prerequest",
-					"script": {
-						"id": "483fc6fb-4269-4fd4-848c-41d07a8438c5",
-						"type": "text/javascript",
-						"packages": {},
-						"exec": [
-							""
-						]
-					}
-				},
-				{
-					"listen": "test",
-					"script": {
-						"id": "e0ceff09-4af9-47fa-ac08-6ea6904f4d47",
-						"type": "text/javascript",
-						"packages": {},
-						"exec": [
-							""
-						]
-					}
-				}
-			]
-		},
-		{
-			"name": "User Login",
-			"event": [
-				{
-					"listen": "test",
-					"script": {
-						"id": "a7753cae-37cd-4593-be91-6d75c60eb513",
-						"exec": [
-							"var jsonData = pm.response.json();\r",
-							"pm.environment.set(\"token\", jsonData.data.token);"
-						],
-						"type": "text/javascript",
-						"packages": {}
-					}
-				}
-			],
-			"id": "88b5ad28-86b4-47b2-9d15-65924c11be4b",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
-			"request": {
-				"method": "POST",
-				"header": [
-					{
-						"key": "Origin",
-						"value": "{{referer}}",
-						"type": "text"
-					}
-				],
-				"body": {
-					"mode": "raw",
-					"raw": "{\r\n    \"email\": \"dominos@gmail.com\",\r\n    \"password\": \"DOM@9999\"\r\n}",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": "{{host}}:{{port}}/api/v1/auth/login"
-			},
-			"response": [
-				{
-					"id": "ea2cadea-9ccc-4912-ad9c-73f9dd0e7a2d",
-					"name": "LFA",
-					"originalRequest": {
-						"method": "POST",
-						"header": [
-							{
-								"key": "Origin",
-								"value": "{{referer}}",
-								"type": "text"
-							}
-						],
-						"body": {
-							"mode": "raw",
-							"raw": "{\r\n    \"email\": \"shree.zirpe@multifit.co.in\",\r\n    \"password\": \"password@123\"\r\n}",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
-						},
-						"url": {
-							"raw": "{{host}}:{{port}}/api/v1/auth/login",
-							"host": [
-								"{{host}}"
-							],
-							"port": "{{port}}",
-							"path": [
-								"api",
-								"v1",
-								"auth",
-								"login"
-							],
-							"query": [
-								{
-									"key": "source",
-									"value": "CoachApp",
-									"description": "CoachApp | UserApp | WebApp",
-									"disabled": true
-								}
-							]
-						}
-					},
-					"status": "OK",
-					"code": 200,
-					"_postman_previewlanguage": "json",
-					"header": [
-						{
-							"key": "Server",
-							"value": "nginx/1.18.0 (Ubuntu)"
-						},
-						{
-							"key": "Date",
-							"value": "Thu, 08 Aug 2024 07:36:14 GMT"
-						},
-						{
-							"key": "Content-Type",
-							"value": "application/json; charset=utf-8"
-						},
-						{
-							"key": "Content-Length",
-							"value": "460"
-						},
-						{
-							"key": "Connection",
-							"value": "keep-alive"
-						},
-						{
-							"key": "X-Powered-By",
-							"value": "Express"
-						},
-						{
-							"key": "Access-Control-Allow-Origin",
-							"value": "*"
-						},
-						{
-							"key": "ETag",
-							"value": "W/\"1cc-HnqFr8UcoP7F6obtBeOno0hSIZw\""
-						}
-					],
-					"cookie": [],
-					"responseTime": null,
-					"body": "{\n    \"data\": {\n        \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7Il9pZCI6IjY0OGI1MjFhYTRiOTZmYmE0MDExNTZiOCIsImVtYWlsIjoic2hyZWUuemlycGVAbXVsdGlmaXQuY28uaW4ifSwidGltZXN0YW1wIjoiMjAyNC0wOC0wOFQwNzozNjoxNC4xMDVaIiwiaWF0IjoxNzIzMTAyNTc0LCJleHAiOjE3MjMzNjE3NzQsImF1ZCI6Imdsb2JhbCJ9.12ML6p6MsXdd568xpbbj0I50HDBznEjkiLE3fFeaOi8\",\n        \"refreshToken\": \"$2b$05$qm864smOmCWZ48zZtTrkDOuRBiRYs1L2a3S4hJFxtS5wY9g9OxpZXDfickeu.\"\n    },\n    \"status\": \"Ok\",\n    \"message\": {\n        \"code\": \"LoginSuccess\"\n    }\n}"
-				}
-			]
-		},
-		{
-			"name": "Me",
-			"event": [
-				{
-					"listen": "test",
-					"script": {
-						"id": "03499e48-5752-4076-b963-23a297d11e4f",
-						"exec": [
-							""
-						],
-						"type": "text/javascript",
-						"packages": {}
-					}
-				}
-			],
-			"id": "42f72073-1276-4b0c-8aaf-b7c0ceb9c81f",
+			"name": "Cart",
+			"id": "83e1e164-6e8b-470a-a4a6-f27962a26ef9",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
 			"request": {
 				"auth": {
-					"type": "bearer",
-					"bearer": {
-						"token": "{{token}}"
-					}
+					"type": "noauth"
 				},
-				"method": "GET",
-				"header": [
-					{
-						"key": "Origin",
-						"value": "{{referer}}",
-						"type": "text"
-					}
-				],
+				"method": "POST",
+				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "",
+					"raw": "\r\n{\r\n    \"productId\":\"6809b0e187cbcd8298bcbf43\",\"quantity\":\"5\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
 						}
 					}
 				},
-				"url": {
-					"raw": "{{host}}:{{port}}/api/v1/user/me",
-					"host": [
-						"{{host}}"
-					],
-					"port": "{{port}}",
-					"path": [
-						"api",
-						"v1",
-						"user",
-						"me"
-					],
-					"query": [
-						{
-							"key": "populate",
-							"value": "tenant",
-							"disabled": true
-						}
-					]
+				"url": "http://localhost:3050/api/v1/cart"
+			},
+			"response": []
+		},
+		{
+			"name": "generateToken",
+			"id": "9a6cbf73-efc7-4222-bf93-97c4c4539dde",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
 				},
-				"description": "Get LoggedIn User Information"
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n   \"token\":\"$2b$05$mogvBw9ovACBiEcoPnzs6OUJLCa88BOW9wJC8W8dK2Ks1L2a3S4h4ihRg4tuS\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://127.0.0.1:3050/api/v1/auth/login/token"
 			},
 			"response": []
 		}
 	],
-	"auth": {
-		"type": "bearer",
-		"bearer": {
-			"token": "{{token}}"
-		}
-	},
-	"event": [
+	"variable": [
 		{
-			"listen": "prerequest",
-			"script": {
-				"id": "892de978-0ac8-4014-8138-4a6cf6af1609",
-				"type": "text/javascript",
-				"packages": {},
-				"exec": [
-					""
-				]
-			}
+			"key": "url",
+			"value": "https://crm-partner.lipigo.com",
+			"type": "default"
 		},
 		{
-			"listen": "test",
-			"script": {
-				"id": "b121772b-0ddf-4ce8-96e8-3e444f2cfeac",
-				"type": "text/javascript",
-				"packages": {},
-				"exec": [
-					""
-				]
-			}
+			"key": "token",
+			"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7Il9pZCI6IjY3YzFjY2YzZTVkOWM3OGViNWQ5ZjBjMyIsImVtYWlsIjoiZG9taW5vc0BnbWFpbC5jb20ifSwidGltZXN0YW1wIjoiMjAyNS0wNS0wNlQxNTo1MTo1NC4yMDNaIiwiaWF0IjoxNzQ2NTQ2NzE0LCJleHAiOjE3NDY4MDU5MTQsImF1ZCI6Imdsb2JhbCJ9.VCiMsHFyljPmqXLcZaMLDLhvVeR-T6bIefwx026Etvg",
+			"type": "default"
 		}
 	]
 }

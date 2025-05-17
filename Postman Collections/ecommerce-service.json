@@ -965,7 +965,7 @@
 							"request": {
 								"method": "GET",
 								"header": [],
-								"url": "http://127.0.0.1:3050/api/v1/products"
+								"url": "{{url}}/api/v1/products"
 							},
 							"response": [
 								{
@@ -1028,7 +1028,7 @@
 							"request": {
 								"method": "GET",
 								"header": [],
-								"url": "http://127.0.0.1:3050/api/v1/products/68159a826ec384fb2991e331"
+								"url": "{{url}}/api/v1/products/682863b5691af816cde6361c"
 							},
 							"response": [
 								{

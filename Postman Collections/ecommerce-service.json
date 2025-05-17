@@ -822,15 +822,20 @@
 						"auth": {
 							"type": "bearer",
 							"bearer": {
-								"token": "{{token}}"
+								"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7Il9pZCI6IjY3YzFjY2YzZTVkOWM3OGViNWQ5ZjBjMyIsImVtYWlsIjoiZG9taW5vc0BnbWFpbC5jb20ifSwidGltZXN0YW1wIjoiMjAyNS0wNS0xN1QxMDo1NjoyNi4xMzJaIiwiaWF0IjoxNzQ3NDc5Mzg2LCJleHAiOjE3NDc3Mzg1ODYsImF1ZCI6Imdsb2JhbCJ9.m4D-6Kgwl4Bd5MarfQB1wfVrJCDjMvf2e5OBHbJgC1Q"
 							}
 						},
 						"method": "GET",
 						"header": [
 							{
 								"key": "Authorization",
-								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7Il9pZCI6IjY3YzFjY2YzZTVkOWM3OGViNWQ5ZjBjMyIsImVtYWlsIjoiZG9taW5vc0BnbWFpbC5jb20ifSwidGltZXN0YW1wIjoiMjAyNS0wNS0xMlQxNjozMDo0Ny45NDRaIiwiaWF0IjoxNzQ3MDY3NDQ3LCJleHAiOjE3NDczMjY2NDcsImF1ZCI6Imdsb2JhbCJ9.Fzb08QSUF21ISrdY1yo5i26gH-bTMeX3QxbQy_cqCl0",
-								"type": "text"
+								"value": "",
+								"disabled": true
+							},
+							{
+								"key": "x-api-key",
+								"value": "",
+								"disabled": true
 							}
 						],
 						"url": "{{url}}/api/v1/categories/fetch"
@@ -1066,17 +1071,20 @@
 						"disableBodyPruning": true
 					},
 					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {}
+						},
 						"method": "POST",
 						"header": [
 							{
 								"key": "authorization",
-								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7Il9pZCI6IjY3YzFjY2YzZTVkOWM3OGViNWQ5ZjBjMyIsImVtYWlsIjoiZG9taW5vc0BnbWFpbC5jb20ifSwidGltZXN0YW1wIjoiMjAyNS0wNS0wMlQxNDoyMDo0My42MTlaIiwiaWF0IjoxNzQ2MTk1NjQzLCJleHAiOjE3NDY0NTQ4NDMsImF1ZCI6Imdsb2JhbCJ9.YOWMOlsNvElWMs5StYVO1mLt12439n3I4N0d-ableKs",
-								"type": "text"
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7Il9pZCI6IjY3YzFjY2YzZTVkOWM3OGViNWQ5ZjBjMyIsImVtYWlsIjoiZG9taW5vc0BnbWFpbC5jb20ifSwidGltZXN0YW1wIjoiMjAyNS0wNS0xN1QxMDoxNjowNi43NjlaIiwiaWF0IjoxNzQ3NDc2OTY2LCJleHAiOjE3NDc3MzYxNjYsImF1ZCI6Imdsb2JhbCJ9.4M-g1fnUeOJn1TNMHQKPyXpNSG7hUoc8KWwyG8kR2Bw"
 							}
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"title\": \"Sample Product Title\",\r\n    \"shortDesc\": \"Short description of the product\",\r\n    \"description\": \"Detailed description of the product\",\r\n    \"category\": \"6808ea75550f3a69d0bd868d\",\r\n    \"subcategory\": \"6808ea91550f3a69d0bd8690\",\r\n    \"status\": \"ACTIVE\",\r\n    \"offerPrice\": 299.99,\r\n    \"originalPrice\": 499.99,\r\n    \"totalQuantity\": 100,\r\n    \"quantity\": 50,\r\n    \"isPriceVariable\": true,\r\n    \"isTaxIncluded\": false,\r\n    \"seo\": {\r\n        \"title\": \"Sample Product SEO Title\",\r\n        \"metaTitle\": \"Sample Product Meta Title\",\r\n        \"metaDesc\": \"Sample product meta description for SEO\",\r\n        \"urlHandle\": \"sample-product-url-handle\"\r\n    },\r\n    \"gallery\": [\r\n        \"680998da82e5a7fd20967e76\"\r\n    ]\r\n    // \"attributes\": {\r\n    //     \"primary\": {\r\n    //         \"attributeId\": \"6814d57a50e949ed115b392d\",\r\n    //         \"name\": \"Color\",\r\n    //         \"attributeOptions\": [\r\n    //             \"Red\",\r\n    //             \"Blue\",\r\n    //             \"Green\"\r\n    //         ]\r\n    //     },\r\n    //     \"secondary\": {\r\n    //         \"attributeId\": \"6814d58f50e949ed115b392f\",\r\n    //         \"name\": \"Size\",\r\n    //         \"attributeOptions\": [\r\n    //             \"XL\",\r\n    //             \"L\"\r\n    //         ]\r\n    //     }\r\n    // },\r\n    // \"variants\": [\r\n    //     {\r\n    //         \"sku\": \"RED-XL\",\r\n    //         \"offerPrice\": 40,\r\n    //         \"originalPrice\": 90,\r\n    //         \"quantity\": 200,\r\n    //         \"gallery\": [\r\n    //             \"680998da82e5a7fd20967e76\"\r\n    //         ]\r\n    //     },\r\n    //     {\r\n    //         \"sku\": \"RED-L\",\r\n    //         \"offerPrice\": 40,\r\n    //         \"originalPrice\": 90,\r\n    //         \"quantity\": 200,\r\n    //         \"gallery\": [\r\n    //             \"680998da82e5a7fd20967e76\"\r\n    //         ]\r\n    //     },\r\n    //     {\r\n    //         \"sku\": \"BLUE-XL\",\r\n    //         \"offerPrice\": 40,\r\n    //         \"originalPrice\": 90,\r\n    //         \"quantity\": 200,\r\n    //         \"gallery\": [\r\n    //             \"680998da82e5a7fd20967e76\"\r\n    //         ]\r\n    //     },\r\n    //     {\r\n    //         \"sku\": \"BLUE-L\",\r\n    //         \"offerPrice\": 40,\r\n    //         \"originalPrice\": 90,\r\n    //         \"quantity\": 200,\r\n    //         \"gallery\": [\r\n    //             \"680998da82e5a7fd20967e76\"\r\n    //         ]\r\n    //     },\r\n    //     {\r\n    //         \"sku\": \"GREEN-XL\",\r\n    //         \"offerPrice\": 40,\r\n    //         \"originalPrice\": 90,\r\n    //         \"quantity\": 200,\r\n    //         \"gallery\": [\r\n    //             \"680998da82e5a7fd20967e76\"\r\n    //         ]\r\n    //     },\r\n    //     {\r\n    //         \"sku\": \"GREEN-L\",\r\n    //         \"offerPrice\": 40,\r\n    //         \"originalPrice\": 90,\r\n    //         \"quantity\": 200,\r\n    //         \"gallery\": [\r\n    //             \"680998da82e5a7fd20967e76\"\r\n    //         ]\r\n    //     }\r\n    // ]\r\n}",
+							"raw": "{\r\n    \"title\": \"nayan\",\r\n    \"shortDesc\": \"Short description of the product\",\r\n    \"description\": \"Detailed description of the product\",\r\n    \"category\": \"6808ea75550f3a69d0bd868d\",\r\n    \"subcategory\": \"6808ea91550f3a69d0bd8690\",\r\n    \"status\": \"ACTIVE\",\r\n    \"offerPrice\": 299.99,\r\n    \"originalPrice\": 499.99,\r\n    \"quantity\": 50,\r\n    \"isPriceVariable\": true,\r\n    \"isTaxIncluded\": false,\r\n    \"seo\": {\r\n        \"title\": \"Sample Product SEO Title\",\r\n        \"metaTitle\": \"Sample Product Meta Title\",\r\n        \"metaDesc\": \"Sample product meta description for SEO\",\r\n        \"urlHandle\": \"sample-product-url-handle\"\r\n    },\r\n    \"gallery\": [\r\n        \"680998da82e5a7fd20967e76\"\r\n    ],\r\n    \"attributes\": {\r\n        \"primary\": {\r\n            \"attributeId\": \"6814d57a50e949ed115b392d\",\r\n            \"attributeOptions\": [\r\n                \"Red\",\r\n                \"Blue\",\r\n                \"Green\"\r\n            ]\r\n        },\r\n        \"secondary\": {\r\n            \"attributeId\": \"6814d58f50e949ed115b392f\",\r\n            \"attributeOptions\": [\r\n                \"XL\",\r\n                \"L\"\r\n            ]\r\n        }\r\n    },\r\n    \"variants\": [\r\n        {\r\n            \"sku\": \"RED-XL\",\r\n            \"offerPrice\": 40,\r\n            \"originalPrice\": 90,\r\n            \"quantity\": 200,\r\n            \"gallery\": [\r\n                \"680998da82e5a7fd20967e76\"\r\n            ]\r\n        },\r\n        {\r\n            \"sku\": \"RED-L\",\r\n            \"offerPrice\": 40,\r\n            \"originalPrice\": 90,\r\n            \"quantity\": 200,\r\n            \"gallery\": [\r\n                \"680998da82e5a7fd20967e76\"\r\n            ]\r\n        },\r\n        {\r\n            \"sku\": \"BLUE-XL\",\r\n            \"offerPrice\": 40,\r\n            \"originalPrice\": 90,\r\n            \"quantity\": 200,\r\n            \"gallery\": [\r\n                \"680998da82e5a7fd20967e76\"\r\n            ]\r\n        },\r\n        {\r\n            \"sku\": \"BLUE-L\",\r\n            \"offerPrice\": 40,\r\n            \"originalPrice\": 90,\r\n            \"quantity\": 200,\r\n            \"gallery\": [\r\n                \"680998da82e5a7fd20967e76\"\r\n            ]\r\n        },\r\n        {\r\n            \"sku\": \"GREEN-XL\",\r\n            \"offerPrice\": 40,\r\n            \"originalPrice\": 90,\r\n            \"quantity\": 200,\r\n            \"gallery\": [\r\n                \"680998da82e5a7fd20967e76\"\r\n            ]\r\n        },\r\n        {\r\n            \"sku\": \"GREEN-L\",\r\n            \"offerPrice\": 40,\r\n            \"originalPrice\": 90,\r\n            \"quantity\": 200,\r\n            \"gallery\": [\r\n                \"680998da82e5a7fd20967e76\"\r\n            ]\r\n        }\r\n    ]\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -1234,15 +1242,83 @@
 						"disableBodyPruning": true
 					},
 					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7Il9pZCI6IjY3YzFjY2YzZTVkOWM3OGViNWQ5ZjBjMyIsImVtYWlsIjoiZG9taW5vc0BnbWFpbC5jb20ifSwidGltZXN0YW1wIjoiMjAyNS0wNS0xN1QxMDoxNjowNi43NjlaIiwiaWF0IjoxNzQ3NDc2OTY2LCJleHAiOjE3NDc3MzYxNjYsImF1ZCI6Imdsb2JhbCJ9.4M-g1fnUeOJn1TNMHQKPyXpNSG7hUoc8KWwyG8kR2Bw"
+							}
+						},
 						"method": "GET",
 						"header": [
 							{
 								"key": "Authorization",
-								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7Il9pZCI6IjY3YzFjY2YzZTVkOWM3OGViNWQ5ZjBjMyIsImVtYWlsIjoiZG9taW5vc0BnbWFpbC5jb20ifSwidGltZXN0YW1wIjoiMjAyNS0wNS0xMlQxNjozMDo0Ny45NDRaIiwiaWF0IjoxNzQ3MDY3NDQ3LCJleHAiOjE3NDczMjY2NDcsImF1ZCI6Imdsb2JhbCJ9.Fzb08QSUF21ISrdY1yo5i26gH-bTMeX3QxbQy_cqCl0",
-								"type": "text"
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7Il9pZCI6IjY3YzFjY2YzZTVkOWM3OGViNWQ5ZjBjMyIsImVtYWlsIjoiZG9taW5vc0BnbWFpbC5jb20ifSwidGltZXN0YW1wIjoiMjAyNS0wNS0xMlQxNjozMDo0Ny45NDRaIiwiaWF0IjoxNzQ3MDY3NDQ3LCJleHAiOjE3NDczMjY2NDcsImF1ZCI6Imdsb2JhbCJ9.Fzb08QSUF21ISrdY1yo5i26gH-bTMeX3QxbQy_cqCl0"
 							}
 						],
-						"url": "http://127.0.0.1:3050/api/v1/products/fetch"
+						"url": {
+							"raw": "http://127.0.0.1:3050/api/v1/products/fetch",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3050",
+							"path": [
+								"api",
+								"v1",
+								"products",
+								"fetch"
+							],
+							"query": [
+								{
+									"key": "search",
+									"value": "nayan",
+									"disabled": true
+								},
+								{
+									"key": "category",
+									"value": null,
+									"disabled": true
+								},
+								{
+									"key": "subcategory",
+									"value": null,
+									"disabled": true
+								},
+								{
+									"key": "minPrice",
+									"value": null,
+									"disabled": true
+								},
+								{
+									"key": "maxPrice",
+									"value": null,
+									"disabled": true
+								},
+								{
+									"key": "page",
+									"value": null,
+									"disabled": true
+								},
+								{
+									"key": "pageSize",
+									"value": null,
+									"disabled": true
+								},
+								{
+									"key": "sort[sortBy]",
+									"value": "offerPrice",
+									"disabled": true
+								},
+								{
+									"key": "sort[sortOrder]",
+									"value": "asc",
+									"disabled": true
+								}
+							]
+						}
 					},
 					"response": [
 						{
@@ -1316,7 +1392,7 @@
 								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7Il9pZCI6IjY3YzFjY2YzZTVkOWM3OGViNWQ5ZjBjMyIsImVtYWlsIjoiZG9taW5vc0BnbWFpbC5jb20ifSwidGltZXN0YW1wIjoiMjAyNS0wNS0xMlQxNjozMDo0Ny45NDRaIiwiaWF0IjoxNzQ3MDY3NDQ3LCJleHAiOjE3NDczMjY2NDcsImF1ZCI6Imdsb2JhbCJ9.Fzb08QSUF21ISrdY1yo5i26gH-bTMeX3QxbQy_cqCl0"
 							}
 						],
-						"url": "http://127.0.0.1:3050/api/v1/products/featured"
+						"url": "{{url}}/api/v1/products/featured"
 					},
 					"response": []
 				},
@@ -1827,7 +1903,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n   \"token\":\"$2b$05$mogvBw9ovACBiEcoPnzs6OUJLCa88BOW9wJC8W8dK2Ks1L2a3S4h4ihRg4tuS\"\r\n}",
+					"raw": "{\r\n   \"token\":\"$2b$05$m1OFGoOuf8Xs1L2a3S4hwD3fG2WQjOpbCsDRZXoUEYcEjjHa7kMLrWX2oJLfu\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"

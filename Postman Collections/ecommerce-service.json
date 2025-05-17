@@ -572,6 +572,12 @@
 								"disableBodyPruning": true
 							},
 							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": {
+										"token": "{{token}}"
+									}
+								},
 								"method": "GET",
 								"header": [],
 								"url": "{{url}}/api/v1/categories"
@@ -635,6 +641,12 @@
 								"disableBodyPruning": true
 							},
 							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": {
+										"token": "{{token}}"
+									}
+								},
 								"method": "GET",
 								"header": [],
 								"url": "http://127.0.0.1:3050/api/v1/categories/6814f8df0278fcb889a48c43"
@@ -1918,6 +1930,31 @@
 		},
 		{
 			"name": "generateToken",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "eb767c42-fd17-4ef8-8902-1408bd0faf27",
+						"exec": [
+							"// Parse the response JSON",
+							"let response = pm.response.json();",
+							"",
+							"if (response && response.data) {",
+							"    // Set environment variables",
+							"    pm.environment.set(\"token\", response.data.token);",
+							"    pm.environment.set(\"refreshToken\", response.data.refreshToken);",
+							"    ",
+							"    console.log(\"Token and Refresh Token have been saved to environment variables.\");",
+							"} else {",
+							"    console.warn(\"Token or refreshToken not found in the response.\");",
+							"}",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
 			"id": "9a6cbf73-efc7-4222-bf93-97c4c4539dde",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
@@ -1930,14 +1967,14 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n   \"token\":\"$2b$05$m1OFGoOuf8Xs1L2a3S4hwD3fG2WQjOpbCsDRZXoUEYcEjjHa7kMLrWX2oJLfu\"\r\n}",
+					"raw": "{\r\n   \"token\": \"{{refreshToken}}\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
 						}
 					}
 				},
-				"url": "http://127.0.0.1:3050/api/v1/auth/login/token"
+				"url": "{{url}}/api/v1/auth/login/token"
 			},
 			"response": []
 		}

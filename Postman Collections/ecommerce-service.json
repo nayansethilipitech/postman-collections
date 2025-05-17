@@ -574,7 +574,7 @@
 							"request": {
 								"method": "GET",
 								"header": [],
-								"url": "http://127.0.0.1:3050/api/v1/categories"
+								"url": "{{url}}/api/v1/categories"
 							},
 							"response": [
 								{
@@ -1081,6 +1081,24 @@
 									"body": "{\n    \"data\": {\n        \"_id\": \"68159a826ec384fb2991e331\",\n        \"tenant\": \"68099a3d82e5a7fd20967e7c\",\n        \"title\": \"Sample Product Title\",\n        \"shortDesc\": \"Short description of the product\",\n        \"description\": \"Detailed description of the product\",\n        \"category\": \"6808ea75550f3a69d0bd868d\",\n        \"status\": \"ACTIVE\",\n        \"offerPrice\": 299.99,\n        \"originalPrice\": 499.99,\n        \"totalQuantity\": 100,\n        \"quantity\": 50,\n        \"sku\": \"ABC123XYZ\",\n        \"isPriceVariable\": true,\n        \"isTaxIncluded\": false,\n        \"seo\": {\n            \"title\": \"Sample Product SEO Title\",\n            \"metaTitle\": \"Sample Product Meta Title\",\n            \"metaDesc\": \"Sample product meta description for SEO\",\n            \"urlHandle\": \"sample-product-url-handle\"\n        },\n        \"gallery\": [\n            \"680998da82e5a7fd20967e76\"\n        ],\n        \"productVariants\": [\n            \"68159a826ec384fb2991e333\",\n            \"68159a826ec384fb2991e334\",\n            \"68159a826ec384fb2991e335\",\n            \"68159a826ec384fb2991e336\"\n        ],\n        \"createdAt\": \"2025-05-03T04:24:34.795Z\",\n        \"updatedAt\": \"2025-05-03T04:24:34.931Z\"\n    },\n    \"status\": \"Ok\",\n    \"message\": {\n        \"code\": \"Success\"\n    }\n}"
 								}
 							]
+						},
+						{
+							"name": "dashboard products",
+							"id": "c173821d-42b3-4877-aa7c-97eab9a1260c",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7Il9pZCI6IjY3YzFjY2YzZTVkOWM3OGViNWQ5ZjBjMyIsImVtYWlsIjoiZG9taW5vc0BnbWFpbC5jb20ifSwidGltZXN0YW1wIjoiMjAyNS0wNS0xMlQxNjozMDo0Ny45NDRaIiwiaWF0IjoxNzQ3MDY3NDQ3LCJleHAiOjE3NDczMjY2NDcsImF1ZCI6Imdsb2JhbCJ9.Fzb08QSUF21ISrdY1yo5i26gH-bTMeX3QxbQy_cqCl0"
+									}
+								],
+								"url": "{{url}}/api/v1/products/featured"
+							},
+							"response": []
 						}
 					],
 					"id": "6c2d645d-d576-488d-be59-491ba6430e2f"
@@ -1399,24 +1417,6 @@
 							"body": "{\n    \"data\": {\n        \"list\": [\n            {\n                \"_id\": \"68159a826ec384fb2991e331\",\n                \"tenant\": \"68099a3d82e5a7fd20967e7c\",\n                \"title\": \"Sample Product Title\",\n                \"shortDesc\": \"Short description of the product\",\n                \"description\": \"Detailed description of the product\",\n                \"category\": \"6808ea75550f3a69d0bd868d\",\n                \"status\": \"ACTIVE\",\n                \"offerPrice\": 299.99,\n                \"originalPrice\": 499.99,\n                \"totalQuantity\": 100,\n                \"quantity\": 50,\n                \"sku\": \"ABC123XYZ\",\n                \"isPriceVariable\": true,\n                \"isTaxIncluded\": false,\n                \"seo\": {\n                    \"title\": \"Sample Product SEO Title\",\n                    \"metaTitle\": \"Sample Product Meta Title\",\n                    \"metaDesc\": \"Sample product meta description for SEO\",\n                    \"urlHandle\": \"sample-product-url-handle\"\n                },\n                \"gallery\": [\n                    \"680998da82e5a7fd20967e76\"\n                ],\n                \"productVariants\": [\n                    \"68159a826ec384fb2991e333\",\n                    \"68159a826ec384fb2991e334\",\n                    \"68159a826ec384fb2991e335\",\n                    \"68159a826ec384fb2991e336\"\n                ],\n                \"createdAt\": \"2025-05-03T04:24:34.795Z\",\n                \"updatedAt\": \"2025-05-03T04:24:34.931Z\"\n            }\n        ],\n        \"total\": 1\n    },\n    \"status\": \"Ok\",\n    \"message\": {\n        \"code\": \"Success\"\n    }\n}"
 						}
 					]
-				},
-				{
-					"name": "dashboard products",
-					"id": "c173821d-42b3-4877-aa7c-97eab9a1260c",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"method": "GET",
-						"header": [
-							{
-								"key": "Authorization",
-								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7Il9pZCI6IjY3YzFjY2YzZTVkOWM3OGViNWQ5ZjBjMyIsImVtYWlsIjoiZG9taW5vc0BnbWFpbC5jb20ifSwidGltZXN0YW1wIjoiMjAyNS0wNS0xMlQxNjozMDo0Ny45NDRaIiwiaWF0IjoxNzQ3MDY3NDQ3LCJleHAiOjE3NDczMjY2NDcsImF1ZCI6Imdsb2JhbCJ9.Fzb08QSUF21ISrdY1yo5i26gH-bTMeX3QxbQy_cqCl0"
-							}
-						],
-						"url": "{{url}}/api/v1/products/featured"
-					},
-					"response": []
 				},
 				{
 					"name": "updateProduct",

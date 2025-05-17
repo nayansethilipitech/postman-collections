@@ -822,7 +822,7 @@
 						"auth": {
 							"type": "bearer",
 							"bearer": {
-								"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7Il9pZCI6IjY3YzFjY2YzZTVkOWM3OGViNWQ5ZjBjMyIsImVtYWlsIjoiZG9taW5vc0BnbWFpbC5jb20ifSwidGltZXN0YW1wIjoiMjAyNS0wNS0xN1QxMDo1NjoyNi4xMzJaIiwiaWF0IjoxNzQ3NDc5Mzg2LCJleHAiOjE3NDc3Mzg1ODYsImF1ZCI6Imdsb2JhbCJ9.m4D-6Kgwl4Bd5MarfQB1wfVrJCDjMvf2e5OBHbJgC1Q"
+								"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7Il9pZCI6IjY3YzFjY2YzZTVkOWM3OGViNWQ5ZjBjMyIsImVtYWlsIjoiZG9taW5vc0BnbWFpbC5jb20ifSwidGltZXN0YW1wIjoiMjAyNS0wNS0xN1QxMTo1MzoyMC4wNTJaIiwiaWF0IjoxNzQ3NDgyODAwLCJleHAiOjE3NDc3NDIwMDAsImF1ZCI6Imdsb2JhbCJ9.9rgyWzeIjGY6FrLGMmN2WiAJ28RYJE5kwN9Exjkxc8o"
 							}
 						},
 						"method": "GET",
@@ -838,7 +838,28 @@
 								"disabled": true
 							}
 						],
-						"url": "{{url}}/api/v1/categories/fetch"
+						"url": {
+							"raw": "{{url}}/api/v1/categories/fetch?page=1&pageSize=5",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"categories",
+								"fetch"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "1"
+								},
+								{
+									"key": "pageSize",
+									"value": "5"
+								}
+							]
+						}
 					},
 					"response": [
 						{

@@ -1995,6 +1995,18 @@
 				"url": "{{url}}/api/v1/auth/login/token"
 			},
 			"response": []
+		},
+		{
+			"name": "New Request",
+			"id": "45173ccd-d070-4ff8-bd29-a74ccad11d8f",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
 		}
 	],
 	"variable": [

@@ -2054,7 +2054,7 @@
 			"name": "Order",
 			"item": [
 				{
-					"name": "New Request",
+					"name": "Create",
 					"id": "3c1e421c-5505-4fd8-af2b-918bede4ea8e",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
@@ -2078,6 +2078,18 @@
 							}
 						},
 						"url": "{{url}}/api/v1/order"
+					},
+					"response": []
+				},
+				{
+					"name": "Status update",
+					"id": "c4cf7b12-8571-41c9-8377-86e631d9296c",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": []
 					},
 					"response": []
 				}

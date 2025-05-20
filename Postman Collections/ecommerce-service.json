@@ -2027,13 +2027,16 @@
 					},
 					"request": {
 						"auth": {
-							"type": "noauth"
+							"type": "bearer",
+							"bearer": {
+								"token": "{{token}}"
+							}
 						},
 						"method": "POST",
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "\r\n{\r\n    \"productId\":\"6809b0e187cbcd8298bcbf43\",\"quantity\":\"5\"\r\n}",
+							"raw": "{\r\n    \"productId\": \"6809b0e187cbcd8298bcbf43\",\r\n    \"quantity\": \"5\",\r\n    \"productSku\": \"682863b5691af816cde6361e\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"

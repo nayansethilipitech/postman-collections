@@ -1936,28 +1936,34 @@
 		},
 		{
 			"name": "Cart",
-			"id": "83e1e164-6e8b-470a-a4a6-f27962a26ef9",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
-			"request": {
-				"auth": {
-					"type": "noauth"
-				},
-				"method": "POST",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "\r\n{\r\n    \"productId\":\"6809b0e187cbcd8298bcbf43\",\"quantity\":\"5\"\r\n}",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": "http://localhost:3050/api/v1/cart"
-			},
-			"response": []
+			"item": [
+				{
+					"name": "Cart",
+					"id": "83e1e164-6e8b-470a-a4a6-f27962a26ef9",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "\r\n{\r\n    \"productId\":\"6809b0e187cbcd8298bcbf43\",\"quantity\":\"5\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:3050/api/v1/cart"
+					},
+					"response": []
+				}
+			],
+			"id": "6328f793-ec71-4ebe-be2e-2bcf48e2a716"
 		},
 		{
 			"name": "generateToken",
@@ -2006,18 +2012,6 @@
 					}
 				},
 				"url": "{{url}}/api/v1/auth/login/token"
-			},
-			"response": []
-		},
-		{
-			"name": "New Request",
-			"id": "45173ccd-d070-4ff8-bd29-a74ccad11d8f",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
-			"request": {
-				"method": "GET",
-				"header": []
 			},
 			"response": []
 		}

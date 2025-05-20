@@ -1939,7 +1939,7 @@
 					"response": []
 				},
 				{
-					"name": "Address list Copy",
+					"name": "add address",
 					"id": "66467aac-38c3-469e-8fc6-f455cb231d29",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
@@ -1951,14 +1951,23 @@
 								"token": "{{token}}"
 							}
 						},
-						"method": "GET",
+						"method": "POST",
 						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"fullname\": \"John Doe\",\n  \"phone\": \"9876543210\",\n  \"line1\": \"123 Main Street\",\n  \"line2\": \"Apt 4B\",\n  \"nearby\": \"Near City Park\",\n  \"city\": \"New York\",\n  \"pincode\": \"10001\",\n  \"state\": \"NY\",\n  \"addressType\": \"Shipping\",\n  \"tag\": \"Home\"\n}\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
 						"url": "{{url}}/api/v1/user/address"
 					},
 					"response": []
 				},
 				{
-					"name": "Address list Copy",
+					"name": "update address",
 					"id": "a93b045e-2480-4e23-a635-6a279bd23e2a",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
@@ -1970,14 +1979,23 @@
 								"token": "{{token}}"
 							}
 						},
-						"method": "GET",
+						"method": "PUT",
 						"header": [],
-						"url": "{{url}}/api/v1/user/address"
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"fullname\": \"John Doe\",\n  \"phone\": \"9876543210\",\n  \"line1\": \"123 Main Street\",\n  \"line2\": \"Apt 4B\",\n  \"nearby\": \"Near City Park\",\n  \"city\": \"New York\",\n  \"pincode\": \"10001\",\n  \"state\": \"NY\",\n  \"addressType\": \"Shipping\",\n  \"tag\": \"Work\"\n}\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{url}}/api/v1/user/address/682c7665444c085188a05f2b"
 					},
 					"response": []
 				},
 				{
-					"name": "Address list Copy",
+					"name": "delete address",
 					"id": "870bb6ac-a6f6-4b4e-b06a-c33359811c1d",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
@@ -1989,9 +2007,9 @@
 								"token": "{{token}}"
 							}
 						},
-						"method": "GET",
+						"method": "DELETE",
 						"header": [],
-						"url": "{{url}}/api/v1/user/address"
+						"url": "{{url}}/api/v1/user/address/682c7617444c085188a05f22"
 					},
 					"response": []
 				}

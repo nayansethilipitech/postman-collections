@@ -984,7 +984,7 @@
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "{{url}}/api/v1/products?search=nayan",
+									"raw": "{{url}}/api/v1/products",
 									"host": [
 										"{{url}}"
 									],
@@ -996,7 +996,8 @@
 									"query": [
 										{
 											"key": "search",
-											"value": "nayan"
+											"value": "nayan",
+											"disabled": true
 										},
 										{
 											"key": "page",
@@ -1005,6 +1006,16 @@
 										},
 										{
 											"key": "pageSize",
+											"value": "",
+											"disabled": true
+										},
+										{
+											"key": "subcategory",
+											"value": null,
+											"disabled": true
+										},
+										{
+											"key": "category",
 											"value": "",
 											"disabled": true
 										}

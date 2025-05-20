@@ -983,7 +983,31 @@
 								},
 								"method": "GET",
 								"header": [],
-								"url": "{{url}}/api/v1/products"
+								"url": {
+									"raw": "{{url}}/api/v1/products?search&page&pageSize",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"products"
+									],
+									"query": [
+										{
+											"key": "search",
+											"value": null
+										},
+										{
+											"key": "page",
+											"value": null
+										},
+										{
+											"key": "pageSize",
+											"value": null
+										}
+									]
+								}
 							},
 							"response": [
 								{

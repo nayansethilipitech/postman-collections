@@ -1917,8 +1917,21 @@
 			"id": "99d9610f-d0b8-4b38-9ef7-f1e53f500ff8"
 		},
 		{
-			"name": "New Folder",
-			"item": [],
+			"name": "Address",
+			"item": [
+				{
+					"name": "New Request",
+					"id": "e490c118-2d06-4b63-b9eb-8676686cff54",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				}
+			],
 			"id": "1dcaa723-96ec-47f2-8645-ca3bbe4780ac"
 		},
 		{

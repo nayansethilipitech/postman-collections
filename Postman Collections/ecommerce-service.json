@@ -1920,14 +1920,21 @@
 			"name": "Address",
 			"item": [
 				{
-					"name": "New Request",
+					"name": "Address list",
 					"id": "e490c118-2d06-4b63-b9eb-8676686cff54",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
 					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "{{token}}"
+							}
+						},
 						"method": "GET",
-						"header": []
+						"header": [],
+						"url": "{{url}}/api/v1/user/address"
 					},
 					"response": []
 				}

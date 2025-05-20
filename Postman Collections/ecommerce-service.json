@@ -635,7 +635,7 @@
 							]
 						},
 						{
-							"name": "getAttributeById",
+							"name": "getcategoryById",
 							"id": "48fcf7c6-2a0f-4eca-b70b-203f3fefacdd",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true

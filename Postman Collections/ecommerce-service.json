@@ -984,7 +984,7 @@
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "{{url}}/api/v1/products?search&page&pageSize",
+									"raw": "{{url}}/api/v1/products?search=nayan",
 									"host": [
 										"{{url}}"
 									],
@@ -996,15 +996,17 @@
 									"query": [
 										{
 											"key": "search",
-											"value": null
+											"value": "nayan"
 										},
 										{
 											"key": "page",
-											"value": null
+											"value": "",
+											"disabled": true
 										},
 										{
 											"key": "pageSize",
-											"value": null
+											"value": "",
+											"disabled": true
 										}
 									]
 								}
@@ -1150,7 +1152,28 @@
 										"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7Il9pZCI6IjY3YzFjY2YzZTVkOWM3OGViNWQ5ZjBjMyIsImVtYWlsIjoiZG9taW5vc0BnbWFpbC5jb20ifSwidGltZXN0YW1wIjoiMjAyNS0wNS0xMlQxNjozMDo0Ny45NDRaIiwiaWF0IjoxNzQ3MDY3NDQ3LCJleHAiOjE3NDczMjY2NDcsImF1ZCI6Imdsb2JhbCJ9.Fzb08QSUF21ISrdY1yo5i26gH-bTMeX3QxbQy_cqCl0"
 									}
 								],
-								"url": "{{url}}/api/v1/products/featured"
+								"url": {
+									"raw": "{{url}}/api/v1/products/featured?page=2&pageSize=10",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"products",
+										"featured"
+									],
+									"query": [
+										{
+											"key": "page",
+											"value": "2"
+										},
+										{
+											"key": "pageSize",
+											"value": "10"
+										}
+									]
+								}
 							},
 							"response": []
 						}

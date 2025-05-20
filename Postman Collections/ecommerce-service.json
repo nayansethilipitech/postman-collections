@@ -2051,6 +2051,40 @@
 			"id": "6328f793-ec71-4ebe-be2e-2bcf48e2a716"
 		},
 		{
+			"name": "Order",
+			"item": [
+				{
+					"name": "New Request",
+					"id": "3c1e421c-5505-4fd8-af2b-918bede4ea8e",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "{{token}}"
+							}
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"billingAddressId\": \"682c76b1444c085188a05f3c\",\n    \"shippingAddressId\": \"682c76b1444c085188a05f3c\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{url}}/api/v1/order"
+					},
+					"response": []
+				}
+			],
+			"id": "ec2fd5d2-cbda-4b09-99d0-f91f326e8d9d"
+		},
+		{
 			"name": "generateToken",
 			"event": [
 				{

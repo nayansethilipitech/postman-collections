@@ -1994,7 +1994,57 @@
 						"header": [],
 						"url": "{{url}}/api/v1/user/address"
 					},
-					"response": []
+					"response": [
+						{
+							"id": "bb358979-45a3-439f-8cb5-8e0ffca55453",
+							"name": "Address list",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": "{{url}}/api/v1/user/address"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "521"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"209-Y1EKUuadvzuMEQlHzVi9+xwux/E\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 20 May 2025 13:42:01 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"responseTime": null,
+							"body": "{\n    \"data\": [\n        {\n            \"_id\": \"682c76b1444c085188a05f3c\",\n            \"fullname\": \"John Doe\",\n            \"phone\": \"9876543210\",\n            \"line1\": \"123 Main Street\",\n            \"line2\": \"Apt 4B\",\n            \"nearby\": \"Near City Park\",\n            \"city\": \"New York\",\n            \"pincode\": \"10001\",\n            \"state\": \"NY\",\n            \"addressType\": \"Shipping\",\n            \"tag\": \"Work\"\n        },\n        {\n            \"_id\": \"682c7698444c085188a05f34\",\n            \"fullname\": \"John Doe\",\n            \"phone\": \"9876543210\",\n            \"line1\": \"123 Main Street\",\n            \"line2\": \"Apt 4B\",\n            \"nearby\": \"Near City Park\",\n            \"city\": \"New York\",\n            \"pincode\": \"10001\",\n            \"state\": \"NY\",\n            \"addressType\": \"Shipping\",\n            \"tag\": \"Home\"\n        }\n    ],\n    \"status\": \"Ok\",\n    \"message\": {\n        \"code\": \"Success\"\n    }\n}"
+						}
+					]
 				},
 				{
 					"name": "add address",

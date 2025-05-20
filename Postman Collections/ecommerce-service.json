@@ -1937,6 +1937,63 @@
 						"url": "{{url}}/api/v1/user/address"
 					},
 					"response": []
+				},
+				{
+					"name": "Address list Copy",
+					"id": "66467aac-38c3-469e-8fc6-f455cb231d29",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "{{token}}"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"url": "{{url}}/api/v1/user/address"
+					},
+					"response": []
+				},
+				{
+					"name": "Address list Copy",
+					"id": "a93b045e-2480-4e23-a635-6a279bd23e2a",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "{{token}}"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"url": "{{url}}/api/v1/user/address"
+					},
+					"response": []
+				},
+				{
+					"name": "Address list Copy",
+					"id": "870bb6ac-a6f6-4b4e-b06a-c33359811c1d",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "{{token}}"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"url": "{{url}}/api/v1/user/address"
+					},
+					"response": []
 				}
 			],
 			"id": "1dcaa723-96ec-47f2-8645-ca3bbe4780ac"

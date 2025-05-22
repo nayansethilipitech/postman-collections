@@ -1000,7 +1000,7 @@
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "{{url}}/api/v1/products",
+									"raw": "{{url}}/api/v1/products?search=parth",
 									"host": [
 										"{{url}}"
 									],
@@ -1012,8 +1012,7 @@
 									"query": [
 										{
 											"key": "search",
-											"value": "nayan",
-											"disabled": true
+											"value": "parth"
 										},
 										{
 											"key": "page",
@@ -1026,13 +1025,23 @@
 											"disabled": true
 										},
 										{
-											"key": "subcategory",
-											"value": null,
+											"key": "subCategory",
+											"value": "68287bf81f4d636180526f4e",
 											"disabled": true
 										},
 										{
 											"key": "category",
 											"value": "",
+											"disabled": true
+										},
+										{
+											"key": "sortBy",
+											"value": "offerPrice",
+											"disabled": true
+										},
+										{
+											"key": "sortOrder",
+											"value": "desc",
 											"disabled": true
 										}
 									]

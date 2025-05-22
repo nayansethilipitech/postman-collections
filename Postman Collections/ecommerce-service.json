@@ -1976,7 +1976,17 @@
 					},
 					"request": {
 						"method": "GET",
-						"header": []
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"productId\": \"682f118263bffbf6d667c654\",\n    \"attributes\": [\n        {\n            \"attributeId\": \"66526e54f5a3b86e0f5f2c31\",\n            \"optionId\": \"682f118263bffbf6d667c656\"\n        },\n        {\n            \"attributeId\": \"66526e54f5a3b86e0f5f2c32\",\n            \"optionId\": \"682f118263bffbf6d667c659\"\n        }\n    ]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{url}}/api/v1/products/variant"
 					},
 					"response": []
 				}
@@ -2153,7 +2163,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"productId\": \"6809b0e187cbcd8298bcbf43\",\r\n    \"quantity\": \"5\",\r\n    \"productSku\": \"682863b5691af816cde6361e\"\r\n}",
+							"raw": "{\r\n    \"productId\": \"682863b5691af816cde6361c\",\r\n    \"quantity\": \"5\",\r\n    \"productSkuId\": \"682863b5691af816cde6361e\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"

@@ -2202,6 +2202,18 @@
 						"url": "{{url}}/api/v1/cart"
 					},
 					"response": []
+				},
+				{
+					"name": "remove",
+					"id": "8b76f8bb-4723-49dd-87cb-5b28fc6a561e",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
 				}
 			],
 			"id": "6328f793-ec71-4ebe-be2e-2bcf48e2a716"

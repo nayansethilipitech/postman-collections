@@ -2285,6 +2285,19 @@
 						"header": []
 					},
 					"response": []
+				},
+				{
+					"name": "order details",
+					"id": "a12ecfb1-dccc-46c1-a629-d4ce5c8f5850",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "{{url}}/api/v1/order/682c882fb9514cd15b24546a"
+					},
+					"response": []
 				}
 			],
 			"id": "ec2fd5d2-cbda-4b09-99d0-f91f326e8d9d"

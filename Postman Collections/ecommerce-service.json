@@ -1699,17 +1699,17 @@
 						"disableBodyPruning": true
 					},
 					"request": {
-						"method": "POST",
-						"header": [
-							{
-								"key": "authorization",
-								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7Il9pZCI6IjY3YzFjY2YzZTVkOWM3OGViNWQ5ZjBjMyIsImVtYWlsIjoiZG9taW5vc0BnbWFpbC5jb20ifSwidGltZXN0YW1wIjoiMjAyNS0wNS0wMlQxNDoyMDo0My42MTlaIiwiaWF0IjoxNzQ2MTk1NjQzLCJleHAiOjE3NDY0NTQ4NDMsImF1ZCI6Imdsb2JhbCJ9.YOWMOlsNvElWMs5StYVO1mLt12439n3I4N0d-ableKs",
-								"type": "text"
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "{{token}}"
 							}
-						],
+						},
+						"method": "POST",
+						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n   \"attributes\":{\r\n    \"primary\":{\r\n        \"attributeId\":\"6814d57a50e949ed115b392d\",\r\n        \"name\":\"Color\",\r\n        \"attributeOptions\":[\"Red\",\"Blue\",\"Green\"]\r\n    },\r\n    \"secondary\":{\r\n        \"attributeId\":\"6814d58f50e949ed115b392f\",\r\n        \"name\":\"Size\",\r\n        \"attributeOptions\":[\"XL\",\"L\"]\r\n    }\r\n}}",
+							"raw": "{\r\n    \"attributes\": [\r\n        {\r\n            \"attributeId\": \"64b7f9e2c2a5f1a2b3c4d5e9\",\r\n            \"options\": [\r\n                {\r\n                    \"value\": \"Option 1\",\r\n                    \"meta\": {\r\n                        \"key1\": \"value1\"\r\n                    }\r\n                },\r\n                {\r\n                    \"value\": \"Option 2\",\r\n                    \"meta\": {\r\n                        \"key2\": \"value2\"\r\n                    }\r\n                }\r\n            ]\r\n        },\r\n        {\r\n            \"attributeId\": \"64b7f9e2c2a5f1a2b3c4d5ea\",\r\n            \"options\": [\r\n                {\r\n                    \"value\": \"Option A\",\r\n                    \"meta\": {\r\n                        \"keyA\": \"valueA\"\r\n                    }\r\n                },\r\n                {\r\n                    \"value\": \"Option B\",\r\n                    \"meta\": {\r\n                        \"keyB\": \"valueB\"\r\n                    }\r\n                }\r\n            ]\r\n        }\r\n    ]\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"

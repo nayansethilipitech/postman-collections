@@ -2251,6 +2251,18 @@
 						"url": "{{url}}/api/v1/order/status/682c882fb9514cd15b24546a"
 					},
 					"response": []
+				},
+				{
+					"name": "get order list",
+					"id": "97cb7b68-aa81-4659-bfb7-3f2433edfe8e",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
 				}
 			],
 			"id": "ec2fd5d2-cbda-4b09-99d0-f91f326e8d9d"

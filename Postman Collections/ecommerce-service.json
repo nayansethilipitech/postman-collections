@@ -2186,7 +2186,20 @@
 								}
 							}
 						},
-						"url": "http://localhost:3050/api/v1/cart"
+						"url": "{{url}}/api/v1/cart"
+					},
+					"response": []
+				},
+				{
+					"name": "get cart",
+					"id": "256a2d25-397e-4d19-a558-4746e1db6fc7",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "{{url}}/api/v1/cart"
 					},
 					"response": []
 				}

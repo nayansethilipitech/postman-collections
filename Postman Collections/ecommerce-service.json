@@ -1969,7 +1969,7 @@
 					]
 				},
 				{
-					"name": "New Request",
+					"name": "get product variant data",
 					"id": "8ea19422-b7a6-4ba7-9833-e8eb4d4a34e0",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true

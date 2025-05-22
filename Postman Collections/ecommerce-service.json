@@ -1967,6 +1967,18 @@
 							"body": "{\n    \"data\": [\n        {\n            \"sku\": \"Red-M\",\n            \"data\": [\n                {\n                    \"name\": \"Colors\",\n                    \"value\": \"Red\"\n                },\n                {\n                    \"name\": \"Size\",\n                    \"value\": \"M\"\n                }\n            ]\n        },\n        {\n            \"sku\": \"Red-S\",\n            \"data\": [\n                {\n                    \"name\": \"Colors\",\n                    \"value\": \"Red\"\n                },\n                {\n                    \"name\": \"Size\",\n                    \"value\": \"S\"\n                }\n            ]\n        },\n        {\n            \"sku\": \"Blue-M\",\n            \"data\": [\n                {\n                    \"name\": \"Colors\",\n                    \"value\": \"Blue\"\n                },\n                {\n                    \"name\": \"Size\",\n                    \"value\": \"M\"\n                }\n            ]\n        },\n        {\n            \"sku\": \"Blue-S\",\n            \"data\": [\n                {\n                    \"name\": \"Colors\",\n                    \"value\": \"Blue\"\n                },\n                {\n                    \"name\": \"Size\",\n                    \"value\": \"S\"\n                }\n            ]\n        }\n    ],\n    \"status\": \"Ok\",\n    \"message\": {\n        \"code\": \"Success\"\n    }\n}"
 						}
 					]
+				},
+				{
+					"name": "New Request",
+					"id": "8ea19422-b7a6-4ba7-9833-e8eb4d4a34e0",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
 				}
 			],
 			"id": "99d9610f-d0b8-4b38-9ef7-f1e53f500ff8"

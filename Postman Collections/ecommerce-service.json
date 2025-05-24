@@ -2303,6 +2303,24 @@
 			"id": "ec2fd5d2-cbda-4b09-99d0-f91f326e8d9d"
 		},
 		{
+			"name": "Customers",
+			"item": [
+				{
+					"name": "New Request",
+					"id": "6ed7dfbe-a42d-42ee-948a-6e1b746955cc",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				}
+			],
+			"id": "074cef34-2b25-4a75-80a6-b0c79c626519"
+		},
+		{
 			"name": "generateToken",
 			"event": [
 				{

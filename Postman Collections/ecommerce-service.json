@@ -157,13 +157,12 @@
 						"header": [
 							{
 								"key": "authorization",
-								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7Il9pZCI6IjY3YzFjY2YzZTVkOWM3OGViNWQ5ZjBjMyIsImVtYWlsIjoiZG9taW5vc0BnbWFpbC5jb20ifSwidGltZXN0YW1wIjoiMjAyNS0wNS0wMlQxNDoyMDo0My42MTlaIiwiaWF0IjoxNzQ2MTk1NjQzLCJleHAiOjE3NDY0NTQ4NDMsImF1ZCI6Imdsb2JhbCJ9.YOWMOlsNvElWMs5StYVO1mLt12439n3I4N0d-ableKs",
-								"type": "text"
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7Il9pZCI6IjY3YzFjY2YzZTVkOWM3OGViNWQ5ZjBjMyIsImVtYWlsIjoiZG9taW5vc0BnbWFpbC5jb20ifSwidGltZXN0YW1wIjoiMjAyNS0wNS0wMlQxNDoyMDo0My42MTlaIiwiaWF0IjoxNzQ2MTk1NjQzLCJleHAiOjE3NDY0NTQ4NDMsImF1ZCI6Imdsb2JhbCJ9.YOWMOlsNvElWMs5StYVO1mLt12439n3I4N0d-ableKs"
 							}
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"name\":\"Weight\",\r\n    \"options\":[\"500gm\",\"1kg\"]\r\n    // \"tenant\":\"67c1ccf2e5d9c78eb5d9f0c0\" //optional\r\n}",
+							"raw": "{\r\n    \"name\":\"Size\",\r\n    \"options\":[{\r\n        \"value\": \"S\"\r\n\r\n    }]\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"

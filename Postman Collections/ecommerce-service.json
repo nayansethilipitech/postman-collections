@@ -2312,8 +2312,40 @@
 						"disableBodyPruning": true
 					},
 					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "{{token}}"
+							}
+						},
 						"method": "GET",
-						"header": []
+						"header": [],
+						"url": {
+							"raw": "{{url}}/api/v1/user/customer?invoice=INV-1747748911&startDate=2023-01-01&endDate=2025-02-29",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"user",
+								"customer"
+							],
+							"query": [
+								{
+									"key": "invoice",
+									"value": "INV-1747748911"
+								},
+								{
+									"key": "startDate",
+									"value": "2023-01-01"
+								},
+								{
+									"key": "endDate",
+									"value": "2025-02-29"
+								}
+							]
+						}
 					},
 					"response": []
 				}

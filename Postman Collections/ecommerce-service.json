@@ -999,7 +999,7 @@
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "{{url}}/api/v1/products?search=parth",
+									"raw": "{{url}}/api/v1/products",
 									"host": [
 										"{{url}}"
 									],
@@ -1010,17 +1010,13 @@
 									],
 									"query": [
 										{
-											"key": "search",
-											"value": "parth"
-										},
-										{
 											"key": "page",
 											"value": "",
 											"disabled": true
 										},
 										{
 											"key": "pageSize",
-											"value": "",
+											"value": "24",
 											"disabled": true
 										},
 										{
@@ -1042,18 +1038,70 @@
 											"key": "sortOrder",
 											"value": "desc",
 											"disabled": true
+										},
+										{
+											"key": "search",
+											"value": "nayantestnew",
+											"disabled": true
 										}
 									]
 								}
 							},
 							"response": [
 								{
-									"id": "97564e64-4798-45e0-aa1c-c4b1cd859cba",
+									"id": "20c5c723-a6cc-49a8-8d9e-244031462fac",
 									"name": "getAllProducts",
 									"originalRequest": {
 										"method": "GET",
 										"header": [],
-										"url": "http://127.0.0.1:3050/api/v1/products"
+										"url": {
+											"raw": "{{url}}/api/v1/products",
+											"host": [
+												"{{url}}"
+											],
+											"path": [
+												"api",
+												"v1",
+												"products"
+											],
+											"query": [
+												{
+													"key": "page",
+													"value": "",
+													"disabled": true
+												},
+												{
+													"key": "pageSize",
+													"value": "24",
+													"disabled": true
+												},
+												{
+													"key": "subCategory",
+													"value": "68287bf81f4d636180526f4e",
+													"disabled": true
+												},
+												{
+													"key": "category",
+													"value": "",
+													"disabled": true
+												},
+												{
+													"key": "sortBy",
+													"value": "offerPrice",
+													"disabled": true
+												},
+												{
+													"key": "sortOrder",
+													"value": "desc",
+													"disabled": true
+												},
+												{
+													"key": "search",
+													"value": "nayantestnew",
+													"disabled": true
+												}
+											]
+										}
 									},
 									"status": "OK",
 									"code": 200,
@@ -1073,15 +1121,19 @@
 										},
 										{
 											"key": "Content-Length",
-											"value": "890"
+											"value": "856"
 										},
 										{
 											"key": "ETag",
-											"value": "W/\"37a-I8UF9/GLN7IRco3zi3tfLkh1IwU\""
+											"value": "W/\"358-M2kqgzxPrGryuXrnNoiY9FLSNfM\""
+										},
+										{
+											"key": "Set-Cookie",
+											"value": "connect.sid=s%3AsJFOnGOdHPD1EjCCRj0XHIp_iGt79nuB.dqJ9R8zaVa8vhnUWI7ETXcg1IEoOaEtXQFZRZc5CGKE; Path=/; HttpOnly"
 										},
 										{
 											"key": "Date",
-											"value": "Sat, 03 May 2025 04:31:57 GMT"
+											"value": "Sun, 25 May 2025 08:16:07 GMT"
 										},
 										{
 											"key": "Connection",
@@ -1094,7 +1146,7 @@
 									],
 									"cookie": [],
 									"responseTime": null,
-									"body": "{\n    \"data\": {\n        \"list\": [\n            {\n                \"_id\": \"68159a826ec384fb2991e331\",\n                \"tenant\": \"68099a3d82e5a7fd20967e7c\",\n                \"title\": \"Sample Product Title\",\n                \"shortDesc\": \"Short description of the product\",\n                \"description\": \"Detailed description of the product\",\n                \"category\": \"6808ea75550f3a69d0bd868d\",\n                \"status\": \"ACTIVE\",\n                \"offerPrice\": 299.99,\n                \"originalPrice\": 499.99,\n                \"totalQuantity\": 100,\n                \"quantity\": 50,\n                \"sku\": \"ABC123XYZ\",\n                \"isPriceVariable\": true,\n                \"isTaxIncluded\": false,\n                \"seo\": {\n                    \"title\": \"Sample Product SEO Title\",\n                    \"metaTitle\": \"Sample Product Meta Title\",\n                    \"metaDesc\": \"Sample product meta description for SEO\",\n                    \"urlHandle\": \"sample-product-url-handle\"\n                },\n                \"gallery\": [\n                    \"680998da82e5a7fd20967e76\"\n                ],\n                \"productVariants\": [\n                    \"68159a826ec384fb2991e333\",\n                    \"68159a826ec384fb2991e334\",\n                    \"68159a826ec384fb2991e335\",\n                    \"68159a826ec384fb2991e336\"\n                ],\n                \"createdAt\": \"2025-05-03T04:24:34.795Z\",\n                \"updatedAt\": \"2025-05-03T04:24:34.931Z\"\n            }\n        ],\n        \"total\": 1\n    },\n    \"status\": \"Ok\",\n    \"message\": {\n        \"code\": \"Success\"\n    }\n}"
+									"body": "{\n    \"data\": {\n        \"list\": [\n            {\n                \"_id\": \"6832cafe53c303fb6d26d5f4\",\n                \"title\": \"Product\",\n                \"minPrice\": {\n                    \"originalPrice\": 90,\n                    \"offerPrice\": 40\n                },\n                \"gallery\": [],\n                \"featured\": true\n            },\n            {\n                \"_id\": \"6832cb0153c303fb6d26d609\",\n                \"title\": \"Product\",\n                \"minPrice\": {\n                    \"originalPrice\": 90,\n                    \"offerPrice\": 40\n                },\n                \"gallery\": [],\n                \"featured\": true\n            },\n            {\n                \"_id\": \"6832cb0253c303fb6d26d61e\",\n                \"title\": \"Product\",\n                \"minPrice\": {\n                    \"originalPrice\": 90,\n                    \"offerPrice\": 40\n                },\n                \"gallery\": [],\n                \"featured\": true\n            },\n            {\n                \"_id\": \"6832cb0453c303fb6d26d633\",\n                \"title\": \"Product\",\n                \"minPrice\": {\n                    \"originalPrice\": 90,\n                    \"offerPrice\": 40\n                },\n                \"gallery\": [],\n                \"featured\": true\n            },\n            {\n                \"_id\": \"6832cbb14a940c93b1c65d22\",\n                \"title\": \"Product\",\n                \"minPrice\": {\n                    \"originalPrice\": 90,\n                    \"offerPrice\": 40\n                },\n                \"gallery\": [\n                    {\n                        \"_id\": \"67c7e799b00a7b365fe86f53\",\n                        \"url\": \"https://crm-coupon-dev.s3.ap-south-1.amazonaws.com/6d9ae0dc-c7a3-4a33-b276-fee39250b762.png\"\n                    }\n                ],\n                \"featured\": true\n            }\n        ],\n        \"total\": 5\n    },\n    \"status\": \"Ok\",\n    \"message\": {\n        \"code\": \"Success\"\n    }\n}"
 								}
 							]
 						},
@@ -1113,58 +1165,9 @@
 								},
 								"method": "GET",
 								"header": [],
-								"url": "{{url}}/api/v1/products/682863b5691af816cde6361c"
+								"url": "{{url}}/api/v1/products/6832cbb14a940c93b1c65d22"
 							},
 							"response": [
-								{
-									"id": "edc2a4c3-79a0-4fa0-b3a5-9b96b5534ba8",
-									"name": "getproductById",
-									"originalRequest": {
-										"method": "GET",
-										"header": [],
-										"url": "http://127.0.0.1:3050/api/v1/products/68159a826ec384fb2991e331"
-									},
-									"status": "OK",
-									"code": 200,
-									"_postman_previewlanguage": "json",
-									"header": [
-										{
-											"key": "X-Powered-By",
-											"value": "Express"
-										},
-										{
-											"key": "Access-Control-Allow-Origin",
-											"value": "*"
-										},
-										{
-											"key": "Content-Type",
-											"value": "application/json; charset=utf-8"
-										},
-										{
-											"key": "Content-Length",
-											"value": "869"
-										},
-										{
-											"key": "ETag",
-											"value": "W/\"365-ubwszDRCAbUjYL0X48Gbl7kxTz8\""
-										},
-										{
-											"key": "Date",
-											"value": "Sat, 03 May 2025 04:32:26 GMT"
-										},
-										{
-											"key": "Connection",
-											"value": "keep-alive"
-										},
-										{
-											"key": "Keep-Alive",
-											"value": "timeout=5"
-										}
-									],
-									"cookie": [],
-									"responseTime": null,
-									"body": "{\n    \"data\": {\n        \"_id\": \"68159a826ec384fb2991e331\",\n        \"tenant\": \"68099a3d82e5a7fd20967e7c\",\n        \"title\": \"Sample Product Title\",\n        \"shortDesc\": \"Short description of the product\",\n        \"description\": \"Detailed description of the product\",\n        \"category\": \"6808ea75550f3a69d0bd868d\",\n        \"status\": \"ACTIVE\",\n        \"offerPrice\": 299.99,\n        \"originalPrice\": 499.99,\n        \"totalQuantity\": 100,\n        \"quantity\": 50,\n        \"sku\": \"ABC123XYZ\",\n        \"isPriceVariable\": true,\n        \"isTaxIncluded\": false,\n        \"seo\": {\n            \"title\": \"Sample Product SEO Title\",\n            \"metaTitle\": \"Sample Product Meta Title\",\n            \"metaDesc\": \"Sample product meta description for SEO\",\n            \"urlHandle\": \"sample-product-url-handle\"\n        },\n        \"gallery\": [\n            \"680998da82e5a7fd20967e76\"\n        ],\n        \"productVariants\": [\n            \"68159a826ec384fb2991e333\",\n            \"68159a826ec384fb2991e334\",\n            \"68159a826ec384fb2991e335\",\n            \"68159a826ec384fb2991e336\"\n        ],\n        \"createdAt\": \"2025-05-03T04:24:34.795Z\",\n        \"updatedAt\": \"2025-05-03T04:24:34.931Z\"\n    },\n    \"status\": \"Ok\",\n    \"message\": {\n        \"code\": \"Success\"\n    }\n}"
-								},
 								{
 									"id": "130d3274-a084-4f34-9877-8482db65910c",
 									"name": "getproductById",
@@ -1241,7 +1244,7 @@
 									}
 								],
 								"url": {
-									"raw": "{{url}}/api/v1/products/featured?page=2&pageSize=10",
+									"raw": "{{url}}/api/v1/products/featured?pageSize=10",
 									"host": [
 										"{{url}}"
 									],
@@ -1254,7 +1257,8 @@
 									"query": [
 										{
 											"key": "page",
-											"value": "2"
+											"value": "2",
+											"disabled": true
 										},
 										{
 											"key": "pageSize",
@@ -1263,7 +1267,84 @@
 									]
 								}
 							},
-							"response": []
+							"response": [
+								{
+									"id": "7bc6f10d-1591-4aa7-8c86-86a2fe8224c2",
+									"name": "dashboard products",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Authorization",
+												"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7Il9pZCI6IjY3YzFjY2YzZTVkOWM3OGViNWQ5ZjBjMyIsImVtYWlsIjoiZG9taW5vc0BnbWFpbC5jb20ifSwidGltZXN0YW1wIjoiMjAyNS0wNS0xMlQxNjozMDo0Ny45NDRaIiwiaWF0IjoxNzQ3MDY3NDQ3LCJleHAiOjE3NDczMjY2NDcsImF1ZCI6Imdsb2JhbCJ9.Fzb08QSUF21ISrdY1yo5i26gH-bTMeX3QxbQy_cqCl0"
+											}
+										],
+										"url": {
+											"raw": "{{url}}/api/v1/products/featured?pageSize=10",
+											"host": [
+												"{{url}}"
+											],
+											"path": [
+												"api",
+												"v1",
+												"products",
+												"featured"
+											],
+											"query": [
+												{
+													"key": "page",
+													"value": "2",
+													"disabled": true
+												},
+												{
+													"key": "pageSize",
+													"value": "10"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "3076"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"c04-VAHLiqFj3dIjMaB2Zc2btAoiINA\""
+										},
+										{
+											"key": "Date",
+											"value": "Sun, 25 May 2025 08:00:20 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"responseTime": null,
+									"body": "{\n    \"data\": {\n        \"list\": [\n            {\n                \"category\": {\n                    \"_id\": \"6814782945124ddfb1322a7f\",\n                    \"name\": \"Test categoriess\",\n                    \"image\": null,\n                    \"subcategories\": []\n                },\n                \"products\": []\n            },\n            {\n                \"category\": {\n                    \"_id\": \"6815ae2aa151198ae0c8efc7\",\n                    \"name\": \"Test category\",\n                    \"image\": {\n                        \"_id\": \"6815ae2aa151198ae0c8efc5\",\n                        \"url\": \"https://crm-coupon-dev.s3.ap-south-1.amazonaws.com/2df089be-1cdc-4fa8-abe9-65ceb03db1dc.png\"\n                    },\n                    \"subcategories\": [\n                        {\n                            \"_id\": \"68287bf81f4d636180526f4e\",\n                            \"name\": \"child category 1\",\n                            \"image\": {\n                                \"_id\": \"6815ae2aa151198ae0c8efc5\",\n                                \"url\": \"https://crm-coupon-dev.s3.ap-south-1.amazonaws.com/2df089be-1cdc-4fa8-abe9-65ceb03db1dc.png\"\n                            }\n                        },\n                        {\n                            \"_id\": \"68287c061f4d636180526f51\",\n                            \"name\": \"child category 2\",\n                            \"image\": {\n                                \"_id\": \"6815ae2aa151198ae0c8efc5\",\n                                \"url\": \"https://crm-coupon-dev.s3.ap-south-1.amazonaws.com/2df089be-1cdc-4fa8-abe9-65ceb03db1dc.png\"\n                            }\n                        },\n                        {\n                            \"_id\": \"68287c0a1f4d636180526f54\",\n                            \"name\": \"child category 3\",\n                            \"image\": {\n                                \"_id\": \"6815ae2aa151198ae0c8efc5\",\n                                \"url\": \"https://crm-coupon-dev.s3.ap-south-1.amazonaws.com/2df089be-1cdc-4fa8-abe9-65ceb03db1dc.png\"\n                            }\n                        }\n                    ]\n                },\n                \"products\": [\n                    {\n                        \"_id\": \"6832cafe53c303fb6d26d5f4\",\n                        \"title\": \"Product\",\n                        \"minPrice\": {\n                            \"originalPrice\": 90,\n                            \"offerPrice\": 40\n                        },\n                        \"gallery\": [],\n                        \"featured\": true\n                    },\n                    {\n                        \"_id\": \"6832cb0153c303fb6d26d609\",\n                        \"title\": \"Product\",\n                        \"minPrice\": {\n                            \"originalPrice\": 90,\n                            \"offerPrice\": 40\n                        },\n                        \"gallery\": [],\n                        \"featured\": true\n                    },\n                    {\n                        \"_id\": \"6832cb0253c303fb6d26d61e\",\n                        \"title\": \"Product\",\n                        \"minPrice\": {\n                            \"originalPrice\": 90,\n                            \"offerPrice\": 40\n                        },\n                        \"gallery\": [],\n                        \"featured\": true\n                    },\n                    {\n                        \"_id\": \"6832cb0453c303fb6d26d633\",\n                        \"title\": \"Product\",\n                        \"minPrice\": {\n                            \"originalPrice\": 90,\n                            \"offerPrice\": 40\n                        },\n                        \"gallery\": [],\n                        \"featured\": true\n                    },\n                    {\n                        \"_id\": \"6832cbb14a940c93b1c65d22\",\n                        \"title\": \"Product\",\n                        \"minPrice\": {\n                            \"originalPrice\": 90,\n                            \"offerPrice\": 40\n                        },\n                        \"gallery\": [\n                            {\n                                \"_id\": \"67c7e799b00a7b365fe86f53\",\n                                \"url\": \"https://crm-coupon-dev.s3.ap-south-1.amazonaws.com/6d9ae0dc-c7a3-4a33-b276-fee39250b762.png\"\n                            }\n                        ],\n                        \"featured\": true\n                    }\n                ]\n            },\n            {\n                \"category\": {\n                    \"_id\": \"68286eb1f847296ddbd5e2b2\",\n                    \"name\": \"new new\",\n                    \"image\": {\n                        \"_id\": \"68286eb1f847296ddbd5e2b0\",\n                        \"url\": \"https://crm-coupon-dev.s3.ap-south-1.amazonaws.com/dc6a1abd-2022-4dbb-b5d4-7516f0be8f60.png\"\n                    },\n                    \"subcategories\": []\n                },\n                \"products\": []\n            },\n            {\n                \"category\": {\n                    \"_id\": \"6828ed0cdc8d49d66b707100\",\n                    \"name\": \"dds\",\n                    \"image\": {\n                        \"_id\": \"6828ed0cdc8d49d66b7070fe\",\n                        \"url\": \"https://crm-coupon-dev.s3.ap-south-1.amazonaws.com/29cc2fb6-7482-41bd-b326-c03977f73b4a.png\"\n                    },\n                    \"subcategories\": []\n                },\n                \"products\": []\n            },\n            {\n                \"category\": {\n                    \"_id\": \"6828ed1ddc8d49d66b707107\",\n                    \"name\": \"mmmm\",\n                    \"image\": {\n                        \"_id\": \"6828ed1ddc8d49d66b707105\",\n                        \"url\": \"https://crm-coupon-dev.s3.ap-south-1.amazonaws.com/572ff05a-f4eb-46b2-bc01-530f1263afa8.png\"\n                    },\n                    \"subcategories\": []\n                },\n                \"products\": []\n            },\n            {\n                \"category\": {\n                    \"_id\": \"6828ed2fdc8d49d66b70710e\",\n                    \"name\": \"mmm\",\n                    \"image\": {\n                        \"_id\": \"6828ed2fdc8d49d66b70710c\",\n                        \"url\": \"https://crm-coupon-dev.s3.ap-south-1.amazonaws.com/054984b0-3609-425f-9685-a50601ebaf48.png\"\n                    },\n                    \"subcategories\": []\n                },\n                \"products\": []\n            },\n            {\n                \"category\": {\n                    \"_id\": \"6831af31d213fd2a06110dac\",\n                    \"name\": \"Tshirt\",\n                    \"image\": {\n                        \"_id\": \"6831af31d213fd2a06110daa\",\n                        \"url\": \"https://crm-coupon-dev.s3.ap-south-1.amazonaws.com/91aaee17-4488-4c11-a472-7e80716a32fc.jpg\"\n                    },\n                    \"subcategories\": []\n                },\n                \"products\": []\n            }\n        ],\n        \"total\": 10\n    },\n    \"status\": \"Ok\",\n    \"message\": {\n        \"code\": \"Success\",\n        \"msg\": \"Featured products retrieved successfully\"\n    }\n}"
+								}
+							]
 						}
 					],
 					"id": "6c2d645d-d576-488d-be59-491ba6430e2f"
@@ -1285,7 +1366,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"title\": \"nayan\",\r\n    \"shortDesc\": \"Short description of the product\",\r\n    \"description\": \"Detailed description of the product\",\r\n    \"category\": \"6815ae2aa151198ae0c8efc7\",\r\n    \"subCategory\": \"68287bf81f4d636180526f4e\",\r\n    \"status\": \"ACTIVE\",\r\n    \"offerPrice\": 299.99,\r\n    \"originalPrice\": 499.99,\r\n    \"quantity\": 50,\r\n    \"isPriceVariable\": true,\r\n    \"isTaxIncluded\": false,\r\n    \"seo\": {\r\n        \"title\": \"Sample Product SEO Title\",\r\n        \"metaTitle\": \"Sample Product Meta Title\",\r\n        \"metaDesc\": \"Sample product meta description for SEO\",\r\n        \"urlHandle\": \"sample-product-url-handle\"\r\n    },\r\n    \"gallery\": [\r\n        \"680998da82e5a7fd20967e76\"\r\n    ],\r\n    \"attributes\": [\r\n        {\r\n            \"attributeId\": \"66526e54f5a3b86e0f5f2c31\",\r\n            \"options\": [\r\n                {\r\n                    \"value\": \"Green\",\r\n                    \"meta\": {\r\n                        \"shape\": \"circle\",\r\n                        \"label\": null,\r\n                        \"bgColor\": \"#228B22\"\r\n                    }\r\n                },\r\n               {\r\n                    \"value\": \"Red\",\r\n                    \"meta\": {\r\n                        \"shape\": \"circle\",\r\n                        \"label\": null,\r\n                        \"bgColor\": \"#FF0000\"\r\n                    }\r\n                }\r\n            ]\r\n        },\r\n        {\r\n            \"attributeId\": \"66526e54f5a3b86e0f5f2c32\",\r\n            \"options\": [\r\n                {\r\n                    \"value\": \"Large\",\r\n                    \"meta\": {\r\n                        \"shape\": \"square\",\r\n                        \"label\": \"L\",\r\n                        \"bgColor\": \"#FFF\"\r\n                    }\r\n                },\r\n                {\r\n                    \"value\": \"Small\",\r\n                   \"meta\": {\r\n                        \"shape\": \"square\",\r\n                        \"label\": \"S\",\r\n                        \"bgColor\": \"#FFF\"\r\n                    }\r\n                }\r\n            ]\r\n        }\r\n    ],\r\n    \"variants\": [\r\n        {\r\n            \"sku\": \"option-1-option-a\",\r\n            \"offerPrice\": 40,\r\n            \"originalPrice\": 90,\r\n            \"quantity\": 200,\r\n            \"gallery\": [\r\n                \"680998da82e5a7fd20967e76\"\r\n            ]\r\n        },\r\n        {\r\n            \"sku\": \"option-2-option-a\",\r\n            \"offerPrice\": 40,\r\n            \"originalPrice\": 90,\r\n            \"quantity\": 200,\r\n            \"gallery\": [\r\n                \"680998da82e5a7fd20967e76\"\r\n            ]\r\n        },\r\n        {\r\n            \"sku\": \"option-1-option-b\",\r\n            \"offerPrice\": 40,\r\n            \"originalPrice\": 90,\r\n            \"quantity\": 200,\r\n            \"gallery\": [\r\n                \"67c7e799b00a7b365fe86f53\"\r\n            ]\r\n        },\r\n        {\r\n            \"sku\": \"option-2-option-b\",\r\n            \"offerPrice\": 40,\r\n            \"originalPrice\": 90,\r\n            \"quantity\": 200,\r\n            \"gallery\": [\r\n                \"680998da82e5a7fd20967e76\"\r\n            ]\r\n        }\r\n    ]\r\n}",
+							"raw": "{\r\n    \"title\": \"Product\",\r\n    \"shortDesc\": \"Short description of the product parth\",\r\n    \"description\": \"Detailed description of the product\",\r\n    \"category\": \"6815ae2aa151198ae0c8efc7\",\r\n    \"subCategory\": \"68287bf81f4d636180526f4e\",\r\n    \"status\": \"ACTIVE\",\r\n    \"offerPrice\": 299.99,\r\n    \"originalPrice\": 499.99,\r\n    \"quantity\": 50,\r\n    \"isPriceVariable\": true,\r\n    \"isTaxIncluded\": false,\r\n    \"seo\": {\r\n        \"title\": \"Sample Product SEO Title\",\r\n        \"metaTitle\": \"Sample Product Meta Title\",\r\n        \"metaDesc\": \"Sample product meta description for SEO\",\r\n        \"urlHandle\": \"sample-product-url-handle\"\r\n    },\r\n    \"gallery\": [\r\n        \"67c7e799b00a7b365fe86f53\"\r\n    ],\r\n    \"attributes\": [\r\n        {\r\n            \"attributeId\": \"68318e727abd44246ed539c1\",\r\n            \"options\": [\r\n                {\r\n                    \"value\": \"Green\",\r\n                    \"meta\": {\r\n                        \"shape\": \"circle\",\r\n                        \"label\": null,\r\n                        \"bgColor\": \"#228B22\"\r\n                    }\r\n                },\r\n               {\r\n                    \"value\": \"Red\",\r\n                    \"meta\": {\r\n                        \"shape\": \"circle\",\r\n                        \"label\": null,\r\n                        \"bgColor\": \"#FF0000\"\r\n                    }\r\n                }\r\n            ]\r\n        },\r\n        {\r\n            \"attributeId\": \"68318e5c7abd44246ed539bd\",\r\n            \"options\": [\r\n                {\r\n                    \"value\": \"S\",\r\n                    \"meta\": {\r\n                        \"shape\": \"square\",\r\n                        \"label\": \"S\",\r\n                        \"bgColor\": \"#FFF\"\r\n                    }\r\n                },\r\n                {\r\n                    \"value\": \"M\",\r\n                   \"meta\": {\r\n                        \"shape\": \"square\",\r\n                        \"label\": \"M\",\r\n                        \"bgColor\": \"#FFF\"\r\n                    }\r\n                }\r\n            ]\r\n        }\r\n    ],\r\n    \"variants\": [\r\n        {\r\n            \"sku\": \"s-red\",\r\n            \"offerPrice\": 40,\r\n            \"originalPrice\": 90,\r\n            \"quantity\": 200,\r\n            \"gallery\": [\r\n                \"67c7e799b00a7b365fe86f53\"\r\n            ]\r\n        },\r\n        {\r\n            \"sku\": \"s-green\",\r\n            \"offerPrice\": 40,\r\n            \"originalPrice\": 90,\r\n            \"quantity\": 200,\r\n            \"gallery\": [\r\n                \"67c7e799b00a7b365fe86f53\"\r\n            ]\r\n        },\r\n        {\r\n            \"sku\": \"m-green\",\r\n            \"offerPrice\": 40,\r\n            \"originalPrice\": 90,\r\n            \"quantity\": 200,\r\n            \"gallery\": [\r\n                \"67c7e799b00a7b365fe86f53\"\r\n            ]\r\n        },\r\n        {\r\n            \"sku\": \"m-red\",\r\n            \"offerPrice\": 40,\r\n            \"originalPrice\": 90,\r\n            \"quantity\": 200,\r\n            \"gallery\": [\r\n                \"67c7e799b00a7b365fe86f53\"\r\n            ]\r\n        }\r\n    ]\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -1382,11 +1463,11 @@
 								"disabled": true
 							}
 						],
-						"url": "http://127.0.0.1:3050/api/v1/products/682863b5691af816cde6361c"
+						"url": "http://127.0.0.1:3050/api/v1/products/fetch/6832cafe53c303fb6d26d5f4"
 					},
 					"response": [
 						{
-							"id": "a2e0cd55-af91-4ec4-972f-8a713a4bcb44",
+							"id": "b9f77e57-2d9d-4293-9ac7-a34d7dfbe5bf",
 							"name": "getProductId",
 							"originalRequest": {
 								"method": "GET",
@@ -1394,10 +1475,10 @@
 									{
 										"key": "Authorization",
 										"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7Il9pZCI6IjY3YzFjY2YzZTVkOWM3OGViNWQ5ZjBjMyIsImVtYWlsIjoiZG9taW5vc0BnbWFpbC5jb20ifSwidGltZXN0YW1wIjoiMjAyNS0wNS0wMlQxNDoyMDo0My42MTlaIiwiaWF0IjoxNzQ2MTk1NjQzLCJleHAiOjE3NDY0NTQ4NDMsImF1ZCI6Imdsb2JhbCJ9.YOWMOlsNvElWMs5StYVO1mLt12439n3I4N0d-ableKs",
-										"type": "text"
+										"disabled": true
 									}
 								],
-								"url": "http://127.0.0.1:3050/api/v1/products/fetch/68159a826ec384fb2991e331"
+								"url": "http://127.0.0.1:3050/api/v1/products/fetch/6832cafe53c303fb6d26d5f4"
 							},
 							"status": "OK",
 							"code": 200,
@@ -1417,15 +1498,15 @@
 								},
 								{
 									"key": "Content-Length",
-									"value": "869"
+									"value": "2707"
 								},
 								{
 									"key": "ETag",
-									"value": "W/\"365-ubwszDRCAbUjYL0X48Gbl7kxTz8\""
+									"value": "W/\"a93-ubr9Xu327F3piuk4eZHX+O8D3QY\""
 								},
 								{
 									"key": "Date",
-									"value": "Sat, 03 May 2025 04:32:46 GMT"
+									"value": "Sun, 25 May 2025 08:16:51 GMT"
 								},
 								{
 									"key": "Connection",
@@ -1438,7 +1519,7 @@
 							],
 							"cookie": [],
 							"responseTime": null,
-							"body": "{\n    \"data\": {\n        \"_id\": \"68159a826ec384fb2991e331\",\n        \"tenant\": \"68099a3d82e5a7fd20967e7c\",\n        \"title\": \"Sample Product Title\",\n        \"shortDesc\": \"Short description of the product\",\n        \"description\": \"Detailed description of the product\",\n        \"category\": \"6808ea75550f3a69d0bd868d\",\n        \"status\": \"ACTIVE\",\n        \"offerPrice\": 299.99,\n        \"originalPrice\": 499.99,\n        \"totalQuantity\": 100,\n        \"quantity\": 50,\n        \"sku\": \"ABC123XYZ\",\n        \"isPriceVariable\": true,\n        \"isTaxIncluded\": false,\n        \"seo\": {\n            \"title\": \"Sample Product SEO Title\",\n            \"metaTitle\": \"Sample Product Meta Title\",\n            \"metaDesc\": \"Sample product meta description for SEO\",\n            \"urlHandle\": \"sample-product-url-handle\"\n        },\n        \"gallery\": [\n            \"680998da82e5a7fd20967e76\"\n        ],\n        \"productVariants\": [\n            \"68159a826ec384fb2991e333\",\n            \"68159a826ec384fb2991e334\",\n            \"68159a826ec384fb2991e335\",\n            \"68159a826ec384fb2991e336\"\n        ],\n        \"createdAt\": \"2025-05-03T04:24:34.795Z\",\n        \"updatedAt\": \"2025-05-03T04:24:34.931Z\"\n    },\n    \"status\": \"Ok\",\n    \"message\": {\n        \"code\": \"Success\"\n    }\n}"
+							"body": "{\n    \"data\": {\n        \"_id\": \"6832cafe53c303fb6d26d5f4\",\n        \"title\": \"Product\",\n        \"shortDesc\": \"Short description of the product parth\",\n        \"description\": \"Detailed description of the product\",\n        \"category\": \"6815ae2aa151198ae0c8efc7\",\n        \"subCategory\": \"68287bf81f4d636180526f4e\",\n        \"isPriceVariable\": true,\n        \"isTaxIncluded\": false,\n        \"seo\": {\n            \"title\": \"Sample Product SEO Title\",\n            \"metaTitle\": \"Sample Product Meta Title\",\n            \"metaDesc\": \"Sample product meta description for SEO\",\n            \"urlHandle\": \"sample-product-url-handle\"\n        },\n        \"gallery\": [],\n        \"attributes\": [\n            {\n                \"attributeId\": \"68318e727abd44246ed539c1\",\n                \"options\": [\n                    {\n                        \"value\": \"Green\",\n                        \"meta\": {\n                            \"shape\": \"circle\",\n                            \"label\": null,\n                            \"bgColor\": \"#228B22\"\n                        },\n                        \"_id\": \"6832cafe53c303fb6d26d5f7\"\n                    },\n                    {\n                        \"value\": \"Red\",\n                        \"meta\": {\n                            \"shape\": \"circle\",\n                            \"label\": null,\n                            \"bgColor\": \"#FF0000\"\n                        },\n                        \"_id\": \"6832cafe53c303fb6d26d5f8\"\n                    }\n                ],\n                \"_id\": \"6832cafe53c303fb6d26d5f6\"\n            },\n            {\n                \"attributeId\": \"68318e5c7abd44246ed539bd\",\n                \"options\": [\n                    {\n                        \"value\": \"S\",\n                        \"meta\": {\n                            \"shape\": \"square\",\n                            \"label\": \"S\",\n                            \"bgColor\": \"#FFF\"\n                        },\n                        \"_id\": \"6832cafe53c303fb6d26d5fa\"\n                    },\n                    {\n                        \"value\": \"M\",\n                        \"meta\": {\n                            \"shape\": \"square\",\n                            \"label\": \"M\",\n                            \"bgColor\": \"#FFF\"\n                        },\n                        \"_id\": \"6832cafe53c303fb6d26d5fb\"\n                    }\n                ],\n                \"_id\": \"6832cafe53c303fb6d26d5f9\"\n            }\n        ],\n        \"productVariants\": [\n            {\n                \"_id\": \"6832cafe53c303fb6d26d5fd\",\n                \"tenant\": \"67c1ccf2e5d9c78eb5d9f0c0\",\n                \"product\": \"6832cafe53c303fb6d26d5f4\",\n                \"sku\": \"53P3SN-s-red\",\n                \"offerPrice\": 40,\n                \"originalPrice\": 90,\n                \"status\": \"ACTIVE\",\n                \"quantity\": 200,\n                \"alertValue\": 0,\n                \"consumed\": 0,\n                \"gallery\": [],\n                \"createdAt\": \"2025-05-25T07:47:10.572Z\",\n                \"updatedAt\": \"2025-05-25T07:47:10.572Z\"\n            },\n            {\n                \"_id\": \"6832cafe53c303fb6d26d5fe\",\n                \"tenant\": \"67c1ccf2e5d9c78eb5d9f0c0\",\n                \"product\": \"6832cafe53c303fb6d26d5f4\",\n                \"sku\": \"53P3SN-s-green\",\n                \"offerPrice\": 40,\n                \"originalPrice\": 90,\n                \"status\": \"ACTIVE\",\n                \"quantity\": 200,\n                \"alertValue\": 0,\n                \"consumed\": 0,\n                \"gallery\": [],\n                \"createdAt\": \"2025-05-25T07:47:10.573Z\",\n                \"updatedAt\": \"2025-05-25T07:47:10.573Z\"\n            },\n            {\n                \"_id\": \"6832cafe53c303fb6d26d5ff\",\n                \"tenant\": \"67c1ccf2e5d9c78eb5d9f0c0\",\n                \"product\": \"6832cafe53c303fb6d26d5f4\",\n                \"sku\": \"53P3SN-m-green\",\n                \"offerPrice\": 40,\n                \"originalPrice\": 90,\n                \"status\": \"ACTIVE\",\n                \"quantity\": 200,\n                \"alertValue\": 0,\n                \"consumed\": 0,\n                \"gallery\": [\n                    {\n                        \"_id\": \"67c7e799b00a7b365fe86f53\",\n                        \"url\": \"https://crm-coupon-dev.s3.ap-south-1.amazonaws.com/6d9ae0dc-c7a3-4a33-b276-fee39250b762.png\"\n                    }\n                ],\n                \"createdAt\": \"2025-05-25T07:47:10.573Z\",\n                \"updatedAt\": \"2025-05-25T07:47:10.573Z\"\n            },\n            {\n                \"_id\": \"6832cafe53c303fb6d26d600\",\n                \"tenant\": \"67c1ccf2e5d9c78eb5d9f0c0\",\n                \"product\": \"6832cafe53c303fb6d26d5f4\",\n                \"sku\": \"53P3SN-m-red\",\n                \"offerPrice\": 40,\n                \"originalPrice\": 90,\n                \"status\": \"ACTIVE\",\n                \"quantity\": 200,\n                \"alertValue\": 0,\n                \"consumed\": 0,\n                \"gallery\": [\n                    {\n                        \"_id\": \"67f103df039b0f5dbb2f7f27\",\n                        \"url\": \"https://crm-coupon-dev.s3.ap-south-1.amazonaws.com/72acab8a-6156-42a8-8fef-edbc3daf6015.png\"\n                    }\n                ],\n                \"createdAt\": \"2025-05-25T07:47:10.573Z\",\n                \"updatedAt\": \"2025-05-25T07:47:10.573Z\"\n            }\n        ],\n        \"featured\": true\n    },\n    \"status\": \"Ok\",\n    \"message\": {\n        \"code\": \"Success\"\n    }\n}"
 						}
 					]
 				},
@@ -1452,7 +1533,7 @@
 						"auth": {
 							"type": "bearer",
 							"bearer": {
-								"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7Il9pZCI6IjY3YzFjY2YzZTVkOWM3OGViNWQ5ZjBjMyIsImVtYWlsIjoiZG9taW5vc0BnbWFpbC5jb20ifSwidGltZXN0YW1wIjoiMjAyNS0wNS0xN1QxMDoxNjowNi43NjlaIiwiaWF0IjoxNzQ3NDc2OTY2LCJleHAiOjE3NDc3MzYxNjYsImF1ZCI6Imdsb2JhbCJ9.4M-g1fnUeOJn1TNMHQKPyXpNSG7hUoc8KWwyG8kR2Bw"
+								"token": "{{token}}"
 							}
 						},
 						"method": "GET",
@@ -1463,7 +1544,7 @@
 							}
 						],
 						"url": {
-							"raw": "http://127.0.0.1:3050/api/v1/products/fetch",
+							"raw": "http://127.0.0.1:3050/api/v1/products/fetch?pageSize=24",
 							"protocol": "http",
 							"host": [
 								"127",
@@ -1481,33 +1562,32 @@
 							"query": [
 								{
 									"key": "category",
-									"value": null,
+									"value": "",
 									"disabled": true
 								},
 								{
 									"key": "subcategory",
-									"value": null,
+									"value": "",
 									"disabled": true
 								},
 								{
 									"key": "minPrice",
-									"value": null,
+									"value": "",
 									"disabled": true
 								},
 								{
 									"key": "maxPrice",
-									"value": null,
+									"value": "",
 									"disabled": true
 								},
 								{
 									"key": "page",
-									"value": null,
+									"value": "",
 									"disabled": true
 								},
 								{
 									"key": "pageSize",
-									"value": null,
-									"disabled": true
+									"value": "24"
 								},
 								{
 									"key": "sort[sortBy]",
@@ -1577,6 +1657,117 @@
 							"cookie": [],
 							"responseTime": null,
 							"body": "{\n    \"data\": {\n        \"list\": [\n            {\n                \"_id\": \"68159a826ec384fb2991e331\",\n                \"tenant\": \"68099a3d82e5a7fd20967e7c\",\n                \"title\": \"Sample Product Title\",\n                \"shortDesc\": \"Short description of the product\",\n                \"description\": \"Detailed description of the product\",\n                \"category\": \"6808ea75550f3a69d0bd868d\",\n                \"status\": \"ACTIVE\",\n                \"offerPrice\": 299.99,\n                \"originalPrice\": 499.99,\n                \"totalQuantity\": 100,\n                \"quantity\": 50,\n                \"sku\": \"ABC123XYZ\",\n                \"isPriceVariable\": true,\n                \"isTaxIncluded\": false,\n                \"seo\": {\n                    \"title\": \"Sample Product SEO Title\",\n                    \"metaTitle\": \"Sample Product Meta Title\",\n                    \"metaDesc\": \"Sample product meta description for SEO\",\n                    \"urlHandle\": \"sample-product-url-handle\"\n                },\n                \"gallery\": [\n                    \"680998da82e5a7fd20967e76\"\n                ],\n                \"productVariants\": [\n                    \"68159a826ec384fb2991e333\",\n                    \"68159a826ec384fb2991e334\",\n                    \"68159a826ec384fb2991e335\",\n                    \"68159a826ec384fb2991e336\"\n                ],\n                \"createdAt\": \"2025-05-03T04:24:34.795Z\",\n                \"updatedAt\": \"2025-05-03T04:24:34.931Z\"\n            }\n        ],\n        \"total\": 1\n    },\n    \"status\": \"Ok\",\n    \"message\": {\n        \"code\": \"Success\"\n    }\n}"
+						},
+						{
+							"id": "83e7b498-a235-4b79-8c4c-aa80294ceb5b",
+							"name": "getAllProduct",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7Il9pZCI6IjY3YzFjY2YzZTVkOWM3OGViNWQ5ZjBjMyIsImVtYWlsIjoiZG9taW5vc0BnbWFpbC5jb20ifSwidGltZXN0YW1wIjoiMjAyNS0wNS0xMlQxNjozMDo0Ny45NDRaIiwiaWF0IjoxNzQ3MDY3NDQ3LCJleHAiOjE3NDczMjY2NDcsImF1ZCI6Imdsb2JhbCJ9.Fzb08QSUF21ISrdY1yo5i26gH-bTMeX3QxbQy_cqCl0"
+									}
+								],
+								"url": {
+									"raw": "http://127.0.0.1:3050/api/v1/products/fetch?pageSize=24",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "3050",
+									"path": [
+										"api",
+										"v1",
+										"products",
+										"fetch"
+									],
+									"query": [
+										{
+											"key": "category",
+											"value": "",
+											"disabled": true
+										},
+										{
+											"key": "subcategory",
+											"value": "",
+											"disabled": true
+										},
+										{
+											"key": "minPrice",
+											"value": "",
+											"disabled": true
+										},
+										{
+											"key": "maxPrice",
+											"value": "",
+											"disabled": true
+										},
+										{
+											"key": "page",
+											"value": "",
+											"disabled": true
+										},
+										{
+											"key": "pageSize",
+											"value": "24"
+										},
+										{
+											"key": "sort[sortBy]",
+											"value": "offerPrice",
+											"disabled": true
+										},
+										{
+											"key": "sort[sortOrder]",
+											"value": "asc",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "1146"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"47a-SRex2F0DajVF8cWjAk6SiH2s294\""
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 25 May 2025 08:16:41 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"responseTime": null,
+							"body": "{\n    \"data\": {\n        \"list\": [\n            {\n                \"_id\": \"6832cafe53c303fb6d26d5f4\",\n                \"title\": \"Product\",\n                \"category\": {\n                    \"_id\": \"6815ae2aa151198ae0c8efc7\",\n                    \"name\": \"Test category\"\n                },\n                \"status\": \"ACTIVE\",\n                \"gallery\": [],\n                \"totalQuantity\": 0,\n                \"variantCount\": 4\n            },\n            {\n                \"_id\": \"6832cb0153c303fb6d26d609\",\n                \"title\": \"Product\",\n                \"category\": {\n                    \"_id\": \"6815ae2aa151198ae0c8efc7\",\n                    \"name\": \"Test category\"\n                },\n                \"status\": \"ACTIVE\",\n                \"gallery\": [],\n                \"totalQuantity\": 0,\n                \"variantCount\": 4\n            },\n            {\n                \"_id\": \"6832cb0253c303fb6d26d61e\",\n                \"title\": \"Product\",\n                \"category\": {\n                    \"_id\": \"6815ae2aa151198ae0c8efc7\",\n                    \"name\": \"Test category\"\n                },\n                \"status\": \"ACTIVE\",\n                \"gallery\": [],\n                \"totalQuantity\": 0,\n                \"variantCount\": 4\n            },\n            {\n                \"_id\": \"6832cb0453c303fb6d26d633\",\n                \"title\": \"Product\",\n                \"category\": {\n                    \"_id\": \"6815ae2aa151198ae0c8efc7\",\n                    \"name\": \"Test category\"\n                },\n                \"status\": \"ACTIVE\",\n                \"gallery\": [],\n                \"totalQuantity\": 0,\n                \"variantCount\": 4\n            },\n            {\n                \"_id\": \"6832cbb14a940c93b1c65d22\",\n                \"title\": \"Product\",\n                \"category\": {\n                    \"_id\": \"6815ae2aa151198ae0c8efc7\",\n                    \"name\": \"Test category\"\n                },\n                \"status\": \"ACTIVE\",\n                \"gallery\": [\n                    {\n                        \"_id\": \"67c7e799b00a7b365fe86f53\",\n                        \"url\": \"https://crm-coupon-dev.s3.ap-south-1.amazonaws.com/6d9ae0dc-c7a3-4a33-b276-fee39250b762.png\"\n                    }\n                ],\n                \"totalQuantity\": 0,\n                \"variantCount\": 4\n            }\n        ],\n        \"total\": 5\n    },\n    \"status\": \"Ok\",\n    \"message\": {\n        \"code\": \"Success\"\n    }\n}"
 						}
 					]
 				},
@@ -1794,27 +1985,21 @@
 					},
 					"response": [
 						{
-							"id": "9a759a71-1f0f-4942-9d92-af96b9e596ff",
-							"name": "generateProductVariants",
+							"id": "252eea21-e98a-47df-a80e-71d57e0dc6ad",
+							"name": "generateSkus",
 							"originalRequest": {
 								"method": "POST",
-								"header": [
-									{
-										"key": "authorization",
-										"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7Il9pZCI6IjY3YzFjY2YzZTVkOWM3OGViNWQ5ZjBjMyIsImVtYWlsIjoiZG9taW5vc0BnbWFpbC5jb20ifSwidGltZXN0YW1wIjoiMjAyNS0wNS0wMlQxNDoyMDo0My42MTlaIiwiaWF0IjoxNzQ2MTk1NjQzLCJleHAiOjE3NDY0NTQ4NDMsImF1ZCI6Imdsb2JhbCJ9.YOWMOlsNvElWMs5StYVO1mLt12439n3I4N0d-ableKs",
-										"type": "text"
-									}
-								],
+								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n   \"attributeIds\":[\"6814d57a50e949ed115b392d\",\"6814d58f50e949ed115b392f\"]\r\n}",
+									"raw": "{\r\n    \"attributes\": [\r\n        {\r\n            \"attributeId\": \"68318e5c7abd44246ed539bd\",\r\n            \"options\": [\r\n                {\r\n                    \"value\": \"S\",\r\n                    \"meta\": {\r\n                        \"shape\": \"square\"\r\n                    }\r\n                },\r\n                {\r\n                    \"value\": \"M\",\r\n                    \"meta\": {\r\n                        \"shape\": \"square\"\r\n                    }\r\n                }\r\n            ]\r\n        },\r\n        {\r\n            \"attributeId\": \"68318e727abd44246ed539c1\",\r\n            \"options\": [\r\n                {\r\n                    \"value\": \"Red\",\r\n                    \"meta\": {\r\n                        \"shape\": \"square\"\r\n                    }\r\n                },\r\n                {\r\n                    \"value\": \"Green\",\r\n                    \"meta\": {\r\n                        \"shape\": \"square\"\r\n                    }\r\n                }\r\n            ]\r\n        }\r\n    ]\r\n}",
 									"options": {
 										"raw": {
 											"language": "json"
 										}
 									}
 								},
-								"url": "http://127.0.0.1:3050/api/v1/attributes/variants"
+								"url": "http://127.0.0.1:3050/api/v1/products/generate-skus"
 							},
 							"status": "OK",
 							"code": 200,
@@ -1834,15 +2019,15 @@
 								},
 								{
 									"key": "Content-Length",
-									"value": "397"
+									"value": "137"
 								},
 								{
 									"key": "ETag",
-									"value": "W/\"18d-pon3MGd6eKzn82knIU/p7r14OM0\""
+									"value": "W/\"89-LoEJFZTn+qQVQYwk78NsdSOrcbk\""
 								},
 								{
 									"key": "Date",
-									"value": "Sat, 03 May 2025 04:28:19 GMT"
+									"value": "Sun, 25 May 2025 08:17:16 GMT"
 								},
 								{
 									"key": "Connection",
@@ -1855,7 +2040,7 @@
 							],
 							"cookie": [],
 							"responseTime": null,
-							"body": "{\n    \"data\": [\n        {\n            \"sku\": \"Red-M\",\n            \"data\": [\n                {\n                    \"name\": \"Colors\",\n                    \"value\": \"Red\"\n                },\n                {\n                    \"name\": \"Size\",\n                    \"value\": \"M\"\n                }\n            ]\n        },\n        {\n            \"sku\": \"Red-S\",\n            \"data\": [\n                {\n                    \"name\": \"Colors\",\n                    \"value\": \"Red\"\n                },\n                {\n                    \"name\": \"Size\",\n                    \"value\": \"S\"\n                }\n            ]\n        },\n        {\n            \"sku\": \"Blue-M\",\n            \"data\": [\n                {\n                    \"name\": \"Colors\",\n                    \"value\": \"Blue\"\n                },\n                {\n                    \"name\": \"Size\",\n                    \"value\": \"M\"\n                }\n            ]\n        },\n        {\n            \"sku\": \"Blue-S\",\n            \"data\": [\n                {\n                    \"name\": \"Colors\",\n                    \"value\": \"Blue\"\n                },\n                {\n                    \"name\": \"Size\",\n                    \"value\": \"S\"\n                }\n            ]\n        }\n    ],\n    \"status\": \"Ok\",\n    \"message\": {\n        \"code\": \"Success\"\n    }\n}"
+							"body": "{\n    \"data\": {\n        \"s\": [\n            \"s-red\",\n            \"s-green\"\n        ],\n        \"m\": [\n            \"m-red\",\n            \"m-green\"\n        ]\n    },\n    \"status\": \"Ok\",\n    \"message\": {\n        \"code\": \"Success\",\n        \"msg\": \"SKUs generated successfully\"\n    }\n}"
 						}
 					]
 				},
@@ -2249,7 +2434,66 @@
 						},
 						"url": "{{url}}/api/v1/cart"
 					},
-					"response": []
+					"response": [
+						{
+							"id": "9630a125-9911-4cd9-ba7e-12deb846a74e",
+							"name": "Cart",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"productId\": \"6832cbb14a940c93b1c65d2c\",\r\n    \"quantity\": \"10\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "{{url}}/api/v1/cart"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "325"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"145-pq2y7kk4ue+NDkNaiPCs8MClXII\""
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 25 May 2025 08:00:58 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"responseTime": null,
+							"body": "{\n    \"data\": {\n        \"_id\": \"6832ce3a2a28e0ab7d62eb9e\",\n        \"tenant\": \"67c1ccf2e5d9c78eb5d9f0c0\",\n        \"user\": \"67c1ccf3e5d9c78eb5d9f0c3\",\n        \"product\": \"6832cbb14a940c93b1c65d22\",\n        \"productSku\": \"6832cbb14a940c93b1c65d2c\",\n        \"createdAt\": \"2025-05-25T08:00:58.284Z\",\n        \"quantity\": 10,\n        \"updatedAt\": \"2025-05-25T08:00:58.284Z\"\n    },\n    \"status\": \"Ok\",\n    \"message\": {\n        \"code\": \"Success\"\n    }\n}"
+						}
+					]
 				},
 				{
 					"name": "get cart",

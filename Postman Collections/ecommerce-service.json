@@ -1164,6 +1164,59 @@
 									"cookie": [],
 									"responseTime": null,
 									"body": "{\n    \"data\": {\n        \"_id\": \"68159a826ec384fb2991e331\",\n        \"tenant\": \"68099a3d82e5a7fd20967e7c\",\n        \"title\": \"Sample Product Title\",\n        \"shortDesc\": \"Short description of the product\",\n        \"description\": \"Detailed description of the product\",\n        \"category\": \"6808ea75550f3a69d0bd868d\",\n        \"status\": \"ACTIVE\",\n        \"offerPrice\": 299.99,\n        \"originalPrice\": 499.99,\n        \"totalQuantity\": 100,\n        \"quantity\": 50,\n        \"sku\": \"ABC123XYZ\",\n        \"isPriceVariable\": true,\n        \"isTaxIncluded\": false,\n        \"seo\": {\n            \"title\": \"Sample Product SEO Title\",\n            \"metaTitle\": \"Sample Product Meta Title\",\n            \"metaDesc\": \"Sample product meta description for SEO\",\n            \"urlHandle\": \"sample-product-url-handle\"\n        },\n        \"gallery\": [\n            \"680998da82e5a7fd20967e76\"\n        ],\n        \"productVariants\": [\n            \"68159a826ec384fb2991e333\",\n            \"68159a826ec384fb2991e334\",\n            \"68159a826ec384fb2991e335\",\n            \"68159a826ec384fb2991e336\"\n        ],\n        \"createdAt\": \"2025-05-03T04:24:34.795Z\",\n        \"updatedAt\": \"2025-05-03T04:24:34.931Z\"\n    },\n    \"status\": \"Ok\",\n    \"message\": {\n        \"code\": \"Success\"\n    }\n}"
+								},
+								{
+									"id": "130d3274-a084-4f34-9877-8482db65910c",
+									"name": "getproductById",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": "{{url}}/api/v1/products/6832cbb14a940c93b1c65d22"
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "1614"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"64e-SeNUGPxB9irL4M+SrlmKsqRqxzA\""
+										},
+										{
+											"key": "Set-Cookie",
+											"value": "connect.sid=s%3Ax93G1TLlKF150l6Uaft9ZdCF8kxifw_N.vZ%2FxsCJ3RbPdWnlpRnn3rJg0fyNr3ZYzEsQhOW18yV4; Path=/; HttpOnly"
+										},
+										{
+											"key": "Date",
+											"value": "Sun, 25 May 2025 07:56:23 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"responseTime": null,
+									"body": "{\n    \"data\": {\n        \"_id\": \"6832cbb14a940c93b1c65d2c\",\n        \"title\": \"Product\",\n        \"shortDesc\": \"Short description of the product parth\",\n        \"description\": \"Detailed description of the product\",\n        \"category\": {\n            \"_id\": \"6815ae2aa151198ae0c8efc7\",\n            \"name\": \"Test category\"\n        },\n        \"subCategory\": {\n            \"_id\": \"68287bf81f4d636180526f4e\",\n            \"name\": \"child category 1\"\n        },\n        \"status\": \"ACTIVE\",\n        \"code\": \"BE8XO4\",\n        \"isPriceVariable\": true,\n        \"isTaxIncluded\": false,\n        \"seo\": {\n            \"title\": \"Sample Product SEO Title\",\n            \"metaTitle\": \"Sample Product Meta Title\",\n            \"metaDesc\": \"Sample product meta description for SEO\",\n            \"urlHandle\": \"sample-product-url-handle\"\n        },\n        \"gallery\": [\n            {\n                \"_id\": \"67c7e799b00a7b365fe86f53\",\n                \"url\": \"https://crm-coupon-dev.s3.ap-south-1.amazonaws.com/6d9ae0dc-c7a3-4a33-b276-fee39250b762.png\"\n            }\n        ],\n        \"attributes\": [\n            {\n                \"attributeId\": {\n                    \"_id\": \"68318e5c7abd44246ed539bd\",\n                    \"name\": \"Size\"\n                },\n                \"options\": [\n                    {\n                        \"value\": \"S\",\n                        \"meta\": {\n                            \"shape\": \"square\",\n                            \"label\": \"S\",\n                            \"bgColor\": \"#FFF\"\n                        },\n                        \"_id\": \"6832cbb14a940c93b1c65d28\"\n                    },\n                    {\n                        \"value\": \"M\",\n                        \"meta\": {\n                            \"shape\": \"square\",\n                            \"label\": \"M\",\n                            \"bgColor\": \"#FFF\"\n                        },\n                        \"_id\": \"6832cbb14a940c93b1c65d29\"\n                    }\n                ],\n                \"_id\": \"6832cbb14a940c93b1c65d27\"\n            },\n            {\n                \"attributeId\": {\n                    \"_id\": \"68318e727abd44246ed539c1\",\n                    \"name\": \"Color\"\n                },\n                \"options\": [\n                    {\n                        \"value\": \"Green\",\n                        \"meta\": {\n                            \"shape\": \"circle\",\n                            \"label\": null,\n                            \"bgColor\": \"#228B22\"\n                        },\n                        \"_id\": \"6832cbb14a940c93b1c65d25\"\n                    },\n                    {\n                        \"value\": \"Red\",\n                        \"meta\": {\n                            \"shape\": \"circle\",\n                            \"label\": null,\n                            \"bgColor\": \"#FF0000\"\n                        },\n                        \"_id\": \"6832cbb14a940c93b1c65d26\"\n                    }\n                ],\n                \"_id\": \"6832cbb14a940c93b1c65d24\"\n            }\n        ],\n        \"sku\": \"BE8XO4-s-green\",\n        \"offerPrice\": 40,\n        \"originalPrice\": 90,\n        \"inStock\": true,\n        \"selectedVariant\": {\n            \"68318e5c7abd44246ed539bd\": \"6832cbb14a940c93b1c65d28\",\n            \"68318e727abd44246ed539c1\": \"6832cbb14a940c93b1c65d25\"\n        }\n    },\n    \"status\": \"Ok\",\n    \"message\": {\n        \"code\": \"Success\"\n    }\n}"
 								}
 							]
 						},
@@ -2243,7 +2296,70 @@
 						},
 						"url": "{{url}}/api/v1/order"
 					},
-					"response": []
+					"response": [
+						{
+							"id": "202a22b3-d9af-44e3-83ae-1e22fb15aa03",
+							"name": "Create",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"billingAddressId\": \"682c76b1444c085188a05f3c\",\n    \"shippingAddressId\": \"682c76b1444c085188a05f3c\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "{{url}}/api/v1/order"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "344"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"158-vZL8BONeY/yIvLC8tpOatiFKzqI\""
+								},
+								{
+									"key": "Set-Cookie",
+									"value": "connect.sid=s%3A4FKZhd-isPcmkZlV23liH5mk6LVHVdxe.ITUPrsz%2BjFdyXesVQ8BrPeEDBB0%2FqcxOTw%2BvkB9qKNA; Path=/; HttpOnly"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 25 May 2025 08:08:05 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"responseTime": null,
+							"body": "{\n    \"data\": {\n        \"key\": \"rzp_test_0EQBcjKzUEhMIC\",\n        \"amount\": 4000000,\n        \"currency\": \"INR\",\n        \"order_id\": \"order_QZ5eZqWTUsaVZK\",\n        \"theme\": {\n            \"color\": \"#A78320\"\n        },\n        \"image\": \"https://stage.restthecase.com/static/img/RTC-LOGO.png\",\n        \"callback_url\": \"undefined/payment/process\",\n        \"name\": \"\",\n        \"prefill\": {\n            \"name\": \"\",\n            \"email\": \"\",\n            \"contact\": \"\"\n        }\n    },\n    \"status\": \"Ok\",\n    \"message\": {\n        \"code\": \"Success\"\n    }\n}"
+						}
+					]
 				},
 				{
 					"name": "Status update",

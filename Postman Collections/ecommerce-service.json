@@ -580,7 +580,7 @@
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "{{url}}/api/v1/categories?parentId=6815ae2aa151198ae0c8efc7",
+									"raw": "{{url}}/api/v1/categories",
 									"host": [
 										"{{url}}"
 									],
@@ -592,19 +592,36 @@
 									"query": [
 										{
 											"key": "parentId",
-											"value": "6815ae2aa151198ae0c8efc7"
+											"value": "6815ae2aa151198ae0c8efc7",
+											"disabled": true
 										}
 									]
 								}
 							},
 							"response": [
 								{
-									"id": "ed0d4d27-50f9-48ea-b2c2-d0fd99144141",
+									"id": "0a239e7f-45f0-454e-b009-67299e100543",
 									"name": "getAllCategory",
 									"originalRequest": {
 										"method": "GET",
 										"header": [],
-										"url": "http://127.0.0.1:3050/api/v1/categories"
+										"url": {
+											"raw": "{{url}}/api/v1/categories?parentId=6815ae2aa151198ae0c8efc7",
+											"host": [
+												"{{url}}"
+											],
+											"path": [
+												"api",
+												"v1",
+												"categories"
+											],
+											"query": [
+												{
+													"key": "parentId",
+													"value": "6815ae2aa151198ae0c8efc7"
+												}
+											]
+										}
 									},
 									"status": "OK",
 									"code": 200,
@@ -624,15 +641,15 @@
 										},
 										{
 											"key": "Content-Length",
-											"value": "138"
+											"value": "855"
 										},
 										{
 											"key": "ETag",
-											"value": "W/\"8a-C9MUX1Jif/sYwrhW2PqxQMydmuo\""
+											"value": "W/\"357-iAgofIARaZHMjA5MKRNxjl2odX0\""
 										},
 										{
 											"key": "Date",
-											"value": "Sat, 03 May 2025 04:28:42 GMT"
+											"value": "Sun, 25 May 2025 08:19:01 GMT"
 										},
 										{
 											"key": "Connection",
@@ -645,7 +662,73 @@
 									],
 									"cookie": [],
 									"responseTime": null,
-									"body": "{\n    \"data\": {\n        \"list\": [\n            {\n                \"_id\": \"6814f8df0278fcb889a48c43\",\n                \"name\": \"Cloth\",\n                \"parentId\": null\n            }\n        ],\n        \"total\": 4\n    },\n    \"status\": \"Ok\",\n    \"message\": {\n        \"code\": \"Success\"\n    }\n}"
+									"body": "{\n    \"data\": {\n        \"list\": [\n            {\n                \"_id\": \"68287bf81f4d636180526f4e\",\n                \"name\": \"child category 1\",\n                \"image\": {\n                    \"_id\": \"6815ae2aa151198ae0c8efc5\",\n                    \"url\": \"https://crm-coupon-dev.s3.ap-south-1.amazonaws.com/2df089be-1cdc-4fa8-abe9-65ceb03db1dc.png\"\n                },\n                \"parentId\": \"6815ae2aa151198ae0c8efc7\",\n                \"tax\": 0,\n                \"taxes\": []\n            },\n            {\n                \"_id\": \"68287c061f4d636180526f51\",\n                \"name\": \"child category 2\",\n                \"image\": {\n                    \"_id\": \"6815ae2aa151198ae0c8efc5\",\n                    \"url\": \"https://crm-coupon-dev.s3.ap-south-1.amazonaws.com/2df089be-1cdc-4fa8-abe9-65ceb03db1dc.png\"\n                },\n                \"parentId\": \"6815ae2aa151198ae0c8efc7\",\n                \"tax\": 0,\n                \"taxes\": []\n            },\n            {\n                \"_id\": \"68287c0a1f4d636180526f54\",\n                \"name\": \"child category 3\",\n                \"image\": {\n                    \"_id\": \"6815ae2aa151198ae0c8efc5\",\n                    \"url\": \"https://crm-coupon-dev.s3.ap-south-1.amazonaws.com/2df089be-1cdc-4fa8-abe9-65ceb03db1dc.png\"\n                },\n                \"parentId\": \"6815ae2aa151198ae0c8efc7\",\n                \"tax\": 0,\n                \"taxes\": []\n            }\n        ],\n        \"total\": 3\n    },\n    \"status\": \"Ok\",\n    \"message\": {\n        \"code\": \"Success\"\n    }\n}"
+								},
+								{
+									"id": "012a18b9-7296-44a6-83f7-cd4b5834c2e0",
+									"name": "getAllCategory",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{url}}/api/v1/categories",
+											"host": [
+												"{{url}}"
+											],
+											"path": [
+												"api",
+												"v1",
+												"categories"
+											],
+											"query": [
+												{
+													"key": "parentId",
+													"value": "6815ae2aa151198ae0c8efc7",
+													"disabled": true
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "1525"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"5f5-dF6qv2RpsVW6tiyLWyLjYq+K46M\""
+										},
+										{
+											"key": "Date",
+											"value": "Sun, 25 May 2025 08:19:18 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"responseTime": null,
+									"body": "{\n    \"data\": {\n        \"list\": [\n            {\n                \"_id\": \"6814782945124ddfb1322a7f\",\n                \"name\": \"Test categoriess\",\n                \"image\": null,\n                \"parentId\": null,\n                \"tax\": 0\n            },\n            {\n                \"_id\": \"6815ae2aa151198ae0c8efc7\",\n                \"name\": \"Test category\",\n                \"image\": {\n                    \"_id\": \"6815ae2aa151198ae0c8efc5\",\n                    \"url\": \"https://crm-coupon-dev.s3.ap-south-1.amazonaws.com/2df089be-1cdc-4fa8-abe9-65ceb03db1dc.png\"\n                },\n                \"parentId\": null\n            },\n            {\n                \"_id\": \"68286eb1f847296ddbd5e2b2\",\n                \"name\": \"new new\",\n                \"image\": {\n                    \"_id\": \"68286eb1f847296ddbd5e2b0\",\n                    \"url\": \"https://crm-coupon-dev.s3.ap-south-1.amazonaws.com/dc6a1abd-2022-4dbb-b5d4-7516f0be8f60.png\"\n                },\n                \"parentId\": null,\n                \"tax\": 0,\n                \"taxes\": []\n            },\n            {\n                \"_id\": \"6828ed0cdc8d49d66b707100\",\n                \"name\": \"dds\",\n                \"image\": {\n                    \"_id\": \"6828ed0cdc8d49d66b7070fe\",\n                    \"url\": \"https://crm-coupon-dev.s3.ap-south-1.amazonaws.com/29cc2fb6-7482-41bd-b326-c03977f73b4a.png\"\n                },\n                \"parentId\": null,\n                \"tax\": 0,\n                \"taxes\": []\n            },\n            {\n                \"_id\": \"6828ed1ddc8d49d66b707107\",\n                \"name\": \"mmmm\",\n                \"image\": {\n                    \"_id\": \"6828ed1ddc8d49d66b707105\",\n                    \"url\": \"https://crm-coupon-dev.s3.ap-south-1.amazonaws.com/572ff05a-f4eb-46b2-bc01-530f1263afa8.png\"\n                },\n                \"parentId\": null,\n                \"tax\": 0,\n                \"taxes\": []\n            },\n            {\n                \"_id\": \"6828ed2fdc8d49d66b70710e\",\n                \"name\": \"mmm\",\n                \"image\": {\n                    \"_id\": \"6828ed2fdc8d49d66b70710c\",\n                    \"url\": \"https://crm-coupon-dev.s3.ap-south-1.amazonaws.com/054984b0-3609-425f-9685-a50601ebaf48.png\"\n                },\n                \"parentId\": null,\n                \"tax\": 0,\n                \"taxes\": []\n            },\n            {\n                \"_id\": \"6831af31d213fd2a06110dac\",\n                \"name\": \"Tshirt\",\n                \"image\": {\n                    \"_id\": \"6831af31d213fd2a06110daa\",\n                    \"url\": \"https://crm-coupon-dev.s3.ap-south-1.amazonaws.com/91aaee17-4488-4c11-a472-7e80716a32fc.jpg\"\n                },\n                \"parentId\": null,\n                \"tax\": 0,\n                \"taxes\": []\n            }\n        ],\n        \"total\": 7\n    },\n    \"status\": \"Ok\",\n    \"message\": {\n        \"code\": \"Success\"\n    }\n}"
 								}
 							]
 						},
@@ -2640,10 +2723,67 @@
 						"disableBodyPruning": true
 					},
 					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "{{token}}"
+							}
+						},
 						"method": "GET",
-						"header": []
+						"header": [],
+						"url": "{{url}}/api/v1/order"
 					},
-					"response": []
+					"response": [
+						{
+							"id": "6d5f3758-0f95-4051-a51d-55652c9c0341",
+							"name": "get order list",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": "{{url}}/api/v1/order"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "259"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"103-W/srlWDb/2iHq3qPz7rsXRhT1CM\""
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 25 May 2025 08:20:58 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"responseTime": null,
+							"body": "{\n    \"data\": {\n        \"list\": [\n            {\n                \"_id\": \"6832cfdffd4271aaf5f2833c\",\n                \"invoice\": \"INV-1748160463\",\n                \"product\": {\n                    \"_id\": \"6832cbb14a940c93b1c65d22\",\n                    \"title\": \"Product\"\n                },\n                \"quantity\": 10,\n                \"price\": 40,\n                \"totalAmount\": 400,\n                \"status\": \"PENDING\"\n            }\n        ],\n        \"total\": 0\n    },\n    \"status\": \"Ok\",\n    \"message\": {\n        \"code\": \"Success\"\n    }\n}"
+						}
+					]
 				},
 				{
 					"name": "order details",
@@ -2652,11 +2792,67 @@
 						"disableBodyPruning": true
 					},
 					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "{{token}}"
+							}
+						},
 						"method": "GET",
 						"header": [],
-						"url": "{{url}}/api/v1/order/682c882fb9514cd15b24546a"
+						"url": "{{url}}/api/v1/order/6832cfdffd4271aaf5f2833c"
 					},
-					"response": []
+					"response": [
+						{
+							"id": "6841f69a-b0ef-4b09-8aa0-e618ba06d1dd",
+							"name": "order details",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": "{{url}}/api/v1/order/6832cfdffd4271aaf5f2833c"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "2815"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"aff-sjUL778joBbC8brw/YOPgX29tVA\""
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 25 May 2025 08:21:26 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"responseTime": null,
+							"body": "{\n    \"data\": {\n        \"_id\": \"6832cfdffd4271aaf5f2833c\",\n        \"tenant\": \"67c1ccf2e5d9c78eb5d9f0c0\",\n        \"order\": {\n            \"_id\": \"6832cfcffd4271aaf5f28339\",\n            \"addedBy\": \"67c1ccf3e5d9c78eb5d9f0c3\",\n            \"subTotal\": 400,\n            \"totalAmount\": 400,\n            \"receipt\": \"$2b$05$BjOEulXqJhCe8d3BXs1L2a3S4\",\n            \"razorPayOrderId\": \"order_QZ5eZqWTUsaVZK\",\n            \"paymentResponses\": [],\n            \"paymentStatus\": \"PENDING\",\n            \"tax\": 0,\n            \"billingAddress\": {\n                \"_id\": \"682c76b1444c085188a05f3c\",\n                \"fullname\": \"John Doe\",\n                \"phone\": \"9876543210\",\n                \"line1\": \"123 Main Street\",\n                \"line2\": \"Apt 4B\",\n                \"nearby\": \"Near City Park\",\n                \"city\": \"New York\",\n                \"pincode\": \"10001\",\n                \"state\": \"NY\",\n                \"addressType\": \"Shipping\",\n                \"tag\": \"Work\"\n            },\n            \"shippingAddress\": {\n                \"_id\": \"682c76b1444c085188a05f3c\",\n                \"fullname\": \"John Doe\",\n                \"phone\": \"9876543210\",\n                \"line1\": \"123 Main Street\",\n                \"line2\": \"Apt 4B\",\n                \"nearby\": \"Near City Park\",\n                \"city\": \"New York\",\n                \"pincode\": \"10001\",\n                \"state\": \"NY\",\n                \"addressType\": \"Shipping\",\n                \"tag\": \"Work\"\n            },\n            \"createdAt\": \"2025-05-25T08:07:58.472Z\",\n            \"updatedAt\": \"2025-05-25T08:07:58.472Z\"\n        },\n        \"invoice\": \"INV-1748160463\",\n        \"product\": {\n            \"_id\": \"6832cbb14a940c93b1c65d22\",\n            \"tenant\": \"67c1ccf2e5d9c78eb5d9f0c0\",\n            \"title\": \"Product\",\n            \"shortDesc\": \"Short description of the product parth\",\n            \"description\": \"Detailed description of the product\",\n            \"category\": \"6815ae2aa151198ae0c8efc7\",\n            \"subCategory\": \"68287bf81f4d636180526f4e\",\n            \"status\": \"ACTIVE\",\n            \"minPrice\": {\n                \"originalPrice\": 90,\n                \"offerPrice\": 40\n            },\n            \"maxPrice\": {\n                \"originalPrice\": 499.99,\n                \"offerPrice\": 299.99\n            },\n            \"code\": \"BE8XO4\",\n            \"isPriceVariable\": true,\n            \"isTaxIncluded\": false,\n            \"seo\": {\n                \"title\": \"Sample Product SEO Title\",\n                \"metaTitle\": \"Sample Product Meta Title\",\n                \"metaDesc\": \"Sample product meta description for SEO\",\n                \"urlHandle\": \"sample-product-url-handle\"\n            },\n            \"gallery\": [\n                {\n                    \"_id\": \"67c7e799b00a7b365fe86f53\",\n                    \"url\": \"https://crm-coupon-dev.s3.ap-south-1.amazonaws.com/6d9ae0dc-c7a3-4a33-b276-fee39250b762.png\"\n                }\n            ],\n            \"attributes\": [\n                {\n                    \"attributeId\": \"68318e727abd44246ed539c1\",\n                    \"options\": [\n                        {\n                            \"value\": \"Green\",\n                            \"meta\": {\n                                \"shape\": \"circle\",\n                                \"label\": null,\n                                \"bgColor\": \"#228B22\"\n                            },\n                            \"_id\": \"6832cbb14a940c93b1c65d25\"\n                        },\n                        {\n                            \"value\": \"Red\",\n                            \"meta\": {\n                                \"shape\": \"circle\",\n                                \"label\": null,\n                                \"bgColor\": \"#FF0000\"\n                            },\n                            \"_id\": \"6832cbb14a940c93b1c65d26\"\n                        }\n                    ],\n                    \"_id\": \"6832cbb14a940c93b1c65d24\"\n                },\n                {\n                    \"attributeId\": \"68318e5c7abd44246ed539bd\",\n                    \"options\": [\n                        {\n                            \"value\": \"S\",\n                            \"meta\": {\n                                \"shape\": \"square\",\n                                \"label\": \"S\",\n                                \"bgColor\": \"#FFF\"\n                            },\n                            \"_id\": \"6832cbb14a940c93b1c65d28\"\n                        },\n                        {\n                            \"value\": \"M\",\n                            \"meta\": {\n                                \"shape\": \"square\",\n                                \"label\": \"M\",\n                                \"bgColor\": \"#FFF\"\n                            },\n                            \"_id\": \"6832cbb14a940c93b1c65d29\"\n                        }\n                    ],\n                    \"_id\": \"6832cbb14a940c93b1c65d27\"\n                }\n            ],\n            \"productVariants\": [\n                \"6832cbb14a940c93b1c65d2b\",\n                \"6832cbb14a940c93b1c65d2c\",\n                \"6832cbb14a940c93b1c65d2d\",\n                \"6832cbb14a940c93b1c65d2e\"\n            ],\n            \"featured\": true,\n            \"createdAt\": \"2025-05-25T07:50:09.473Z\",\n            \"updatedAt\": \"2025-05-25T07:50:09.597Z\"\n        },\n        \"sku\": \"BE8XO4-s-green\",\n        \"quantity\": 10,\n        \"price\": 40,\n        \"subTotal\": 400,\n        \"totalAmount\": 400,\n        \"status\": \"PENDING\",\n        \"tax\": [],\n        \"statusHistory\": [],\n        \"createdAt\": \"2025-05-25T08:07:59.235Z\",\n        \"updatedAt\": \"2025-05-25T08:07:59.235Z\"\n    },\n    \"status\": \"Ok\",\n    \"message\": {\n        \"code\": \"Success\"\n    }\n}"
+						}
+					]
 				}
 			],
 			"id": "ec2fd5d2-cbda-4b09-99d0-f91f326e8d9d"

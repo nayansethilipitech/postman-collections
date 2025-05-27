@@ -1428,6 +1428,91 @@
 									"body": "{\n    \"data\": {\n        \"list\": [\n            {\n                \"category\": {\n                    \"_id\": \"6814782945124ddfb1322a7f\",\n                    \"name\": \"Test categoriess\",\n                    \"image\": null,\n                    \"subcategories\": []\n                },\n                \"products\": []\n            },\n            {\n                \"category\": {\n                    \"_id\": \"6815ae2aa151198ae0c8efc7\",\n                    \"name\": \"Test category\",\n                    \"image\": {\n                        \"_id\": \"6815ae2aa151198ae0c8efc5\",\n                        \"url\": \"https://crm-coupon-dev.s3.ap-south-1.amazonaws.com/2df089be-1cdc-4fa8-abe9-65ceb03db1dc.png\"\n                    },\n                    \"subcategories\": [\n                        {\n                            \"_id\": \"68287bf81f4d636180526f4e\",\n                            \"name\": \"child category 1\",\n                            \"image\": {\n                                \"_id\": \"6815ae2aa151198ae0c8efc5\",\n                                \"url\": \"https://crm-coupon-dev.s3.ap-south-1.amazonaws.com/2df089be-1cdc-4fa8-abe9-65ceb03db1dc.png\"\n                            }\n                        },\n                        {\n                            \"_id\": \"68287c061f4d636180526f51\",\n                            \"name\": \"child category 2\",\n                            \"image\": {\n                                \"_id\": \"6815ae2aa151198ae0c8efc5\",\n                                \"url\": \"https://crm-coupon-dev.s3.ap-south-1.amazonaws.com/2df089be-1cdc-4fa8-abe9-65ceb03db1dc.png\"\n                            }\n                        },\n                        {\n                            \"_id\": \"68287c0a1f4d636180526f54\",\n                            \"name\": \"child category 3\",\n                            \"image\": {\n                                \"_id\": \"6815ae2aa151198ae0c8efc5\",\n                                \"url\": \"https://crm-coupon-dev.s3.ap-south-1.amazonaws.com/2df089be-1cdc-4fa8-abe9-65ceb03db1dc.png\"\n                            }\n                        }\n                    ]\n                },\n                \"products\": [\n                    {\n                        \"_id\": \"6832cafe53c303fb6d26d5f4\",\n                        \"title\": \"Product\",\n                        \"minPrice\": {\n                            \"originalPrice\": 90,\n                            \"offerPrice\": 40\n                        },\n                        \"gallery\": [],\n                        \"featured\": true\n                    },\n                    {\n                        \"_id\": \"6832cb0153c303fb6d26d609\",\n                        \"title\": \"Product\",\n                        \"minPrice\": {\n                            \"originalPrice\": 90,\n                            \"offerPrice\": 40\n                        },\n                        \"gallery\": [],\n                        \"featured\": true\n                    },\n                    {\n                        \"_id\": \"6832cb0253c303fb6d26d61e\",\n                        \"title\": \"Product\",\n                        \"minPrice\": {\n                            \"originalPrice\": 90,\n                            \"offerPrice\": 40\n                        },\n                        \"gallery\": [],\n                        \"featured\": true\n                    },\n                    {\n                        \"_id\": \"6832cb0453c303fb6d26d633\",\n                        \"title\": \"Product\",\n                        \"minPrice\": {\n                            \"originalPrice\": 90,\n                            \"offerPrice\": 40\n                        },\n                        \"gallery\": [],\n                        \"featured\": true\n                    },\n                    {\n                        \"_id\": \"6832cbb14a940c93b1c65d22\",\n                        \"title\": \"Product\",\n                        \"minPrice\": {\n                            \"originalPrice\": 90,\n                            \"offerPrice\": 40\n                        },\n                        \"gallery\": [\n                            {\n                                \"_id\": \"67c7e799b00a7b365fe86f53\",\n                                \"url\": \"https://crm-coupon-dev.s3.ap-south-1.amazonaws.com/6d9ae0dc-c7a3-4a33-b276-fee39250b762.png\"\n                            }\n                        ],\n                        \"featured\": true\n                    }\n                ]\n            },\n            {\n                \"category\": {\n                    \"_id\": \"68286eb1f847296ddbd5e2b2\",\n                    \"name\": \"new new\",\n                    \"image\": {\n                        \"_id\": \"68286eb1f847296ddbd5e2b0\",\n                        \"url\": \"https://crm-coupon-dev.s3.ap-south-1.amazonaws.com/dc6a1abd-2022-4dbb-b5d4-7516f0be8f60.png\"\n                    },\n                    \"subcategories\": []\n                },\n                \"products\": []\n            },\n            {\n                \"category\": {\n                    \"_id\": \"6828ed0cdc8d49d66b707100\",\n                    \"name\": \"dds\",\n                    \"image\": {\n                        \"_id\": \"6828ed0cdc8d49d66b7070fe\",\n                        \"url\": \"https://crm-coupon-dev.s3.ap-south-1.amazonaws.com/29cc2fb6-7482-41bd-b326-c03977f73b4a.png\"\n                    },\n                    \"subcategories\": []\n                },\n                \"products\": []\n            },\n            {\n                \"category\": {\n                    \"_id\": \"6828ed1ddc8d49d66b707107\",\n                    \"name\": \"mmmm\",\n                    \"image\": {\n                        \"_id\": \"6828ed1ddc8d49d66b707105\",\n                        \"url\": \"https://crm-coupon-dev.s3.ap-south-1.amazonaws.com/572ff05a-f4eb-46b2-bc01-530f1263afa8.png\"\n                    },\n                    \"subcategories\": []\n                },\n                \"products\": []\n            },\n            {\n                \"category\": {\n                    \"_id\": \"6828ed2fdc8d49d66b70710e\",\n                    \"name\": \"mmm\",\n                    \"image\": {\n                        \"_id\": \"6828ed2fdc8d49d66b70710c\",\n                        \"url\": \"https://crm-coupon-dev.s3.ap-south-1.amazonaws.com/054984b0-3609-425f-9685-a50601ebaf48.png\"\n                    },\n                    \"subcategories\": []\n                },\n                \"products\": []\n            },\n            {\n                \"category\": {\n                    \"_id\": \"6831af31d213fd2a06110dac\",\n                    \"name\": \"Tshirt\",\n                    \"image\": {\n                        \"_id\": \"6831af31d213fd2a06110daa\",\n                        \"url\": \"https://crm-coupon-dev.s3.ap-south-1.amazonaws.com/91aaee17-4488-4c11-a472-7e80716a32fc.jpg\"\n                    },\n                    \"subcategories\": []\n                },\n                \"products\": []\n            }\n        ],\n        \"total\": 10\n    },\n    \"status\": \"Ok\",\n    \"message\": {\n        \"code\": \"Success\",\n        \"msg\": \"Featured products retrieved successfully\"\n    }\n}"
 								}
 							]
+						},
+						{
+							"name": "get product variant data",
+							"id": "8ea19422-b7a6-4ba7-9833-e8eb4d4a34e0",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"productId\": \"6832cbb14a940c93b1c65d22\",\n    \"attributes\": [\n        {\n            \"attributeId\": \"68318e5c7abd44246ed539bd\",\n            \"optionId\": \"6832cbb14a940c93b1c65d28\"\n        },\n        {\n            \"attributeId\": \"68318e727abd44246ed539c1\",\n            \"optionId\": \"6832cbb14a940c93b1c65d25\"\n        }\n    ]\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "{{url}}/api/v1/products/variant"
+							},
+							"response": [
+								{
+									"id": "dd45ac4e-f22d-4a0e-9113-4d5ebc772d32",
+									"name": "get product variant data",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"productId\": \"6832cbb14a940c93b1c65d22\",\n    \"attributes\": [\n        {\n            \"attributeId\": \"68318e5c7abd44246ed539bd\",\n            \"optionId\": \"6832cbb14a940c93b1c65d28\"\n        },\n        {\n            \"attributeId\": \"68318e727abd44246ed539c1\",\n            \"optionId\": \"6832cbb14a940c93b1c65d25\"\n        }\n    ]\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": "{{url}}/api/v1/products/variant"
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "1707"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"6ab-ScFjyC+85GW7v7GTf/AnZOKAGq0\""
+										},
+										{
+											"key": "Set-Cookie",
+											"value": "connect.sid=s%3AR6jLiuL_X63QkTKj86f_-VWWWtHR-PZk.C3qAzGSCKy0jFDQ8Ou3zpGZZK%2BLGGdJ3ZzdVuVt%2BnqY; Path=/; HttpOnly"
+										},
+										{
+											"key": "Date",
+											"value": "Tue, 27 May 2025 04:04:14 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"responseTime": null,
+									"body": "{\n    \"data\": {\n        \"_id\": \"6832cbb14a940c93b1c65d2c\",\n        \"title\": \"Product\",\n        \"shortDesc\": \"Short description of the product parth\",\n        \"description\": \"Detailed description of the product\",\n        \"category\": {\n            \"_id\": \"6815ae2aa151198ae0c8efc7\",\n            \"name\": \"Test category\"\n        },\n        \"subCategory\": {\n            \"_id\": \"68287bf81f4d636180526f4e\",\n            \"name\": \"child category 1\"\n        },\n        \"status\": \"ACTIVE\",\n        \"code\": \"BE8XO4\",\n        \"isPriceVariable\": true,\n        \"isTaxIncluded\": false,\n        \"seo\": {\n            \"title\": \"Sample Product SEO Title\",\n            \"metaTitle\": \"Sample Product Meta Title\",\n            \"metaDesc\": \"Sample product meta description for SEO\",\n            \"urlHandle\": \"sample-product-url-handle\"\n        },\n        \"gallery\": [\n            {\n                \"_id\": \"67c7e799b00a7b365fe86f53\",\n                \"url\": \"https://crm-coupon-dev.s3.ap-south-1.amazonaws.com/6d9ae0dc-c7a3-4a33-b276-fee39250b762.png\"\n            }\n        ],\n        \"attributes\": [\n            {\n                \"attributeId\": {\n                    \"_id\": \"68318e727abd44246ed539c1\",\n                    \"name\": \"Color\"\n                },\n                \"options\": [\n                    {\n                        \"value\": \"Green\",\n                        \"meta\": {\n                            \"shape\": \"circle\",\n                            \"label\": null,\n                            \"bgColor\": \"#228B22\"\n                        },\n                        \"_id\": \"6832cbb14a940c93b1c65d25\"\n                    },\n                    {\n                        \"value\": \"Red\",\n                        \"meta\": {\n                            \"shape\": \"circle\",\n                            \"label\": null,\n                            \"bgColor\": \"#FF0000\"\n                        },\n                        \"_id\": \"6832cbb14a940c93b1c65d26\"\n                    }\n                ],\n                \"_id\": \"6832cbb14a940c93b1c65d24\"\n            },\n            {\n                \"attributeId\": {\n                    \"_id\": \"68318e5c7abd44246ed539bd\",\n                    \"name\": \"Size\"\n                },\n                \"options\": [\n                    {\n                        \"value\": \"S\",\n                        \"meta\": {\n                            \"shape\": \"square\",\n                            \"label\": \"S\",\n                            \"bgColor\": \"#FFF\"\n                        },\n                        \"_id\": \"6832cbb14a940c93b1c65d28\"\n                    },\n                    {\n                        \"value\": \"M\",\n                        \"meta\": {\n                            \"shape\": \"square\",\n                            \"label\": \"M\",\n                            \"bgColor\": \"#FFF\"\n                        },\n                        \"_id\": \"6832cbb14a940c93b1c65d29\"\n                    }\n                ],\n                \"_id\": \"6832cbb14a940c93b1c65d27\"\n            }\n        ],\n        \"sku\": \"BE8XO4-s-green\",\n        \"offerPrice\": 40,\n        \"originalPrice\": 90,\n        \"inStock\": true,\n        \"productId\": \"6832cbb14a940c93b1c65d22\",\n        \"selectedVariant\": [\n            {\n                \"attributeId\": \"68318e5c7abd44246ed539bd\",\n                \"optionId\": \"6832cbb14a940c93b1c65d28\"\n            },\n            {\n                \"attributeId\": \"68318e727abd44246ed539c1\",\n                \"optionId\": \"6832cbb14a940c93b1c65d25\"\n            }\n        ]\n    },\n    \"status\": \"Ok\",\n    \"message\": {\n        \"code\": \"Success\"\n    }\n}"
+								}
+							]
 						}
 					],
 					"id": "6c2d645d-d576-488d-be59-491ba6430e2f"
@@ -2312,28 +2397,6 @@
 							"body": "{\n    \"data\": [\n        {\n            \"sku\": \"Red-M\",\n            \"data\": [\n                {\n                    \"name\": \"Colors\",\n                    \"value\": \"Red\"\n                },\n                {\n                    \"name\": \"Size\",\n                    \"value\": \"M\"\n                }\n            ]\n        },\n        {\n            \"sku\": \"Red-S\",\n            \"data\": [\n                {\n                    \"name\": \"Colors\",\n                    \"value\": \"Red\"\n                },\n                {\n                    \"name\": \"Size\",\n                    \"value\": \"S\"\n                }\n            ]\n        },\n        {\n            \"sku\": \"Blue-M\",\n            \"data\": [\n                {\n                    \"name\": \"Colors\",\n                    \"value\": \"Blue\"\n                },\n                {\n                    \"name\": \"Size\",\n                    \"value\": \"M\"\n                }\n            ]\n        },\n        {\n            \"sku\": \"Blue-S\",\n            \"data\": [\n                {\n                    \"name\": \"Colors\",\n                    \"value\": \"Blue\"\n                },\n                {\n                    \"name\": \"Size\",\n                    \"value\": \"S\"\n                }\n            ]\n        }\n    ],\n    \"status\": \"Ok\",\n    \"message\": {\n        \"code\": \"Success\"\n    }\n}"
 						}
 					]
-				},
-				{
-					"name": "get product variant data",
-					"id": "8ea19422-b7a6-4ba7-9833-e8eb4d4a34e0",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"method": "GET",
-						"header": [],
-						"body": {
-							"mode": "raw",
-							"raw": "{\n    \"productId\": \"682f118263bffbf6d667c654\",\n    \"attributes\": [\n        {\n            \"attributeId\": \"66526e54f5a3b86e0f5f2c31\",\n            \"optionId\": \"682f118263bffbf6d667c656\"\n        },\n        {\n            \"attributeId\": \"66526e54f5a3b86e0f5f2c32\",\n            \"optionId\": \"682f118263bffbf6d667c659\"\n        }\n    ]\n}",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
-						},
-						"url": "{{url}}/api/v1/products/variant"
-					},
-					"response": []
 				}
 			],
 			"id": "99d9610f-d0b8-4b38-9ef7-f1e53f500ff8"
@@ -2585,11 +2648,71 @@
 						"disableBodyPruning": true
 					},
 					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "{{token}}"
+							}
+						},
 						"method": "GET",
 						"header": [],
 						"url": "{{url}}/api/v1/cart"
 					},
-					"response": []
+					"response": [
+						{
+							"id": "ec40d495-2fe9-4004-9c3b-124a17dd2af0",
+							"name": "New Request",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": "{{url}}/api/v1/cart"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "453"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"1c5-Y9gr/gq2Uj+Z5+cjmq/aEVf3B5k\""
+								},
+								{
+									"key": "Set-Cookie",
+									"value": "connect.sid=s%3A7kbxW4-4ey_cd7j-wLGCmaJodhALIYG5.VdKwVhKndXdcCNJU8Qr4cyuZ%2F7H2Md9R8IwvWZLZ1t4; Path=/; HttpOnly"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 27 May 2025 03:59:51 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"responseTime": null,
+							"body": "{\n    \"data\": {\n        \"items\": [\n            {\n                \"_id\": \"683495582a28e0ab7d98716d\",\n                \"productId\": \"6832cbb14a940c93b1c65d22\",\n                \"productVariantId\": \"6832cbb14a940c93b1c65d2c\",\n                \"sku\": \"BE8XO4-s-green\",\n                \"image\": \"https://crm-coupon-dev.s3.ap-south-1.amazonaws.com/6d9ae0dc-c7a3-4a33-b276-fee39250b762.png\",\n                \"quantity\": 10,\n                \"totalOriginalPrice\": 900,\n                \"totalOfferPrice\": 400,\n                \"title\": \"Product\"\n            }\n        ],\n        \"subtotal\": 900,\n        \"totalDiscount\": 500,\n        \"totalTax\": 0,\n        \"totalAmount\": 500\n    },\n    \"status\": \"Ok\",\n    \"message\": {\n        \"code\": \"Success\"\n    }\n}"
+						}
+					]
 				}
 			],
 			"id": "6328f793-ec71-4ebe-be2e-2bcf48e2a716"

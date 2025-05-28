@@ -2984,6 +2984,141 @@
 						"disableBodyPruning": true
 					},
 					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "{{token}}"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/api/v1/order/me",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"order",
+								"me"
+							],
+							"query": [
+								{
+									"key": "status",
+									"value": "DELIVERED",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "page",
+									"value": "1",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "pageSize",
+									"value": "5",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"id": "70f7e00a-97f7-40b1-9b70-e9bbb423da09",
+							"name": "New Request",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{url}}/api/v1/order/me",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"order",
+										"me"
+									],
+									"query": [
+										{
+											"key": "status",
+											"value": "DELIVERED",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "page",
+											"value": "1",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "pageSize",
+											"value": "5",
+											"type": "text",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "315"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"13b-w9qpQ5qUDsYGD1OYOj9UgCVzjNQ\""
+								},
+								{
+									"key": "Set-Cookie",
+									"value": "connect.sid=s%3Aa4Gx-EYkdfwZSUMV7eovaLbPC2BuXIRD.ISB0kfyEXIL%2FhueAkU4DcjFf4NJqb8grYsH0oxXW214; Path=/; HttpOnly"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 28 May 2025 16:48:50 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"responseTime": null,
+							"body": "{\n    \"data\": {\n        \"list\": [\n            {\n                \"_id\": \"6832cfdffd4271aaf5f2833c\",\n                \"invoice\": \"INV-1748160463\",\n                \"quantity\": 10,\n                \"totalAmount\": 400,\n                \"status\": \"DELIVERED\",\n                \"gallery\": \"https://crm-coupon-dev.s3.ap-south-1.amazonaws.com/6d9ae0dc-c7a3-4a33-b276-fee39250b762.png\",\n                \"productName\": \"Product\"\n            }\n        ],\n        \"total\": 1\n    },\n    \"status\": \"Ok\",\n    \"message\": {\n        \"code\": \"Success\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "my order details",
+					"id": "af0cb439-aa9f-41c9-b3c0-dc2f154b8bca",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
 						"method": "GET",
 						"header": []
 					},

@@ -3353,10 +3353,67 @@
 						"disableBodyPruning": true
 					},
 					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "{{token}}"
+							}
+						},
 						"method": "GET",
-						"header": []
+						"header": [],
+						"url": "{{url}}/api/v1/user/customer/681f6ddbbe44aa745a34f8f5/order-items"
 					},
-					"response": []
+					"response": [
+						{
+							"id": "6b450ede-84f9-444a-a02f-61c61107961e",
+							"name": "New Request",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": "{{url}}/api/v1/user/customer/681f6ddbbe44aa745a34f8f5/order-items"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "1252"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"4e4-y5jtLOvZOkQJvw5JIk9pG9x/tYg\""
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 28 May 2025 17:25:47 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"responseTime": null,
+							"body": "{\n    \"data\": {\n        \"orderItems\": [\n            {\n                \"_id\": \"68360121fd4a124b73608598\",\n                \"tenant\": \"67c1ccf2e5d9c78eb5d9f0c0\",\n                \"invoice\": \"INV-1748369696\",\n                \"product\": \"6832cbb14a940c93b1c65d22\",\n                \"totalAmount\": 240,\n                \"createdAt\": \"2025-05-27T18:14:57.832Z\"\n            },\n            {\n                \"_id\": \"683602fefd4a124b736085b5\",\n                \"tenant\": \"67c1ccf2e5d9c78eb5d9f0c0\",\n                \"invoice\": \"INV-1748370173\",\n                \"product\": \"6832cbb14a940c93b1c65d22\",\n                \"totalAmount\": 200,\n                \"createdAt\": \"2025-05-27T18:22:54.010Z\"\n            },\n            {\n                \"_id\": \"6836038afd4a124b736085d1\",\n                \"tenant\": \"67c1ccf2e5d9c78eb5d9f0c0\",\n                \"invoice\": \"INV-1748370314\",\n                \"product\": \"6832cbb14a940c93b1c65d22\",\n                \"totalAmount\": 40,\n                \"createdAt\": \"2025-05-27T18:25:14.473Z\"\n            },\n            {\n                \"_id\": \"683742f4c66b6ddc470d03a4\",\n                \"tenant\": \"67c1ccf2e5d9c78eb5d9f0c0\",\n                \"invoice\": \"INV-1748452083\",\n                \"product\": \"6832cbb14a940c93b1c65d22\",\n                \"totalAmount\": 400,\n                \"createdAt\": \"2025-05-28T17:08:04.941Z\"\n            },\n            {\n                \"_id\": \"68374310c66b6ddc470d03ba\",\n                \"tenant\": \"67c1ccf2e5d9c78eb5d9f0c0\",\n                \"invoice\": \"INV-1748452112\",\n                \"product\": \"6832cbb14a940c93b1c65d22\",\n                \"totalAmount\": 400,\n                \"createdAt\": \"2025-05-28T17:08:32.950Z\"\n            },\n            {\n                \"_id\": \"6837431fc66b6ddc470d03c8\",\n                \"tenant\": \"67c1ccf2e5d9c78eb5d9f0c0\",\n                \"invoice\": \"INV-1748452127\",\n                \"product\": \"6832cbb14a940c93b1c65d22\",\n                \"totalAmount\": 400,\n                \"createdAt\": \"2025-05-28T17:08:47.713Z\"\n            }\n        ],\n        \"total\": 6,\n        \"page\": 1,\n        \"pageSize\": 10\n    },\n    \"status\": \"Ok\",\n    \"message\": {\n        \"code\": \"Success\"\n    }\n}"
+						}
+					]
 				}
 			],
 			"id": "074cef34-2b25-4a75-80a6-b0c79c626519"

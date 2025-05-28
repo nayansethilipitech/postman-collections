@@ -2397,6 +2397,96 @@
 							"body": "{\n    \"data\": [\n        {\n            \"sku\": \"Red-M\",\n            \"data\": [\n                {\n                    \"name\": \"Colors\",\n                    \"value\": \"Red\"\n                },\n                {\n                    \"name\": \"Size\",\n                    \"value\": \"M\"\n                }\n            ]\n        },\n        {\n            \"sku\": \"Red-S\",\n            \"data\": [\n                {\n                    \"name\": \"Colors\",\n                    \"value\": \"Red\"\n                },\n                {\n                    \"name\": \"Size\",\n                    \"value\": \"S\"\n                }\n            ]\n        },\n        {\n            \"sku\": \"Blue-M\",\n            \"data\": [\n                {\n                    \"name\": \"Colors\",\n                    \"value\": \"Blue\"\n                },\n                {\n                    \"name\": \"Size\",\n                    \"value\": \"M\"\n                }\n            ]\n        },\n        {\n            \"sku\": \"Blue-S\",\n            \"data\": [\n                {\n                    \"name\": \"Colors\",\n                    \"value\": \"Blue\"\n                },\n                {\n                    \"name\": \"Size\",\n                    \"value\": \"S\"\n                }\n            ]\n        }\n    ],\n    \"status\": \"Ok\",\n    \"message\": {\n        \"code\": \"Success\"\n    }\n}"
 						}
 					]
+				},
+				{
+					"name": "product status update",
+					"id": "a6bdcd49-e6ae-44dd-a263-8141c44e4673",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "{{token}}"
+							}
+						},
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json, text/plain, */*"
+							},
+							{
+								"key": "Accept-Language",
+								"value": "en-US,en;q=0.5"
+							},
+							{
+								"key": "Connection",
+								"value": "keep-alive"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Origin",
+								"value": "http://localhost:5173"
+							},
+							{
+								"key": "Referer",
+								"value": "http://localhost:5173/"
+							},
+							{
+								"key": "Sec-Fetch-Dest",
+								"value": "empty"
+							},
+							{
+								"key": "Sec-Fetch-Mode",
+								"value": "cors"
+							},
+							{
+								"key": "Sec-Fetch-Site",
+								"value": "cross-site"
+							},
+							{
+								"key": "Sec-GPC",
+								"value": "1"
+							},
+							{
+								"key": "User-Agent",
+								"value": "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Mobile Safari/537.36"
+							},
+							{
+								"key": "authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7Il9pZCI6IjY3YzFjY2YzZTVkOWM3OGViNWQ5ZjBjMyIsImVtYWlsIjoiZG9taW5vc0BnbWFpbC5jb20ifSwidGltZXN0YW1wIjoiMjAyNS0wNS0yNVQxNzoyODoyMS4yMDZaIiwiaWF0IjoxNzQ4MTk0MTAxLCJleHAiOjE3NDg0NTMzMDEsImF1ZCI6Imdsb2JhbCJ9.kNksL-FjZPljrWeW8HAfxdx8kTs7UdfhYf0N5vDwspc",
+								"disabled": true
+							},
+							{
+								"key": "sec-ch-ua",
+								"value": "\"Chromium\";v=\"136\", \"Brave\";v=\"136\", \"Not.A/Brand\";v=\"99\""
+							},
+							{
+								"key": "sec-ch-ua-mobile",
+								"value": "?1"
+							},
+							{
+								"key": "sec-ch-ua-platform",
+								"value": "\"Android\""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"status\":\"INACTIVE\"}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{url}}/api/v1/products/status/68333cb7d51434aa69591456"
+					},
+					"response": []
 				}
 			],
 			"id": "99d9610f-d0b8-4b38-9ef7-f1e53f500ff8"

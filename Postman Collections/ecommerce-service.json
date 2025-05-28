@@ -3303,7 +3303,7 @@
 			"name": "Customers",
 			"item": [
 				{
-					"name": "New Request",
+					"name": "customer",
 					"id": "6ed7dfbe-a42d-42ee-948a-6e1b746955cc",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
@@ -3343,6 +3343,18 @@
 								}
 							]
 						}
+					},
+					"response": []
+				},
+				{
+					"name": "customer orders",
+					"id": "b098acb3-cc3f-4681-a4ed-c433320f3990",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": []
 					},
 					"response": []
 				}

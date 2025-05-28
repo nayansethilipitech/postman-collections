@@ -3122,7 +3122,93 @@
 						"method": "GET",
 						"header": []
 					},
-					"response": []
+					"response": [
+						{
+							"id": "dec1404e-7665-45fe-9ba8-e7a160716919",
+							"name": "New Request",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{url}}/api/v1/order/me/6832cfdffd4271aaf5f2833c",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"order",
+										"me",
+										"6832cfdffd4271aaf5f2833c"
+									],
+									"query": [
+										{
+											"key": "status",
+											"value": "DELIVERED",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "page",
+											"value": "1",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "pageSize",
+											"value": "5",
+											"type": "text",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "981"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"3d5-QfQvvMDw/0TsOcFWwGytHJvak1A\""
+								},
+								{
+									"key": "Set-Cookie",
+									"value": "connect.sid=s%3AityVR2DNgOWI4AlQ4SkrTuxC51Ar1gdw.7VDqLW5YBtc6RObqRIIUiCYTRd37RbZqQeGkU65y%2BEQ; Path=/; HttpOnly"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 28 May 2025 16:52:02 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"responseTime": null,
+							"body": "{\n    \"data\": {\n        \"_id\": \"6832cfdffd4271aaf5f2833c\",\n        \"invoice\": \"INV-1748160463\",\n        \"product\": {\n            \"_id\": \"6832cbb14a940c93b1c65d22\",\n            \"title\": \"Product\",\n            \"gallery\": [\n                {\n                    \"_id\": \"67c7e799b00a7b365fe86f53\",\n                    \"url\": \"https://crm-coupon-dev.s3.ap-south-1.amazonaws.com/6d9ae0dc-c7a3-4a33-b276-fee39250b762.png\"\n                }\n            ]\n        },\n        \"quantity\": 10,\n        \"subTotal\": 400,\n        \"totalAmount\": 400,\n        \"status\": \"DELIVERED\",\n        \"tax\": [],\n        \"statusHistory\": [\n            {\n                \"status\": \"PENDING\",\n                \"reason\": \"changing status\",\n                \"_id\": \"68336c8cd51434aa69591bbf\",\n                \"changedAt\": \"2025-05-25T19:16:28.860Z\"\n            },\n            {\n                \"status\": \"PENDING\",\n                \"reason\": \"djd\",\n                \"_id\": \"68336cc5d51434aa69591bcd\",\n                \"changedAt\": \"2025-05-25T19:17:25.689Z\"\n            },\n            {\n                \"status\": \"SHIPPED\",\n                \"reason\": \"shipped\",\n                \"_id\": \"68336d32d51434aa69591bd3\",\n                \"changedAt\": \"2025-05-25T19:19:14.653Z\"\n            },\n            {\n                \"status\": \"CONFIRMED\",\n                \"reason\": \"okk\",\n                \"_id\": \"68372f35116bf3cb52e436a8\",\n                \"changedAt\": \"2025-05-28T15:43:49.348Z\"\n            },\n            {\n                \"status\": \"DELIVERED\",\n                \"reason\": \"reason\",\n                \"_id\": \"683737f32681e51540cd1e9e\",\n                \"changedAt\": \"2025-05-28T16:21:07.455Z\"\n            }\n        ]\n    },\n    \"status\": \"Ok\",\n    \"message\": {\n        \"code\": \"Success\"\n    }\n}"
+						}
+					]
 				}
 			],
 			"id": "ec2fd5d2-cbda-4b09-99d0-f91f326e8d9d"

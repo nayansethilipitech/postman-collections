@@ -1440,7 +1440,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\n    \"productId\": \"6832cbb14a940c93b1c65d22\",\n    \"attributes\": [\n        {\n            \"attributeId\": \"68318e5c7abd44246ed539bd\",\n            \"optionId\": \"6832cbb14a940c93b1c65d28\"\n        },\n        {\n            \"attributeId\": \"68318e727abd44246ed539c1\",\n            \"optionId\": \"6832cbb14a940c93b1c65d25\"\n        }\n    ]\n}",
+									"raw": "{\n    \"productId\": \"6839d2c0d2522dc41e6b0dea\",\n    \"attributes\": [\n        {\n            \"attributeId\": \"68318e727abd44246ed539c1\",\n            \"optionId\": \"6839d377d2522dc41e6b0e92\"\n        },\n       ]\n    \n}",
 									"options": {
 										"raw": {
 											"language": "json"
